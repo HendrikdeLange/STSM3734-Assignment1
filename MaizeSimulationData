@@ -1,4 +1,5 @@
 library(GGally)
+library(writexl)
 #Maize yield synthetic data
 
 set.seed(123)
@@ -198,5 +199,22 @@ ggplot(maize_data, aes(x = yield_tha)) +
   labs(title = "Density of Maize Yield", x = "Yield (t/ha)")
 
 #CORR PLOT
-ggpairs(maize_data, columns = c("temperature_C", "rainfall_mm", "fertiliser_kgha",
+ggpairs(maize_data, columns = c("temperature_C", "rainfall_mm","rainfall_sq", "fertiliser_kgha",
                                 "pesticide_kgha", "soil_organic_matter", "yield_tha"))
+
+#write to excel
+write_xlsx(maize_data, "maize_data.xlsx")
+
+#data used for the model
+sim_data <- data.frame(
+  rain_c    = as.numeric(rain_c),
+  rain_c2   = as.numeric(rain_c2),
+  fert_c    = as.numeric(fert_c),
+  som_c     = as.numeric(som_c),
+  temp_c    = as.numeric(temp_c),
+  pest_c    = as.numeric(pest_c),
+  irr_hybrid = irr_hybrid,
+  soil_loamy = soil_loamy,
+  soil_clay  = soil_clay
+)
+write_xlsx(sim_data, "sim_data.xlsx")
