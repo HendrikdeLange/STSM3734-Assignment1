@@ -1,6 +1,8 @@
+#Generate Observational Data
+
 library(GGally)
 library(writexl)
-#Maize yield synthetic data
+
 
 set.seed(123)
 n <- 1000  # total observations (fields)
@@ -10,15 +12,15 @@ n <- 1000  # total observations (fields)
 #    1 = Free State, 2 = North West, 3 = Mpumalanga
 # -----------------------------------------------------------
 regions <- c("Free State", "North West", "Mpumalanga")
-region  <- sample(1:3, n, replace = TRUE, prob = c(0.5, 0.2, 0.3))
+region  <- sample(1:3, n, replace = TRUE, prob = c(0.6, 0.15, 0.25))
 
 # -----------------------------------------------------------
-# 2. AVERAGE TEMPERATURE  (Normal, region-dependent)
+# 2. AVERAGE TEMPERATURE  
 # -----------------------------------------------------------
 temp_params <- list(
-  "1" = c(mean = 23, sd = 9),   # Free State
-  "2" = c(mean = 24, sd = 7),   # North West
-  "3" = c(mean = 23, sd = 3)    # Mpumalanga
+  "1" = c(mean = 23, sd = 3),   # Free State
+  "2" = c(mean = 24, sd = 2.5),   # North West
+  "3" = c(mean = 23, sd = 1.5)    # Mpumalanga
 )
 
 temperature <- mapply(function(reg) {
@@ -29,7 +31,7 @@ temperature <- mapply(function(reg) {
 }, region)
 
 # -----------------------------------------------------------
-# 3. RAINFALL  (Gamma, region-dependent)
+# 3. RAINFALL  
 # -----------------------------------------------------------
 rainfall_params <- list(
   "1" = c(mean = 1080, shape = 25),  # Free State
@@ -43,27 +45,12 @@ rainfall <- mapply(function(reg) {
   rgamma(1, shape = p["shape"], rate = rate)
 }, region)
 
-# -----------------------------------------------------------
-# 4. SOIL TYPE
-#    1 = Sandy, 2 = Loamy, 3 = Clay
-# -----------------------------------------------------------
-soil_probs <- list(
-  "1" = c(0.341, 0.433, 0.226),  # Free State
-  "2" = c(0.600, 0.200, 0.200),  # North West
-  "3" = c(0.150, 0.550, 0.300)   # Mpumalanga
-)
-
-soil_type <- mapply(function(reg) {
-  sample(1:3, 1, prob = soil_probs[[as.character(reg)]])
-}, region)
 
 # -----------------------------------------------------------
 # 5. IRRIGATION TYPE
-#    1 = Rainfed, 2 = Hybrid
-#    Mpumalanga (region 3): Rainfed ONLY
-#    Elsewhere: ~ 10% Hybrid
+#    1 = Rainfed, 2 = Irrigated
 # -----------------------------------------------------------
-irrigation_type <- mapply(function(reg) {
+irrigation <- mapply(function(reg) {
   if (reg == 3) {
     1L  # Rainfed only
   } else {
@@ -72,62 +59,37 @@ irrigation_type <- mapply(function(reg) {
 }, region)
 
 # -----------------------------------------------------------
-# 6. FERTILISER APPLICATION RATE  (Lognormal, no dependency)
-#    Range: 50 – 500 kg/ha, mean ≈ 180, SD ≈ 80
+# 6. FERTILISER APPLICATION RATE  
 # -----------------------------------------------------------
 fert_mu    <- log(180^2 / sqrt(180^2 + 80^2))
 fert_sigma <- sqrt(log(1 + (80 / 180)^2))
 
 fertiliser <- rlnorm(n, meanlog = fert_mu, sdlog = fert_sigma)
-fertiliser <- pmax(50, pmin(500, fertiliser))
+fertiliser <- pmax(0, pmin(500, fertiliser))
 
 # -----------------------------------------------------------
-# 7. PESTICIDE PER HECTARE  (Lognormal, no dependency)
-#    Range: 50 – 500 kg/ha, mean ≈ 150, SD ≈ 70
+# 7. Chemical Weed Control PER HECTARE 
 # -----------------------------------------------------------
 pest_mu    <- log(150^2 / sqrt(150^2 + 70^2))
 pest_sigma <- sqrt(log(1 + (70 / 150)^2))
 
 pesticide_kgha <- rlnorm(n, meanlog = pest_mu, sdlog = pest_sigma)
-pesticide_kgha <- pmax(50, pmin(500, pesticide_kgha))
+pesticide_kgha <- pmax(0, pmin(500, pesticide_kgha))
 
 # -----------------------------------------------------------
 # 8. SOIL ORGANIC MATTER  (Beta → rescaled to [1, 6]%)
 #    + rainfall, - temperature
 # -----------------------------------------------------------
-rain_mean <- 1100; rain_sd <- 200
-temp_mean <-   23; temp_sd <-   7
+rain_soil <- (rainfall - min(rainfall)) / (max(rainfall) - min(rainfall))
+temp_soil <- (temperature - min(temperature)) / (max(temperature) - min(temperature))
 
-rain_z  <- (rainfall    - rain_mean) / rain_sd
-temp_z  <- (temperature - temp_mean) / temp_sd
-logit_p <- 0.3 * rain_z - 0.4 * temp_z
-p_som   <- plogis(logit_p)
+soil_organic_matter <- 0.6 * rain_soil + 0.4 * (1 - temp_soil)
 
-kappa     <- 8
-alpha_som <- p_som * kappa
-beta_som  <- (1 - p_som) * kappa
-
-som_raw             <- rbeta(n, shape1 = alpha_som, shape2 = beta_som)
-soil_organic_matter <- 1 + som_raw * 5
+soil_organic_matter <- 1 + soil_organic_matter * 5
+soil_organic_matter <- pmin(pmax(soil_organic_matter, 1), 6)
 
 # -----------------------------------------------------------
-# 9. FIELD SIZE  (Nuisance – Uniform, no dependency)
-#    Range: 1 – 50 ha
-# -----------------------------------------------------------
-field_size_ha <- runif(n, min = 1, max = 50)
-
-# -----------------------------------------------------------
-# 10. RAINFALL SQUARED  (Transformed variable)
-# -----------------------------------------------------------
-rainfall_sq <- rainfall^2
-
-# -----------------------------------------------------------
-# 11. PESTICIDE APPLICATIONS  (Count, Poisson clipped to 0–8)
-# -----------------------------------------------------------
-pesticide_apps <- pmin(rpois(n, lambda = 3), 8)
-
-# -----------------------------------------------------------
-# 12. SEED BRAND  (Nuisance)
+# 12. SEED BRAND  
 #     1 = Pannar, 2 = Dekalb, 3 = Pioneer
 # -----------------------------------------------------------
 seed_brand <- sample(1:3, n, replace = TRUE, prob = c(1/3, 1/3, 1/3))
@@ -136,7 +98,7 @@ seed_brand <- sample(1:3, n, replace = TRUE, prob = c(1/3, 1/3, 1/3))
 # 13. TRACTOR BRAND  (Nuisance)
 #     1 = John Deere, 2 = Case, 3 = New Holland
 # -----------------------------------------------------------
-tractor_brand <- sample(1:3, n, replace = TRUE, prob = c(0.6, 0.2, 0.1))
+tractor_brand <- sample(1:3, n, replace = TRUE, prob = c(0.6, 0.2, 0.2))
 
 # -----------------------------------------------------------
 # 14. ASSEMBLE DATASET
@@ -145,76 +107,130 @@ maize_data <- data.frame(
   region              = region,           # 1=Free State, 2=North West, 3=Mpumalanga
   temperature_C       = round(temperature,          2),
   rainfall_mm         = round(rainfall,              1),
-  rainfall_sq         = round(rainfall_sq,           1),
-  soil_type           = soil_type,        # 1=Sandy, 2=Loamy, 3=Clay
-  irrigation_type     = irrigation_type,  # 1=Rainfed, 2=Hybrid
+  irrigation          = irrigation,  
   fertiliser_kgha     = round(fertiliser,            2),
   pesticide_kgha      = round(pesticide_kgha,        2),
-  pesticide_apps      = pesticide_apps,
   soil_organic_matter = round(soil_organic_matter,   3),
-  field_size_ha       = round(field_size_ha,         2),
-  seed_brand          = seed_brand,       # 1=Pannar, 2=Dekalb, 3=Pioneer
-  tractor_brand       = tractor_brand     # 1=John Deere, 2=Case, 3=New Holland
+  seed_brand          = seed_brand,      
+  tractor_brand       = tractor_brand     
 )
 
-#CORRELATION MATRIX
-ggpairs(maize_data, columns = c("temperature_C", "rainfall_mm", "fertiliser_kgha",
-                                "pesticide_kgha", "soil_organic_matter", "field_size_ha"))
+maize_data_observed <- maize_data #for viewing
+# --- Correct variable types ---
+maize_data$region        <- factor(maize_data$region,        labels = c("Free State", "North West", "Mpumalanga"))
+maize_data$irrigation    <- factor(maize_data$irrigation,    labels = c("Rainfed", "Irrigated"))
+maize_data$seed_brand    <- factor(maize_data$seed_brand,    labels = c("Pannar", "Dekalb", "Pioneer"))
+maize_data$tractor_brand <- factor(maize_data$tractor_brand, labels = c("John Deere", "Case", "New Holland"))
 
+# --- Standardise continuous variables ---
+maize_data$temperature_C_z       <- as.numeric(scale(maize_data$temperature_C))
+maize_data$rainfall_mm_z         <- as.numeric(scale(maize_data$rainfall_mm))
+maize_data$fertiliser_kgha_z     <- as.numeric(scale(maize_data$fertiliser_kgha))
+maize_data$pesticide_kgha_z      <- as.numeric(scale(maize_data$pesticide_kgha))
+maize_data$soil_organic_matter_z <- as.numeric(scale(maize_data$soil_organic_matter))
 
-##SIMULATE Y(YIELD PER HECTARE)
-# --- Standardise continuous drivers ---
-rain_c    <- scale(maize_data$rainfall_mm)
-rain_c2   <- rain_c^2
-fert_c    <- scale(log(maize_data$fertiliser_kgha))
-som_c     <- scale(maize_data$soil_organic_matter)
-temp_c    <- scale(maize_data$temperature_C)
-pest_c    <- scale(log(maize_data$pesticide_kgha))
+# --- Dummies (Pannar = reference, so no Pannar dummy) ---
+maize_data$Dekalb    <- as.integer(maize_data$seed_brand == "Dekalb")
+maize_data$Pioneer   <- as.integer(maize_data$seed_brand == "Pioneer")
+maize_data$Irrigated <- as.integer(maize_data$irrigation == "Irrigated")
+maize_data$John    <- as.integer(maize_data$tractor_brand == "John Deere")
+maize_data$Case   <- as.integer(maize_data$tractor_brand == "New Holland")
 
-# --- Categorical dummies ---
-irr_hybrid <- as.integer(maize_data$irrigation_type == 2)  # 1 if Hybrid
-soil_loamy <- as.integer(maize_data$soil_type == 2)        # reference: Sandy
-soil_clay  <- as.integer(maize_data$soil_type == 3)
+# Local vectors for use in yield formula
+Dekalb    <- maize_data$Dekalb
+Pioneer   <- maize_data$Pioneer
+Irrigated <- maize_data$Irrigated
 
-# --- Yield equation ---
-# Target range: 5.33 – 7.25 t/ha, mean ≈ 6.3
-maize_data$yield_tha <- 6.30 +
-  0.40 * rain_c       +   # more rain → more yield
-  -0.15 * rain_c2      +   # but diminishing/hump-shaped
-  0.35 * fert_c       +   # fertiliser boosts yield (log scale)
-  0.30 * som_c        +   # richer soil → higher yield
-  0.40 * irr_hybrid   +   # irrigation gives meaningful lift
-  0.20 * soil_loamy   +   # loamy > sandy
-  -0.10 * soil_clay    +   # clay slightly worse than sandy
-  -0.15 * temp_c       +   # heat stress penalty
-  0.20 * pest_c       +   # pest control helps (log, steep drop-off)
-  rnorm(nrow(maize_data), mean = 0, sd = 0.20)  # residual noise
-
-# Clip to agronomic bounds
-maize_data$yield_tha <- round(pmax(4, pmin(8, maize_data$yield_tha)), 3)
-
-#DENSITY PLOT
-ggplot(maize_data, aes(x = yield_tha)) +
-  geom_density(fill = "darkgreen", alpha = 0.5) +
-  labs(title = "Density of Maize Yield", x = "Yield (t/ha)")
-
-#CORR PLOT
-ggpairs(maize_data, columns = c("temperature_C", "rainfall_mm","rainfall_sq", "fertiliser_kgha",
-                                "pesticide_kgha", "soil_organic_matter", "yield_tha"))
-
-#write to excel
-write_xlsx(maize_data, "maize_data.xlsx")
-
-#data used for the model
-sim_data <- data.frame(
-  rain_c    = as.numeric(rain_c),
-  rain_c2   = as.numeric(rain_c2),
-  fert_c    = as.numeric(fert_c),
-  som_c     = as.numeric(som_c),
-  temp_c    = as.numeric(temp_c),
-  pest_c    = as.numeric(pest_c),
-  irr_hybrid = irr_hybrid,
-  soil_loamy = soil_loamy,
-  soil_clay  = soil_clay
+# --- Simulate yield ---
+# Reference groups: Pannar seed, Rainfed irrigation
+maize_data$yield_tha <- (
+  6.0                                                         # baseline = Pannar, Rainfed
+  
+  + 0.80  * maize_data$rainfall_mm_z                         # strongest driver
+  - 0.25  * maize_data$temperature_C_z                       # heat penalty
+  
+  + 0.35  * maize_data$fertiliser_kgha_z
+  + 0.15  * maize_data$pesticide_kgha_z
+  + 0.25  * Irrigated                                        # vs Rainfed
+  
+  + 0.10  * maize_data$soil_organic_matter_z
+  
+  + 0.30  * Dekalb                                           # vs Pannar
+  + 0.20  * Dekalb   * maize_data$temperature_C_z           # Pannar thrives in heat (negative relative to Dekalb)
+  + 0.25  * Pioneer  * Irrigated                             # Pioneer boost when irrigated
+  + 0.20  * Pioneer  * maize_data$fertiliser_kgha_z         # Pioneer boost with high fertiliser
+  
+  + rnorm(n, mean = 0, sd = 0.3)
 )
-write_xlsx(sim_data, "sim_data.xlsx")
+
+maize_data$yield_tha <- pmin(pmax(maize_data$yield_tha, 3), 10)
+
+# --- Subset columns ---
+maize_data <- maize_data[, c("yield_tha",
+                             "region",
+                             "temperature_C_z",
+                             "rainfall_mm_z",
+                             "Irrigated",
+                             "fertiliser_kgha_z",
+                             "pesticide_kgha_z",
+                             "soil_organic_matter_z",
+                             "Dekalb",
+                             "Pioneer",
+                             "John",
+                             "Case",
+                             "seed_brand",
+                             "irrigation")]
+
+summary(maize_data$yield_tha)
+hist(maize_data$yield_tha, breaks = 30,
+     main = "Simulated Maize Yield", xlab = "t/ha", col = "steelblue")
+
+library(ggplot2)
+library(gridExtra)
+
+###SOME GRAPHS
+# 1. Yield distribution by seed brand
+p1 <- ggplot(maize_data, aes(x = yield_tha, fill = seed_brand)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Yield Distribution by Seed Brand", x = "Yield (t/ha)", fill = "Seed Brand") +
+  theme_minimal()
+
+# 2. Yield by region (boxplot)
+p2 <- ggplot(maize_data, aes(x = region, y = yield_tha, fill = region)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(title = "Yield by Region", x = "", y = "Yield (t/ha)") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# 3. Rainfall vs Yield (scatter) coloured by seed brand
+p3 <- ggplot(maize_data, aes(x = rainfall_mm_z, y = yield_tha, colour = seed_brand)) +
+  geom_point(alpha = 0.3, size = 0.8) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Rainfall vs Yield by Seed Brand", 
+       x = "Rainfall (standardised)", y = "Yield (t/ha)", colour = "Seed Brand") +
+  theme_minimal()
+
+# 4. Irrigation effect by seed brand
+p4 <- ggplot(maize_data, aes(x = seed_brand, y = yield_tha, fill = irrigation)) +
+  geom_boxplot(alpha = 0.7) +
+  labs(title = "Irrigation Effect by Seed Brand", x = "", y = "Yield (t/ha)", fill = "Irrigation") +
+  theme_minimal()
+
+# 5. Temperature vs Yield — should show Pannar doing better in heat
+p5 <- ggplot(maize_data, aes(x = temperature_C_z, y = yield_tha, colour = seed_brand)) +
+  geom_point(alpha = 0.3, size = 0.8) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Temperature vs Yield by Seed Brand",
+       x = "Temperature (standardised)", y = "Yield (t/ha)", colour = "Seed Brand") +
+  theme_minimal()
+
+# 6. Fertiliser vs Yield — Pioneer interaction should be visible
+p6 <- ggplot(maize_data, aes(x = fertiliser_kgha_z, y = yield_tha, colour = seed_brand)) +
+  geom_point(alpha = 0.3, size = 0.8) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Fertiliser vs Yield by Seed Brand",
+       x = "Fertiliser (standardised)", y = "Yield (t/ha)", colour = "Seed Brand") +
+  theme_minimal()
+
+# Display all together
+grid.arrange(p1, p2, p3, p4, p5, p6, ncol = 2)
