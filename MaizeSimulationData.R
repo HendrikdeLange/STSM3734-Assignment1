@@ -237,4 +237,5 @@ grid.arrange(p1, p2, p3, p4, p5, p6, ncol = 2)
 
 
 #I will export the necessary dataset for the next step
-write.csv(maize_data_observed, "observed_data.csv", rownames=FALSE)
+maize_data_observed$yield_tha <-maize_data$yield_tha
+write.csv(maize_data_observed, "observed_data.csv", row.names = FALSE)
