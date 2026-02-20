@@ -153,12 +153,12 @@ maize_data$yield_tha <- (
   + 0.2  * maize_data$pesticide_kgha_z
   + 0.25  * Irrigated                                        # vs Rainfed
   
-  + 0.10  * maize_data$soil_organic_matter_z
+  + 0.10  * maize_data$soil_organic_matter_z #slaan my
   
   + 0.30  * Dekalb                                           # vs Pannar
-  + 0.20  * Dekalb   * maize_data$temperature_C_z           # Pannar thrives in heat (negative relative to Dekalb)
+  + 0.20  * Dekalb   * maize_data$temperature_C_z            # Pannar thrives in heat (negative relative to Dekalb)
   + 0.25  * Pioneer  * Irrigated                             # Pioneer boost when irrigated
-  + 0.20  * Pioneer  * maize_data$fertiliser_kgha_z         # Pioneer boost with high fertiliser
+  + 0.20  * Pioneer  * maize_data$fertiliser_kgha_z          # Pioneer boost with high fertiliser
   
   + rnorm(n, mean = 0, sd = 0.3)
 )

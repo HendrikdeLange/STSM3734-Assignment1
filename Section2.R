@@ -94,3 +94,7 @@ ggplot(block_counts, aes(x = region, y = seed_brand, fill = Count)) +
   theme_minimal() +
   labs(title = "Block Sizes: Seed Brand × Region",
        x = "Region", y = "Seed Brand")
+
+#GOING TO SAVE THIS TO CSV (datadummies)
+data_dummies$yield_tha <- data$yield_tha
+write.csv(data_dummies, "dummy_data.csv", row.names = FALSE)
