@@ -150,7 +150,7 @@ maize_data$yield_tha <- (
   - 0.25  * maize_data$temperature_C_z                       # heat penalty
   
   + 0.35  * maize_data$fertiliser_kgha_z
-  + 0.15  * maize_data$pesticide_kgha_z
+  + 0.2  * maize_data$pesticide_kgha_z
   + 0.25  * Irrigated                                        # vs Rainfed
   
   + 0.10  * maize_data$soil_organic_matter_z
