@@ -184,7 +184,7 @@ maize_data <- maize_data[, c("yield_tha",
 summary(maize_data$yield_tha)
 hist(maize_data$yield_tha, breaks = 30,
      main = "Simulated Maize Yield", xlab = "t/ha", col = "steelblue")
-
+#test for damien
 library(ggplot2)
 library(gridExtra)
 
