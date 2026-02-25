@@ -91,4 +91,4 @@ corrplot(
   mar         = c(0, 0, 2, 0)
 )
 
-ggpairs(df)
+#ggpairs(df)

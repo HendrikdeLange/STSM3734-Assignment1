@@ -1,7 +1,7 @@
 #Generate observed data
 
 set.seed(123)
-n <- 1000  # total observations (fields)
+n <- 1080  # total observations (fields)
 
 # -----------------------------------------------------------
 # 1. REGION  
