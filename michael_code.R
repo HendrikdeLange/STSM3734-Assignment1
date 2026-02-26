@@ -1,102 +1,5 @@
+
 library(dplyr)
-
-# Set seed for reproducibility
-#set.seed(123)
-
-# Sample size
-n <- 2000
-
-### 1. Continuous variable: Age
-age <- rnorm(n, mean = 40, sd = 10)
-age <- pmax(age, 18)   # enforce minimum adult age#havw this
-
-### 2. Continuous variable correlated with age: Experience
-# Noisy linear relationship with age
-experience <- 0.5*(age - 22) + rnorm(n, mean = 0, sd = 8)
-experience <- pmax(experience, 0) #have this
-
-### 3. Categorical variable: Education level
-education_levels <- c("School", "College", "Postgrad")
-education <- sample(education_levels, n, replace = TRUE,
-                    prob = c(0.4, 0.4, 0.2))
-education <- factor(education)# fine if samples are not even
-
-### 4. Binary treatment variable: Training participation
-# Slightly more likely for younger and college educated
-training_prob <- plogis(-0.5 + 0.02*(35 - age) + 0.5*(education == "College"))
-training <- rbinom(n, 1, training_prob)
-
-### 5. Binary explanatory variable: Urban residence
-urban <- rbinom(n, 1, 0.6)
-
-# Combine into data frame
-X <- data.frame(age, experience, education, training, urban)
-
-head(X)
-
-
-par(mfrow = c(2,3))
-
-hist(age, main = "Age", col = "lightblue")
-hist(experience, main = "Experience", col = "lightgreen")
-hist(training, main = "Training", col = "salmon")
-hist(urban, main = "Urban", col = "orange")
-
-# For categorical variable
-barplot(table(education), main = "Education Level",
-        col = "purple")
-
-# Create numeric version for plotting
-X_numeric <- data.frame(
-  age = age,
-  experience = experience,
-  education = as.numeric(education),
-  training = training,
-  urban = urban
-)
-
-X_numeric
-
-pairs(X_numeric,
-      main = "Scatterplot Matrix of Covariates",
-      col = "darkblue",
-      pch = 16)
-
-# Creating the response variable
-### Create dummy variables for education
-edu_college  <- ifelse(education == "College", 1, 0)
-edu_postgrad <- ifelse(education == "Postgrad", 1, 0)
-
-### Set error variance (controls R^2)
-sigma <- 15000
-
-epsilon <- rnorm(n, mean = 0, sd = sigma)
-
-### Generate income
-income <- 20000 +
-  900 * experience +
-  100 * age +
-  4000 * training +
-  3000 * edu_college +
-  7000 * edu_postgrad +
-  3500 * urban +
-  epsilon
-
-#This is where you will possibly put in an interaction or transformation, or both
-#instead of maybe one or two of the main effects. #we have this
-
-### Add to dataset
-X$income <- income
-
-hist(income,
-     breaks = 30,
-     col = "lightgray",
-     main = "Histogram of Annual Income",
-     xlab = "Income")
-
-model1 <- lm(income ~ age + experience + education + training + urban, data = X)
-summary(model1)
-
 #Experimentalising the data
 set.seed(123)
 
@@ -123,13 +26,6 @@ temp_df <- data.frame(age_cont, experience_cont) %>%
   ungroup()
 
 temp_df
-
-
-
-
-
-
-
 
 
 
@@ -198,32 +94,50 @@ table(final_data$age_cat,
 # 
 #Create the new response
 
+
+
+#OLD MODEL
+### Set error variance (controls R^2)
+# sigma <- 15000
+# 
+# epsilon <- rnorm(n, mean = 0, sd = sigma)
+# 
+# ### Generate income
+# income <- 20000 +
+#   900 * experience +
+#   100 * age +
+#   4000 * training +
+#   3000 * edu_college +
+#   7000 * edu_postgrad +
+#   3500 * urban +
+#   epsilon
 #Adjusting based on Experience
-beta_exp <- 900 * exp_means$exp_mean
-beta_exp
+beta_exp <- 900 * exp_means$exp_mean #WAS 900
+beta_exp # 1X3 VECTOR
 beta_exp_dev <- beta_exp - beta_exp[1]
-beta_exp_dev
-intercept_new <- 20000 + beta_exp[1]
+beta_exp_dev #SUBTRACTS THE FIRST TERILE MEAN FROM EACH ENTRY IN THE VECTOR
+intercept_new <- 20000 + beta_exp[1] #NEW INTERCEPT = OLD + LOWEST TERTILE MEAN
 intercept_new
+
 #beta0  <- intercept_new
-betaE2 <- beta_exp_dev[2]
-betaE3 <- beta_exp_dev[3]
+betaE2 <- beta_exp_dev[2] #2ND TERTILE MEAN
+betaE3 <- beta_exp_dev[3] #3RD TERTILE MEAN
 # Create experience dummies
-exp2 <- ifelse(final_data$exp_cat == "MidExp", 1, 0)
+exp2 <- ifelse(final_data$exp_cat == "MidExp", 1, 0) #CREATE DUMMIES FOR EXPERIENCE
 exp3 <- ifelse(final_data$exp_cat == "HighExp", 1, 0)
 
 #Adjusting based on Age
 beta_age <- 100 * age_means$age_mean
-beta_age
+beta_age #3X1 VECTOR
 beta_age_dev <- beta_age - beta_age[1]
-beta_age_dev
-intercept_new <- intercept_new + beta_age[1]
+beta_age_dev #SUBTRACTS THE 1ST TERTILE MEAN FROM EACH ENTRY IN THE VECTOR
+intercept_new <- intercept_new + beta_age[1] #NEW INTERCEPT = OLD + LOWEST TERTILE MEAN
 intercept_new
 beta0  <- intercept_new
 betaA2 <- beta_age_dev[2]
 betaA3 <- beta_age_dev[3]
 # Create experience dummies
-age2 <- ifelse(final_data$age_cat == "Middle", 1, 0)
+age2 <- ifelse(final_data$age_cat == "Middle", 1, 0) #CREATE EXPERIENCE DUMMIES
 age3 <- ifelse(final_data$age_cat == "Older", 1, 0)
 
 # Schooling dummies

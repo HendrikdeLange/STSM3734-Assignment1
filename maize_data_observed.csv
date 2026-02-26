@@ -1,1081 +1,401 @@
-"region","temperature_C","rainfall_mm","irrigation","fertiliser_kgha","chem_weed_control_kgha","soil_organic_matter","seed_brand","tractor_brand","yield_tha"
-"Free State",22.91,473.2,"Rainfed",282.39,142.1,3.952,"Pioneer","John Deere",6.65006665134642
-"Mpumalanga",20.59,1090.1,"Rainfed",137.26,69.5,3.849,"Pannar","John Deere",7.15400529866354
-"Free State",26.82,772.1,"Rainfed",88.33,109.8,3.934,"Pioneer","Case",5.19971793321165
-"North West",22.01,534,"Irrigated",204.35,116.8,3.392,"Pioneer","John Deere",6.71134925496151
-"North West",32.33,613.1,"Rainfed",213.88,175.04,3.812,"Pannar","Case",5.85889260453972
-"Free State",27.46,1055.4,"Rainfed",483.67,149.03,3.118,"Pioneer","John Deere",9.4541729162581
-"Free State",19.21,248.4,"Rainfed",341.34,97.07,3.667,"Pannar","John Deere",4.77853350926511
-"North West",31.2,564.6,"Rainfed",135.02,198.14,3.962,"Pannar","John Deere",5.65325076345324
-"Free State",33.72,955.2,"Rainfed",107.27,234.29,4.107,"Dekalb","John Deere",6.58192718250089
-"Free State",21.77,469.7,"Rainfed",214.11,77.03,3.58,"Pioneer","John Deere",5.03933405373422
-"North West",32.22,420.5,"Rainfed",383.41,147.5,3.677,"Pannar","John Deere",5.09011108552278
-"Free State",20.87,469.1,"Rainfed",99.53,97.48,3.173,"Pannar","John Deere",5.10730636673588
-"Mpumalanga",25.33,562.7,"Rainfed",118.09,103.77,3.027,"Pannar","Case",4.62912835667625
-"Free State",25,555.3,"Rainfed",345.45,163.77,3.484,"Pannar","John Deere",5.74717596728844
-"Free State",30.61,485.4,"Rainfed",358.83,197.51,3.547,"Pioneer","John Deere",6.38785982028467
-"North West",20.71,453.4,"Rainfed",178.65,160.91,3.456,"Pioneer","John Deere",6.06815079474307
-"Free State",23.79,793.5,"Rainfed",82.68,107.2,3.273,"Pannar","New Holland",6.44380649184274
-"Free State",21.89,469.3,"Rainfed",130.64,224.43,3.126,"Pioneer","New Holland",4.87837963061098
-"Free State",23.21,356.1,"Rainfed",270.02,214.9,3.759,"Pannar","John Deere",5.87334548898793
-"North West",24.85,671.8,"Rainfed",410.45,87.62,3.801,"Pannar","John Deere",7.87141324638217
-"North West",23.83,437.1,"Rainfed",163.38,156.2,3.434,"Pioneer","John Deere",4.55660960953859
-"Mpumalanga",23.74,642,"Rainfed",125.8,81.24,4.005,"Pioneer","John Deere",6.30979845516289
-"Mpumalanga",18.74,1090.7,"Rainfed",187.25,260.65,3.565,"Dekalb","John Deere",9.96831947637342
-"North West",35.42,608.8,"Irrigated",174.92,153.24,3.745,"Pioneer","John Deere",5.19841702175516
-"Mpumalanga",18.44,577.4,"Rainfed",111.8,218.28,3.314,"Pannar","Case",5.86965561383054
-"Mpumalanga",22.3,922.9,"Rainfed",211.48,161.48,3.713,"Pioneer","John Deere",5.80289051740586
-"Free State",26.13,784.5,"Rainfed",296.83,129.55,3.702,"Dekalb","New Holland",6.28109490238009
-"Free State",26.35,452.9,"Rainfed",165.4,189.66,3.56,"Pioneer","John Deere",5.90755503881041
-"Free State",22.79,267.7,"Irrigated",214.54,83.29,3.798,"Dekalb","John Deere",4.22925499475365
-"Free State",24.32,548.1,"Rainfed",183.07,71.97,3.45,"Pioneer","John Deere",5.61026254705237
-"North West",32.81,594.2,"Rainfed",200.1,102.72,2.859,"Pioneer","John Deere",4.34431178394204
-"North West",20.72,237.6,"Rainfed",150.22,152.8,3.375,"Dekalb","New Holland",4.91393008768125
-"Mpumalanga",19.65,759.4,"Rainfed",273.53,113.13,3.755,"Dekalb","New Holland",7.38936657746316
-"Mpumalanga",22.96,501.9,"Rainfed",181.5,110.57,2.929,"Pioneer","John Deere",5.36986507559947
-"Free State",22.22,776,"Rainfed",132.86,204.56,3.004,"Pioneer","John Deere",6.4137023713768
-"Free State",29.48,653.3,"Rainfed",214.97,108.77,3.486,"Dekalb","Case",6.10869144548848
-"Mpumalanga",24.02,1142.9,"Rainfed",246.97,209.49,3.58,"Pannar","John Deere",8.40445133941181
-"Free State",24.29,478.7,"Rainfed",159.37,96.45,3.849,"Dekalb","John Deere",6.23256604766088
-"Free State",17.97,535.4,"Rainfed",52.76,121.3,3.495,"Dekalb","New Holland",5.33227540349929
-"Free State",24.1,453.3,"Rainfed",329.47,94.19,3.635,"Pioneer","John Deere",6.45812848508058
-"Free State",22.73,532.1,"Rainfed",119.6,112.5,3.577,"Dekalb","John Deere",4.74578155678886
-"Free State",23.59,744,"Rainfed",141.82,81.16,3.733,"Pannar","John Deere",6.47682859809491
-"Free State",19.27,479.7,"Rainfed",327.03,165.76,3.778,"Pioneer","John Deere",7.39761310995065
-"Free State",25.99,644.7,"Rainfed",73.48,229.73,3.092,"Dekalb","New Holland",6.13127336434336
-"Free State",19.84,602.6,"Rainfed",102.82,154.15,3.307,"Dekalb","Case",5.51006102563834
-"Free State",23.1,531.5,"Rainfed",119.66,290.66,3.769,"Pannar","John Deere",5.73659349324275
-"Free State",25.53,509.1,"Rainfed",94.2,65.64,2.831,"Pioneer","John Deere",3.78562196793669
-"Free State",20.87,553.3,"Rainfed",262.76,97.37,2.733,"Dekalb","John Deere",6.43596482071051
-"Free State",26.33,691.5,"Rainfed",281.38,171.57,3.536,"Dekalb","Case",6.49102167715102
-"North West",21.42,852.6,"Rainfed",203.46,180.06,3.538,"Pannar","New Holland",7.05574969015754
-"Free State",12.76,619.5,"Rainfed",136.49,157.16,3.437,"Dekalb","John Deere",7.88258106381467
-"Free State",25.86,458.7,"Rainfed",137.41,295.01,3.73,"Pioneer","John Deere",6.41043528671078
-"Mpumalanga",24.52,497.1,"Rainfed",129.24,285.94,3.842,"Pioneer","New Holland",4.64925742786288
-"Free State",22.86,421.6,"Rainfed",131.64,71.12,3.782,"Dekalb","John Deere",4.70078389568279
-"Free State",26.02,667.4,"Rainfed",201.91,112.94,3.441,"Pannar","New Holland",6.6049254499745
-"Free State",19.38,476.7,"Rainfed",241.98,71.92,3.495,"Pannar","Case",5.83228382769883
-"Free State",23.49,840.6,"Irrigated",135.5,86.02,3.611,"Pannar","John Deere",6.44178893398205
-"Mpumalanga",16.18,808.8,"Rainfed",188.34,151.76,2.907,"Dekalb","Case",7.99116945431769
-"North West",33.91,489.5,"Rainfed",59.73,158.87,3.146,"Pannar","John Deere",3.74300378431974
-"Free State",31.44,434.8,"Rainfed",169.87,96.13,3.691,"Dekalb","John Deere",4.70984789839828
-"Mpumalanga",25.22,226.6,"Rainfed",113.28,155.4,3.532,"Dekalb","Case",4.58031260316164
-"Free State",23.89,538.9,"Rainfed",262.23,98.4,3.1,"Pioneer","Case",6.43855617607613
-"Free State",23.87,384.6,"Rainfed",272.13,151.84,3.864,"Pannar","John Deere",6.15127594890965
-"Free State",17.94,790.1,"Rainfed",64.73,142.93,3.683,"Dekalb","John Deere",7.36289560681626
-"Mpumalanga",24.37,815.3,"Rainfed",243.33,119.83,3.333,"Dekalb","Case",7.34945578082212
-"Free State",23.16,471.4,"Rainfed",129.36,88.76,3.491,"Pannar","Case",5.5177827337668
-"Mpumalanga",20.03,529.9,"Rainfed",153.43,110.56,3.525,"Pioneer","John Deere",5.67601803103311
-"Mpumalanga",17.76,766.1,"Rainfed",240.88,169.04,3.445,"Pioneer","John Deere",7.23130634415258
-"Mpumalanga",21.1,557.2,"Rainfed",220.4,109.15,3.448,"Dekalb","Case",6.62571905361128
-"Free State",20.6,596.4,"Rainfed",116.17,117.64,3.464,"Dekalb","John Deere",6.40146308141792
-"Mpumalanga",20.81,661.2,"Irrigated",188.43,84.54,3.712,"Pioneer","John Deere",7.65058348298768
-"Mpumalanga",18.35,818,"Rainfed",134.9,112.1,3.837,"Pioneer","Case",6.45079558185961
-"Mpumalanga",27.06,604,"Rainfed",279.87,134.44,3.65,"Dekalb","John Deere",6.69791718936557
-"Free State",23.94,586.7,"Rainfed",84.4,98.35,4.018,"Pioneer","John Deere",5.0288862665084
-"Free State",28.3,618.9,"Irrigated",232.96,114.69,3.667,"Pioneer","John Deere",6.97038248696641
-"Free State",13.59,609.4,"Rainfed",296.92,83.39,3.634,"Dekalb","John Deere",8.43194031106837
-"Free State",22.19,502.7,"Rainfed",54.32,189.55,3.746,"Pioneer","John Deere",5.50348302173171
-"Mpumalanga",19.97,673.8,"Rainfed",216.55,362.49,3.477,"Pioneer","Case",7.00572473499014
-"Free State",19.11,803.6,"Rainfed",140.99,112.55,3.753,"Dekalb","John Deere",6.90353833102612
-"Free State",30.19,510.3,"Rainfed",172.37,167.21,4.065,"Pannar","New Holland",5.11024694133505
-"Free State",18.34,590,"Rainfed",146.67,274.33,3.454,"Pannar","John Deere",6.70251290546101
-"Mpumalanga",22.96,1141.4,"Rainfed",220.67,114.6,3.858,"Pannar","John Deere",7.92164479160709
-"Free State",27.39,324.2,"Rainfed",243.95,114.36,3.465,"Pannar","John Deere",5.10535763167071
-"Mpumalanga",22.53,1067,"Rainfed",211.59,181.17,3.319,"Pioneer","John Deere",8.71916133185325
-"Free State",20.5,543.6,"Rainfed",157.23,89.07,3.844,"Pioneer","New Holland",6.09408855459253
-"Free State",27.76,560.3,"Rainfed",137.38,125.87,3.615,"Pannar","John Deere",6.01341878860414
-"North West",28.85,627.8,"Rainfed",154.97,106.33,3.384,"Dekalb","John Deere",5.65961757533275
-"North West",22.68,548.5,"Rainfed",149.35,88.46,4.025,"Dekalb","New Holland",6.12019321967118
-"North West",21.06,428.2,"Rainfed",179.45,163.83,2.935,"Dekalb","John Deere",5.3447929567713
-"Free State",32.35,559,"Rainfed",115.9,127.8,3.44,"Dekalb","John Deere",5.19932828532547
-"Free State",21.29,527.6,"Rainfed",210.82,356.07,3.437,"Dekalb","John Deere",6.21548669197098
-"Mpumalanga",16.43,1220.1,"Rainfed",107.66,38.48,3.541,"Pannar","John Deere",7.3545506006891
-"Free State",26.13,743,"Rainfed",87.59,181.01,3.536,"Dekalb","Case",6.3346460982019
-"Mpumalanga",22.93,559.5,"Rainfed",183.51,94.4,4.055,"Pannar","John Deere",5.48827233799326
-"Free State",18.58,776.1,"Rainfed",196.2,119.71,2.91,"Pioneer","John Deere",7.24894630039533
-"Free State",16.23,725.3,"Rainfed",254.22,83.83,3.848,"Pioneer","New Holland",7.01326397701181
-"Mpumalanga",21.65,824.5,"Rainfed",223.88,175.71,3.297,"Pioneer","John Deere",7.44490779106655
-"Free State",28.56,327.1,"Rainfed",180.57,248.08,3.736,"Pannar","Case",4.16690547900195
-"Free State",26.54,744.8,"Rainfed",220.62,168.89,3.364,"Pannar","New Holland",6.74896563281931
-"Free State",22.03,545.6,"Rainfed",108.48,90.68,3.757,"Pannar","John Deere",4.57731907868902
-"Free State",20.66,232.7,"Rainfed",101.35,278.31,3.409,"Dekalb","Case",5.29270718661231
-"Free State",25.08,886.7,"Rainfed",98.18,126.4,3.334,"Pannar","John Deere",6.46103094475173
-"Free State",24.63,653.2,"Irrigated",167.64,147.15,3.129,"Pannar","New Holland",6.73711056011987
-"North West",31.15,522.3,"Irrigated",217.82,132.99,3.161,"Pioneer","John Deere",6.95183926396085
-"Free State",22.42,455.1,"Rainfed",241.69,123.51,3.38,"Pioneer","Case",4.9996365557158
-"North West",32.5,343,"Irrigated",308.82,140.9,3.427,"Pioneer","John Deere",5.59226502697685
-"North West",23.85,237.6,"Rainfed",189.16,86.03,3.618,"Dekalb","John Deere",4.55308698553513
-"Mpumalanga",21.01,728.2,"Rainfed",155.77,226.79,3.496,"Pioneer","Case",6.40020129034045
-"Free State",26.96,1091.3,"Rainfed",124.22,181.09,3.898,"Pannar","John Deere",6.94015918965684
-"Free State",27.96,367.3,"Rainfed",183.22,140.77,3.087,"Pioneer","New Holland",4.75070861311918
-"North West",18.31,576.1,"Rainfed",160.05,206.8,3.682,"Pannar","John Deere",6.48384769925783
-"Free State",24.43,525.3,"Rainfed",143.28,79.01,3.762,"Pannar","John Deere",5.64377390778129
-"Free State",26.44,568,"Rainfed",123.39,220.03,3.636,"Pioneer","Case",6.27055965523119
-"North West",20.75,749.4,"Rainfed",107.31,149.34,3.483,"Dekalb","Case",5.86866950184873
-"Mpumalanga",23.44,770.1,"Rainfed",108.36,169.95,3.361,"Pannar","John Deere",6.45618170805307
-"Free State",20.69,979.8,"Rainfed",306.88,111.03,3.12,"Pannar","New Holland",7.76516187139137
-"Free State",28.08,721.7,"Rainfed",182.95,96.05,3.027,"Pannar","New Holland",5.62600645679519
-"North West",30.69,601.8,"Rainfed",137.03,106.66,3.679,"Dekalb","John Deere",4.9883497341001
-"Free State",27.08,542.6,"Rainfed",84.13,215.31,3.383,"Pioneer","Case",4.71232230994857
-"Free State",24.48,563.8,"Rainfed",178.52,220.59,3.036,"Dekalb","John Deere",6.65082196188495
-"Mpumalanga",24.59,355.6,"Rainfed",133.18,271.05,3.626,"Pannar","John Deere",4.82615476433807
-"Free State",29.52,618.4,"Irrigated",158.6,132.24,3.713,"Pioneer","John Deere",5.85862119562002
-"Free State",31.86,480.6,"Rainfed",150.64,97.18,2.809,"Dekalb","New Holland",4.63424320647151
-"Free State",23.89,984.7,"Rainfed",228.68,261.31,4.082,"Dekalb","John Deere",8.74282185366902
-"Free State",15,982.9,"Rainfed",159.76,68.25,3.936,"Pannar","John Deere",8.59939428936322
-"North West",28.16,607.6,"Rainfed",152.51,126.67,3.1,"Pannar","John Deere",5.30154673998081
-"Free State",24.82,642.2,"Rainfed",450.46,177.66,3.255,"Pioneer","John Deere",8.07041345017671
-"Free State",23.38,1163.9,"Rainfed",260.97,81.14,3.611,"Pioneer","New Holland",7.6142014865806
-"Free State",26.27,712,"Rainfed",173.82,68.01,3.606,"Pioneer","Case",6.48825746342023
-"Mpumalanga",25.03,486.7,"Rainfed",120.59,168.89,3.124,"Pioneer","John Deere",5.33447240744478
-"Mpumalanga",20.45,889.7,"Rainfed",271.36,279.13,3.344,"Pannar","John Deere",8.57712404011146
-"North West",26.53,315.9,"Irrigated",110.7,98.97,4.386,"Dekalb","John Deere",4.6859022262876
-"Mpumalanga",23.19,623.3,"Rainfed",161.16,100.21,3.782,"Pannar","New Holland",6.64438716551484
-"Mpumalanga",20.35,784.2,"Rainfed",236.23,89.49,3.944,"Pioneer","John Deere",7.11688794659106
-"Free State",24.37,598.4,"Rainfed",138.13,262.74,3.256,"Pannar","John Deere",6.77792822864915
-"Mpumalanga",16.11,774.6,"Rainfed",140.74,99.27,3.45,"Pioneer","John Deere",6.98362134998384
-"Mpumalanga",18.64,701.8,"Rainfed",198.3,93.73,3.12,"Pannar","John Deere",6.7752358073602
-"Mpumalanga",18.02,1167.3,"Rainfed",174.52,95.13,3.678,"Pannar","John Deere",8.37745527046355
-"North West",23.73,514.6,"Irrigated",147.97,104.71,3.474,"Pannar","John Deere",5.37496127624456
-"Free State",21.23,629.7,"Rainfed",150.5,104.25,4.203,"Pannar","John Deere",6.13398479869575
-"Free State",25.53,560.4,"Irrigated",182.98,177.92,3.391,"Pannar","New Holland",5.86925921307967
-"Free State",27.93,826.1,"Rainfed",200.53,155.41,3.504,"Pannar","John Deere",6.22402692114647
-"Free State",21.09,901.4,"Rainfed",284.96,167.81,3.252,"Dekalb","John Deere",8.16090585335137
-"Free State",20.01,630.6,"Rainfed",137.67,102.76,3.583,"Pannar","New Holland",5.47107728638973
-"Mpumalanga",18.87,834,"Rainfed",287.68,187.49,3.301,"Pannar","John Deere",7.74951684383187
-"Free State",22.34,525.8,"Rainfed",88.3,35.21,3.184,"Dekalb","Case",5.28373616036618
-"Free State",23.04,610.1,"Irrigated",125.08,224.23,3.469,"Dekalb","John Deere",7.14082200632888
-"Free State",25.93,688.3,"Rainfed",92.61,148.54,3.225,"Pioneer","John Deere",4.95162632654069
-"Free State",22.71,654.7,"Rainfed",187.58,113.56,3.247,"Pannar","John Deere",6.46275937078328
-"Mpumalanga",15.76,670.9,"Rainfed",196.67,167.87,3.687,"Pioneer","John Deere",7.37231974641907
-"Mpumalanga",21.73,673.2,"Rainfed",92.1,78.98,3.838,"Dekalb","John Deere",6.08398086649133
-"Free State",28.75,563.2,"Irrigated",167.86,102.64,3.734,"Pannar","John Deere",6.42645149927762
-"Free State",28.77,504.2,"Rainfed",111.59,142.68,3.467,"Pannar","John Deere",5.11873043145722
-"Free State",20.84,555.7,"Rainfed",202.86,67.93,3.531,"Pannar","John Deere",5.50715413383101
-"Free State",17.81,652.8,"Rainfed",85,133.52,3.297,"Pioneer","New Holland",5.27108666742251
-"Free State",33.83,363.6,"Irrigated",237.45,133.75,3.525,"Pioneer","Case",5.24630630715636
-"Free State",23.35,534.1,"Rainfed",161.41,120.1,3.792,"Pioneer","New Holland",5.22246327533181
-"Free State",23.61,422.6,"Irrigated",105.95,76.56,3.19,"Dekalb","John Deere",6.30110054541227
-"Free State",25.68,764,"Rainfed",158.8,228.16,3.803,"Pannar","Case",6.91170664316558
-"Free State",17.54,395.1,"Rainfed",146.94,70.3,3.308,"Pannar","Case",3.67928003539628
-"Free State",21.09,925.4,"Rainfed",140.9,70.56,3.665,"Dekalb","John Deere",6.91555869439536
-"Free State",17.84,541.1,"Rainfed",87.1,104.95,3.098,"Pioneer","Case",4.73191473673382
-"Mpumalanga",19.92,748.9,"Rainfed",128.3,270.38,3.576,"Pannar","Case",6.30350898010472
-"Free State",24.48,715.3,"Rainfed",152.82,142.53,3.897,"Pannar","Case",5.44644223977591
-"Free State",18.54,894.8,"Rainfed",87.63,152.53,3.52,"Dekalb","John Deere",7.76625234528659
-"Free State",26.36,495.5,"Irrigated",187.02,123.5,3.002,"Dekalb","John Deere",6.06389824439508
-"Mpumalanga",22.87,738.4,"Rainfed",294.66,153.29,4.002,"Pioneer","John Deere",7.90592027538063
-"Free State",20.38,531.7,"Rainfed",229.27,180.04,3.257,"Dekalb","John Deere",7.25852842344269
-"Free State",24.91,852.7,"Rainfed",117.19,186.08,3.22,"Pioneer","John Deere",6.37025051873996
-"Free State",26.99,858.1,"Irrigated",124.45,249.77,3.322,"Pioneer","John Deere",7.84336805017556
-"Mpumalanga",25.18,516.7,"Rainfed",134.98,96.23,3.185,"Pannar","Case",4.47012061495876
-"Free State",23.15,864.2,"Rainfed",212.74,126.71,3.582,"Pioneer","John Deere",6.94037127549493
-"North West",27.53,724.4,"Rainfed",161.75,163.32,3.593,"Pannar","John Deere",5.84865254350859
-"Mpumalanga",21.74,423.4,"Rainfed",110.12,196.05,3.38,"Dekalb","New Holland",5.34861024586214
-"Mpumalanga",26.32,951.2,"Rainfed",86.56,117.25,3.765,"Pioneer","John Deere",5.88958730742945
-"Mpumalanga",25.38,572,"Rainfed",208.57,181.45,3.622,"Dekalb","New Holland",6.56833466216337
-"Free State",27.34,438.4,"Rainfed",105.59,106.56,3.084,"Pioneer","New Holland",4.07208559529448
-"Free State",22.85,634.5,"Irrigated",203.13,116.81,3.701,"Dekalb","John Deere",7.59709576443841
-"North West",29.87,757,"Rainfed",169.67,213.02,3.097,"Pioneer","Case",5.10226687171917
-"Free State",25.61,490.6,"Rainfed",223.47,58.93,3.454,"Dekalb","John Deere",4.90836152360465
-"Mpumalanga",18.87,745.8,"Rainfed",261.75,149.97,3.447,"Dekalb","John Deere",7.43975884130712
-"Free State",17.09,658.4,"Rainfed",89.89,205.02,3.288,"Dekalb","New Holland",6.34144634585909
-"Mpumalanga",23.93,625.6,"Rainfed",253.88,116.64,3.836,"Dekalb","New Holland",5.93941969244449
-"Free State",17.88,285.8,"Rainfed",220.27,179.38,3.499,"Pannar","Case",5.5875621893089
-"Free State",24.01,466.1,"Rainfed",144.36,99.34,3.639,"Pioneer","John Deere",5.47420542978022
-"Free State",25,340,"Rainfed",163.11,146.66,3.455,"Pioneer","Case",5.35743275585757
-"Free State",26.26,399.7,"Rainfed",202.39,136.52,3.204,"Pioneer","John Deere",5.33193706031155
-"Free State",24.76,782.7,"Rainfed",217.73,134.21,3.683,"Pioneer","John Deere",7.12586643746048
-"North West",24.34,301.8,"Rainfed",79.45,77.16,3.229,"Dekalb","Case",4.90773670439769
-"North West",32.93,804,"Rainfed",305.58,126.46,3.734,"Dekalb","John Deere",6.59281658769821
-"Free State",30.95,415,"Rainfed",90.47,94.71,4.177,"Dekalb","John Deere",4.57334854819097
-"Free State",27.52,805.4,"Rainfed",67.98,115.87,3.603,"Pannar","John Deere",6.06290364837062
-"North West",18.28,828.1,"Rainfed",246.65,214.17,3.741,"Pioneer","John Deere",9.41546002561937
-"Mpumalanga",26.2,793.2,"Rainfed",86.58,105.7,3.635,"Dekalb","New Holland",6.34540675027982
-"North West",27.72,389.4,"Rainfed",149.55,133.97,3.838,"Pannar","New Holland",4.4284738364371
-"Free State",26.1,483.3,"Rainfed",92.86,142.29,3.102,"Pannar","John Deere",5.08861153798276
-"Free State",26.49,1103.7,"Rainfed",76.78,124.96,3.244,"Pioneer","John Deere",6.09083223892417
-"Mpumalanga",21.71,377.1,"Rainfed",136.34,194.4,3.507,"Pannar","John Deere",4.66999675382112
-"Free State",23.7,1082,"Rainfed",216.5,133.39,3.522,"Pannar","Case",8.44687517260965
-"Free State",28.08,715.4,"Rainfed",188.1,145.6,3.145,"Pannar","John Deere",5.52063861286214
-"Free State",26.85,435,"Rainfed",125.22,91.56,2.944,"Pioneer","Case",3.45009822937779
-"North West",32.95,392.6,"Rainfed",163.39,114.71,3.301,"Dekalb","John Deere",4.13067596456728
-"Mpumalanga",29.15,1057.3,"Rainfed",157.74,102,4.01,"Pioneer","John Deere",6.70294660622462
-"Free State",26.66,318.3,"Rainfed",162.85,167.78,4.133,"Pannar","John Deere",5.14321395074473
-"Free State",24.83,299.9,"Rainfed",136.11,226.62,3.716,"Pannar","John Deere",4.808475272234
-"North West",16.95,285,"Rainfed",191.73,110.79,3.009,"Dekalb","John Deere",6.98327813749505
-"Free State",34.77,697,"Rainfed",103.87,50.85,3.687,"Pioneer","Case",5.00432805883092
-"Free State",22.07,719.1,"Rainfed",193.08,93.39,3.352,"Pioneer","New Holland",5.43592171097225
-"Free State",33.5,422,"Rainfed",142.41,89.78,3.481,"Dekalb","New Holland",4.35363401382212
-"Free State",25.5,843.3,"Rainfed",142.64,229.58,3.715,"Pannar","Case",6.62928605661249
-"Free State",30.15,878.3,"Rainfed",221.96,144.83,3.994,"Dekalb","John Deere",7.45023441226041
-"Free State",23.56,740.3,"Rainfed",137.18,272.24,3.55,"Pannar","Case",6.10545427775623
-"Free State",26.05,496.7,"Rainfed",108.25,162.4,3.267,"Dekalb","John Deere",5.05413418351423
-"Mpumalanga",22.64,650.4,"Rainfed",98.7,68.39,3.735,"Pioneer","John Deere",5.58399566528757
-"Free State",23.26,770.2,"Rainfed",218.52,169.32,3.76,"Pannar","John Deere",7.21901812253213
-"Mpumalanga",21.64,731.2,"Rainfed",61.08,97.53,3.788,"Dekalb","John Deere",5.54105600862937
-"Free State",28.05,190.1,"Rainfed",137.8,135.96,3.786,"Dekalb","John Deere",4.02192295506571
-"Free State",23.19,238.3,"Rainfed",177.66,129.93,3.553,"Pioneer","John Deere",3.68333813613101
-"Mpumalanga",15.89,543.6,"Rainfed",91.75,127.51,3.239,"Pannar","John Deere",5.92853561320664
-"North West",27.02,427.2,"Rainfed",164.97,117.34,3.508,"Pannar","John Deere",4.68847446013714
-"Free State",26.16,393.9,"Rainfed",218.63,318.91,2.94,"Pioneer","Case",6.24360218368716
-"North West",31.08,605.1,"Rainfed",75.81,265.69,3.814,"Pannar","John Deere",6.12777145822888
-"Mpumalanga",23.85,753.6,"Rainfed",112.86,91.6,3.662,"Dekalb","Case",5.93684270322911
-"Mpumalanga",16.92,574,"Rainfed",347.59,148.46,3.732,"Pannar","Case",7.31768941264226
-"Free State",25.47,610.2,"Rainfed",124.57,226.6,3.539,"Dekalb","Case",6.64378800104442
-"Free State",27.87,423.4,"Rainfed",109.14,221.74,2.747,"Pannar","John Deere",4.97053748417413
-"Free State",29.11,299.3,"Rainfed",114.28,91.35,3.266,"Dekalb","John Deere",3.5309999923575
-"Free State",23.1,219.9,"Rainfed",136.79,254.14,3.749,"Dekalb","John Deere",4.19195531676056
-"Mpumalanga",21.03,594.9,"Rainfed",178,99.42,3.425,"Pioneer","Case",6.13232775575297
-"North West",35.44,491.4,"Rainfed",122.01,143.79,3.692,"Pioneer","John Deere",3.67211769551006
-"Mpumalanga",17,706.1,"Rainfed",179.19,146.5,3.251,"Dekalb","John Deere",8.0166580762007
-"Free State",22.25,435.1,"Rainfed",221.6,57.97,3.565,"Dekalb","New Holland",5.3303740542766
-"Free State",25.83,589,"Irrigated",189.72,128.12,3.323,"Dekalb","John Deere",6.73298447794786
-"Free State",17.53,706.4,"Rainfed",226.15,53.51,3.336,"Pioneer","John Deere",7.55151370079172
-"Free State",25.12,427.3,"Rainfed",117.07,56.79,3.42,"Pioneer","John Deere",4.87045922191106
-"Free State",31.51,592,"Rainfed",156.13,156.71,3.98,"Pioneer","Case",4.25914446703348
-"Free State",23.98,687.5,"Rainfed",218.08,158.16,3.555,"Dekalb","John Deere",6.13697650607478
-"Mpumalanga",21.16,804.8,"Rainfed",168.37,209.48,3.592,"Pannar","John Deere",6.82617899049336
-"Free State",25.9,757,"Rainfed",180.03,160.87,3.98,"Pannar","John Deere",7.18518117386488
-"Mpumalanga",21.16,1032.8,"Rainfed",168.08,100.79,3.459,"Pioneer","New Holland",8.17098484282151
-"Free State",27.25,759.7,"Rainfed",177.77,95.27,3.652,"Dekalb","New Holland",7.26677209689433
-"Mpumalanga",24.71,656.1,"Irrigated",162.77,194.27,3.281,"Dekalb","John Deere",6.35459148987081
-"Free State",24.01,1063.3,"Rainfed",103.14,258.84,3.791,"Pioneer","John Deere",7.22982528002484
-"Mpumalanga",18.47,549.3,"Rainfed",177.1,193.77,3.109,"Dekalb","John Deere",6.67361131184144
-"Free State",18.73,823.2,"Rainfed",135.57,149.67,3.519,"Dekalb","Case",7.98122327636424
-"Mpumalanga",20.22,710.9,"Rainfed",302.6,131.83,3.859,"Dekalb","John Deere",6.84296422532369
-"Free State",27.19,479.7,"Rainfed",131.36,280.04,3.874,"Pannar","John Deere",5.03303459151189
-"North West",18.21,378.5,"Rainfed",175.46,44.98,3.473,"Dekalb","John Deere",6.61931467893748
-"North West",18.57,533.4,"Rainfed",71.17,211.21,2.794,"Pioneer","John Deere",5.842203898184
-"Mpumalanga",20.04,556.3,"Rainfed",124.35,126.18,4.001,"Pannar","John Deere",4.81092733754177
-"Free State",25.58,593.6,"Rainfed",115.71,82.42,3.302,"Dekalb","John Deere",6.06454013965487
-"Free State",20.35,660.8,"Rainfed",277.49,197.06,3.731,"Pioneer","New Holland",7.6725471886647
-"Free State",27.55,508.7,"Rainfed",154.27,87.97,2.965,"Dekalb","Case",4.66506317895657
-"Free State",25.33,758.1,"Rainfed",174.93,158.35,3.371,"Pioneer","John Deere",6.40073865843292
-"Free State",23.32,708.9,"Rainfed",186.85,147.6,3.997,"Pioneer","New Holland",6.9118095920864
-"Mpumalanga",24.46,861.7,"Rainfed",131.28,144.72,3.62,"Dekalb","John Deere",7.18002580131637
-"Free State",25.55,252,"Rainfed",186.89,59.74,3.562,"Pioneer","New Holland",4.6695216818078
-"Free State",22.22,493,"Rainfed",311.84,146.09,3.762,"Pioneer","John Deere",7.65549088893793
-"Free State",24.92,1094.4,"Rainfed",213.75,109.2,3.127,"Pannar","Case",7.79578337371664
-"North West",31.24,504.6,"Rainfed",222.77,99.46,3.468,"Dekalb","John Deere",4.52680291752504
-"North West",29.78,293.4,"Rainfed",115.41,80.38,3.588,"Pannar","John Deere",4.06191533749419
-"North West",24.71,759,"Rainfed",177.48,82,3.847,"Pioneer","John Deere",5.22807551535103
-"Mpumalanga",24.57,371.8,"Rainfed",186.3,93.39,3.23,"Dekalb","Case",4.96324014178852
-"North West",33.76,717.1,"Rainfed",124.55,236.43,3.538,"Pannar","Case",5.36627342531634
-"Free State",25.11,1227.1,"Rainfed",172.89,185.06,3.747,"Dekalb","John Deere",8.19651317417068
-"Free State",24.58,801.2,"Rainfed",380.21,153.56,4.626,"Dekalb","Case",7.98741012347457
-"Free State",23.7,437.1,"Rainfed",108.75,291.21,3.959,"Dekalb","John Deere",7.87933239300043
-"Free State",32.65,607.7,"Rainfed",208.01,278.02,2.751,"Pioneer","John Deere",5.00413682919048
-"Free State",25.11,1060.6,"Rainfed",104.26,202.94,3.538,"Pannar","John Deere",6.96822033182868
-"Free State",23.37,464.8,"Rainfed",191,80.38,3.543,"Dekalb","New Holland",5.44813539415496
-"North West",15.46,570.7,"Rainfed",105.69,256.78,3.772,"Dekalb","John Deere",6.92679009657606
-"Free State",17.74,383.8,"Rainfed",211.34,124.26,3.291,"Pannar","John Deere",7.27943467022468
-"Free State",23.69,452.5,"Rainfed",95.99,122.05,3.783,"Dekalb","Case",5.26674927466459
-"Free State",24.83,617,"Rainfed",165.92,151.04,3.286,"Pannar","John Deere",5.80547040519368
-"Mpumalanga",22.83,1094.6,"Rainfed",290.71,139.78,3.513,"Pioneer","John Deere",8.54503144163584
-"Mpumalanga",24.46,620.7,"Rainfed",149.66,109.17,3.677,"Pannar","John Deere",6.39687991292514
-"North West",27.03,331.2,"Rainfed",157.22,184.22,3.277,"Pioneer","John Deere",4.45994252813444
-"Free State",28.86,463,"Rainfed",298.57,109.74,3.49,"Pannar","Case",5.8354642494509
-"Free State",20.31,739.9,"Rainfed",390.48,105.79,3.996,"Dekalb","John Deere",8.36666854302731
-"Mpumalanga",18.37,860.6,"Rainfed",472.05,121.42,3.402,"Pannar","John Deere",7.87955492594406
-"Mpumalanga",18.31,1223.9,"Rainfed",139.17,97.02,3.226,"Pannar","New Holland",7.66705051882528
-"Free State",26.97,578.5,"Rainfed",105.09,145.52,3.699,"Pioneer","Case",5.00666491949201
-"Free State",23.67,631.3,"Rainfed",216.87,130.18,3.264,"Dekalb","John Deere",7.11394854162439
-"Free State",27.16,385.1,"Rainfed",197.9,119.2,3.384,"Pioneer","New Holland",4.95723803683183
-"Free State",22.93,441.9,"Rainfed",283.86,167,3.638,"Pannar","Case",6.07476297697218
-"Free State",21.63,466.6,"Rainfed",175.32,60.47,3.631,"Dekalb","John Deere",5.4112717282695
-"Free State",22.53,618.2,"Rainfed",176.11,152.04,3.857,"Pannar","Case",6.62201785851917
-"Free State",16.59,622.5,"Rainfed",312.79,202.79,3.323,"Pioneer","John Deere",8.45442952095234
-"Free State",19.32,673.6,"Rainfed",176.2,200.92,3.425,"Pannar","New Holland",6.393114261158
-"Mpumalanga",17.67,649.4,"Rainfed",219.75,366.04,3.327,"Pannar","Case",7.63441088526815
-"Free State",28.22,762.5,"Rainfed",202.05,102.32,3.445,"Pioneer","Case",5.96299658339616
-"Free State",21.61,741.7,"Rainfed",161.41,87.98,4.114,"Pannar","John Deere",6.68921343380017
-"Free State",27.16,1089.4,"Rainfed",131.07,157.1,3.509,"Pioneer","John Deere",7.55413962233886
-"North West",35.58,218.9,"Irrigated",142.52,64.33,3.408,"Pioneer","John Deere",3.76823023644511
-"Mpumalanga",21.42,1149.3,"Rainfed",71.92,232.65,3.708,"Dekalb","John Deere",7.99325900860736
-"Mpumalanga",22.85,891.9,"Irrigated",283.05,85.4,3.161,"Dekalb","John Deere",8.31570595095627
-"North West",19.24,447.4,"Rainfed",83.56,165.14,3.787,"Dekalb","Case",5.52633138212174
-"Free State",20.73,697.1,"Rainfed",128,117,3.5,"Pioneer","John Deere",6.11705804896889
-"Free State",24.22,654.5,"Irrigated",140.55,47.27,3.288,"Pioneer","John Deere",5.70962964193653
-"Mpumalanga",22.9,922.4,"Rainfed",274.42,152.51,3.641,"Pannar","John Deere",7.77944146853167
-"Mpumalanga",19.72,687.5,"Irrigated",168.58,83.31,3.465,"Dekalb","John Deere",7.641924093403
-"Free State",34.74,540.8,"Rainfed",245.6,204.69,3.403,"Dekalb","John Deere",5.295475976153
-"Mpumalanga",20.62,736.8,"Rainfed",145.17,45.79,3.487,"Dekalb","New Holland",6.92925097226358
-"Mpumalanga",22.19,924.5,"Irrigated",334.44,128.25,3.996,"Pioneer","John Deere",9.27511914200396
-"Mpumalanga",23.95,851.8,"Rainfed",202.27,85.16,3.352,"Pioneer","New Holland",7.05324942413227
-"Free State",23.9,616.7,"Rainfed",207.51,224.18,3.784,"Dekalb","Case",5.96406942574726
-"Free State",21.43,567.8,"Irrigated",238.75,98.4,3.552,"Dekalb","John Deere",7.37488465636121
-"Free State",28.18,596.3,"Rainfed",87.66,205.88,3.396,"Pioneer","John Deere",4.67036403809737
-"Free State",30.46,475.4,"Rainfed",163.75,110.42,3.266,"Dekalb","John Deere",4.68675459104338
-"Free State",23.88,609.3,"Rainfed",180.16,143.99,3.387,"Dekalb","John Deere",6.43387560866714
-"Free State",26.25,479.9,"Rainfed",118.78,260.14,3.393,"Pioneer","John Deere",5.41340362672244
-"Free State",23.61,997.9,"Rainfed",165.34,100.42,3.86,"Pioneer","Case",7.02959650073413
-"Mpumalanga",25.05,519.3,"Rainfed",121.09,304.71,3.25,"Pioneer","John Deere",5.02635604508126
-"Free State",19.38,426.1,"Rainfed",180.57,210.58,3.991,"Pannar","John Deere",5.62820923203083
-"Free State",33.28,683.8,"Rainfed",77.09,240.41,3.416,"Pioneer","John Deere",4.18807114552849
-"Mpumalanga",20.19,939.5,"Rainfed",185.6,50.15,3.345,"Dekalb","New Holland",8.09511690638138
-"Mpumalanga",17.62,560.8,"Rainfed",125.55,126.13,3.305,"Pioneer","John Deere",6.16670990362092
-"Free State",22.6,629.3,"Rainfed",245.09,70.89,3.56,"Pannar","John Deere",6.29954157298363
-"Free State",24.59,380.6,"Irrigated",71.17,190.4,3.998,"Dekalb","Case",4.95402257119689
-"North West",36.12,700.7,"Rainfed",167.48,233.9,3.39,"Pannar","New Holland",6.16265639632601
-"North West",32.56,433.5,"Rainfed",149.76,103.34,3.419,"Pannar","John Deere",4.67218717263639
-"Free State",24.57,287.4,"Rainfed",245.22,108.31,3.527,"Pannar","John Deere",4.17208211900881
-"Free State",18.44,305.2,"Rainfed",84.1,66.18,3.51,"Pioneer","John Deere",4.32434464493782
-"Mpumalanga",19.4,864.5,"Rainfed",130.3,193.1,3.315,"Dekalb","John Deere",7.41879900001048
-"Free State",23.35,661.2,"Rainfed",222.53,260.05,3.8,"Dekalb","John Deere",7.09008975368389
-"Free State",34.21,478.4,"Rainfed",213.37,63.92,3.076,"Dekalb","John Deere",4.59489964548434
-"North West",18.7,483.8,"Rainfed",191.35,60.8,3.212,"Pannar","Case",5.67065945012767
-"Free State",28.52,953.2,"Rainfed",185.93,225.87,3.385,"Pannar","John Deere",7.86608793390289
-"Free State",21.89,605.6,"Rainfed",81,247.33,3.421,"Pannar","John Deere",5.85191630911493
-"North West",36.33,302.5,"Rainfed",236.08,160.3,3.737,"Pioneer","John Deere",3.86608349765365
-"Mpumalanga",18.58,942.7,"Rainfed",180.27,151.36,3.36,"Pioneer","John Deere",7.20416046236142
-"Free State",24.57,888,"Rainfed",76.12,103.17,3.466,"Pioneer","John Deere",6.2368956448622
-"Mpumalanga",18.7,744.9,"Rainfed",152.81,158,3.43,"Pioneer","Case",6.57536472340721
-"Mpumalanga",24.71,671,"Rainfed",246.6,111.21,3.98,"Dekalb","New Holland",7.0860226838935
-"Free State",29.94,686.6,"Rainfed",221.77,336.66,3.915,"Dekalb","John Deere",6.49460626514599
-"Free State",31.8,611.1,"Rainfed",125.81,111.35,3.149,"Pioneer","John Deere",4.45478885032695
-"Mpumalanga",24.39,800.6,"Rainfed",241.81,33.77,3.643,"Pioneer","John Deere",6.25349333565282
-"Mpumalanga",27.53,1012.9,"Rainfed",138.97,169.7,3.13,"Pioneer","John Deere",7.0727245853754
-"Mpumalanga",25.74,545.7,"Rainfed",193.45,77.8,3.235,"Pannar","John Deere",5.36579270569587
-"North West",27.34,777.5,"Irrigated",243.97,195.85,3.324,"Dekalb","New Holland",8.72581945649657
-"Free State",25.91,731,"Rainfed",194.15,68.43,3.246,"Pannar","John Deere",5.90136426650445
-"Free State",20.11,291.3,"Rainfed",124.67,121.18,3.552,"Pioneer","John Deere",4.37833753284154
-"Free State",23.26,540.1,"Rainfed",232.98,161.65,3.399,"Pannar","New Holland",6.97989055048894
-"Free State",28.88,1093.2,"Rainfed",308,124.53,3.612,"Pannar","John Deere",9.11933458508291
-"Free State",26.17,683.5,"Rainfed",110.87,57.28,3.864,"Pannar","John Deere",6.44101295798445
-"Free State",25.83,516.8,"Rainfed",152.24,72.13,3.832,"Pannar","John Deere",5.4844132123051
-"North West",22.81,587.4,"Rainfed",251.88,93.19,2.878,"Pioneer","Case",6.53356321869154
-"Free State",21.58,439.6,"Rainfed",114.56,279.55,3.414,"Pannar","John Deere",6.0442865414175
-"Free State",20.94,307.8,"Irrigated",79.27,128.5,3.624,"Dekalb","John Deere",5.97629943161961
-"Mpumalanga",23.19,946.8,"Rainfed",133.33,239.45,3.879,"Dekalb","Case",7.39726953404189
-"Free State",20.04,615.5,"Rainfed",258.69,147.2,3.341,"Pannar","Case",6.13433769139512
-"North West",30.81,536.6,"Rainfed",92.26,109.15,3.502,"Pioneer","John Deere",4.82601255276484
-"Free State",19.53,910,"Rainfed",148.03,224.22,4.03,"Pioneer","John Deere",7.18517062594617
-"Free State",31.31,373,"Rainfed",247.46,81.7,3.506,"Pannar","John Deere",5.08220029571908
-"Mpumalanga",23.38,803.6,"Rainfed",167.8,262.31,4.079,"Dekalb","New Holland",7.12570045282994
-"North West",24.49,466.4,"Rainfed",209.25,204.14,2.817,"Dekalb","John Deere",6.8815942844719
-"Mpumalanga",22.72,1323.9,"Irrigated",327.77,157.73,4.175,"Pannar","John Deere",10.6321108268795
-"Free State",22.59,792.7,"Rainfed",241.11,175.42,2.806,"Pannar","New Holland",7.12061805262281
-"Free State",25.48,414.5,"Rainfed",211.42,148.79,3.813,"Pannar","Case",5.4927808437336
-"Mpumalanga",22.73,566.5,"Rainfed",202.61,111.46,3.817,"Dekalb","John Deere",6.01784215043978
-"Free State",19.94,406.4,"Rainfed",100.58,116.7,3.38,"Pannar","New Holland",4.63942679596149
-"Free State",20.83,602.9,"Rainfed",234.89,103.97,3.409,"Pioneer","Case",6.55304086814657
-"North West",29.5,319.4,"Rainfed",207.06,235.55,3.556,"Pannar","Case",5.08014345944032
-"Free State",30.56,275.1,"Rainfed",195.23,177.37,3.492,"Dekalb","John Deere",4.7571255002376
-"Free State",28.34,451.1,"Rainfed",168.53,129.52,3.537,"Dekalb","John Deere",3.90554746085935
-"Mpumalanga",20.13,921.2,"Rainfed",95.89,81.99,3.934,"Dekalb","Case",7.48041527655384
-"Free State",27.3,319.2,"Rainfed",175.57,156.66,3.526,"Pioneer","John Deere",4.92543561805688
-"Free State",23.81,612.7,"Rainfed",280.24,86.95,2.878,"Pannar","John Deere",6.73064565722349
-"Free State",25.21,533.6,"Irrigated",126.86,93.14,3.61,"Dekalb","John Deere",6.71744100159648
-"Free State",25.04,570.9,"Irrigated",76.57,335.99,3.392,"Pioneer","John Deere",6.62220592968255
-"Free State",34.3,592.1,"Rainfed",358.96,73.15,3.708,"Pioneer","New Holland",6.53388069676019
-"Free State",19.26,766.8,"Rainfed",129.44,91.85,3.267,"Dekalb","John Deere",6.69569198289463
-"North West",28.5,240.7,"Rainfed",266.93,105.04,3.371,"Dekalb","Case",4.41462576516363
-"Free State",16.88,524.8,"Rainfed",214.39,104.34,3.055,"Pioneer","John Deere",6.01999110127097
-"Free State",26.36,629.9,"Irrigated",332.51,82.48,3.044,"Pioneer","Case",8.06167372529823
-"North West",33.48,360.9,"Irrigated",161.57,125.06,2.914,"Dekalb","John Deere",3.46649632301118
-"Mpumalanga",26.34,720.5,"Rainfed",144.79,85.74,3.505,"Pioneer","John Deere",5.88291141407561
-"Free State",16.3,451,"Rainfed",343.19,246.66,2.69,"Dekalb","John Deere",7.43781676167158
-"Free State",25.65,622.7,"Rainfed",410.93,143.59,3.868,"Dekalb","Case",7.62676125518766
-"North West",35.97,758.9,"Rainfed",188.3,198.95,3.268,"Pannar","John Deere",6.43714064289667
-"Free State",22.34,433.7,"Irrigated",176.79,72.84,3.492,"Pioneer","John Deere",5.28194016109732
-"Mpumalanga",21.36,1125.1,"Rainfed",225.43,135.06,3.912,"Pioneer","John Deere",9.0598442537594
-"Free State",23.85,541,"Rainfed",123.63,173.17,3.581,"Dekalb","John Deere",6.11963927441088
-"Mpumalanga",23.1,774.5,"Rainfed",203.2,141.98,3.641,"Dekalb","John Deere",7.1562640091947
-"Free State",26.66,561.2,"Rainfed",108.06,136.99,3.291,"Pioneer","John Deere",4.71171419998604
-"North West",34.59,277.5,"Rainfed",144.97,85.89,3.037,"Dekalb","New Holland",3.60032003620723
-"Free State",23.62,737.3,"Rainfed",230.51,102.83,3.702,"Pannar","John Deere",6.33659674287816
-"Free State",24.79,775.1,"Rainfed",118.97,113.57,3.447,"Pannar","New Holland",6.2654100585706
-"Free State",33.95,828.6,"Rainfed",236.06,95.2,3.477,"Pannar","John Deere",6.39303946132707
-"Free State",25.72,480.2,"Rainfed",203.58,190.79,3.231,"Pioneer","John Deere",4.78212955942891
-"North West",28.94,777.9,"Rainfed",302.34,296.83,3.325,"Pannar","John Deere",8.25343150906384
-"Free State",18.63,608.5,"Rainfed",412.53,243.69,2.83,"Pannar","New Holland",8.53967361437673
-"Mpumalanga",22.01,692.5,"Rainfed",128.84,163.99,3.016,"Pioneer","John Deere",6.58477477427651
-"Mpumalanga",21.34,657.1,"Rainfed",194.16,128.97,3.04,"Pioneer","John Deere",6.18705031671811
-"Free State",23.96,781,"Irrigated",318.81,175.53,3.458,"Pioneer","John Deere",8.16691925454983
-"Free State",21.7,553.7,"Irrigated",178.99,95.78,3.181,"Pannar","John Deere",6.63714719910163
-"Free State",21.25,539.4,"Rainfed",124.62,152.89,3.618,"Pannar","Case",6.07369602833165
-"Free State",21.12,560.8,"Rainfed",107.69,146.35,3.514,"Pannar","Case",6.09795854041749
-"Free State",23.14,643.5,"Rainfed",298.1,48,3.353,"Pannar","John Deere",6.32686954609728
-"North West",34.84,200.2,"Irrigated",495.96,315.45,2.936,"Dekalb","John Deere",6.62024924486578
-"North West",33.25,605.3,"Irrigated",105.44,75.27,3.259,"Pannar","New Holland",5.99958145223971
-"Free State",22.56,686,"Rainfed",172.39,42.37,3.777,"Pannar","John Deere",6.21431071936549
-"North West",19.57,539,"Rainfed",84.53,135.91,3.651,"Pioneer","John Deere",5.616038808599
-"Free State",20.62,628.1,"Rainfed",169.42,142.57,3.418,"Dekalb","New Holland",6.57925673599765
-"Free State",22.17,573.5,"Rainfed",144.37,135.45,2.827,"Pioneer","John Deere",4.97901622142909
-"Free State",24.41,505.1,"Irrigated",163.65,144.68,3.34,"Dekalb","New Holland",5.4886180683585
-"Mpumalanga",20.01,822.8,"Rainfed",500,80.33,2.654,"Pioneer","John Deere",8.91802920362894
-"Free State",32.03,391,"Rainfed",90.83,176.82,3.978,"Pioneer","New Holland",4.10023908606789
-"Free State",22.91,579.8,"Rainfed",197.61,250.88,3.508,"Pioneer","John Deere",6.62570822115075
-"Mpumalanga",18.36,1837.6,"Rainfed",358.14,93.67,4.006,"Pannar","New Holland",12.3042098778494
-"Free State",23.43,920.5,"Rainfed",126.9,155.69,3.474,"Pannar","John Deere",6.51061235123493
-"Mpumalanga",18.98,893.2,"Rainfed",116.16,120.53,4.164,"Dekalb","New Holland",7.55966433488223
-"Free State",24.62,429.1,"Rainfed",167.89,132.31,3.208,"Pioneer","John Deere",4.84154239597836
-"Free State",24.93,569.4,"Rainfed",285.72,209.6,3.741,"Pannar","John Deere",6.73620611489615
-"Free State",25.42,400.8,"Rainfed",142.19,153.76,3.469,"Dekalb","Case",5.45273930617353
-"Free State",17.51,512.5,"Rainfed",106.41,320.42,3.731,"Dekalb","John Deere",7.72071281116595
-"North West",29.1,374.1,"Rainfed",169.49,117.29,3.058,"Pannar","Case",5.3131724023836
-"Free State",25.24,675,"Rainfed",69.83,262.41,4.169,"Dekalb","John Deere",7.38292449254026
-"Free State",18.32,390.2,"Rainfed",87.92,111.04,3.59,"Dekalb","John Deere",5.87881958049199
-"Free State",27.82,580.3,"Rainfed",260.89,122.66,3.33,"Pannar","John Deere",6.88853123496637
-"Free State",27.14,481.5,"Rainfed",199.86,117.56,3.117,"Pioneer","John Deere",4.6284575393883
-"Mpumalanga",28.9,772.6,"Rainfed",65.35,154.46,3.034,"Dekalb","John Deere",5.79141742029836
-"Free State",24.63,452.7,"Rainfed",213.8,167.2,2.935,"Dekalb","New Holland",6.36799797516081
-"Free State",24.19,508.1,"Rainfed",61.82,144.97,2.971,"Pannar","Case",4.61596650378821
-"North West",28.48,479.2,"Rainfed",136.05,177.35,3.479,"Dekalb","John Deere",5.49293973615136
-"Mpumalanga",22.21,683.4,"Rainfed",186.79,96.07,3.847,"Pannar","New Holland",6.68116154261919
-"Free State",16.61,774.9,"Rainfed",89.69,122.25,3.646,"Pannar","John Deere",6.47075589042602
-"Free State",17.32,543.2,"Irrigated",281.74,181.56,2.937,"Pannar","New Holland",7.53445805361166
-"Free State",23.69,623.7,"Rainfed",275.47,215.49,3.525,"Pioneer","John Deere",7.34215146726092
-"North West",25.09,701.1,"Rainfed",123.51,157.95,3.95,"Pioneer","John Deere",5.61826891669569
-"North West",28.27,569.8,"Rainfed",264.75,186.23,3.781,"Pannar","Case",6.77094842498328
-"Free State",15.56,772.5,"Irrigated",178.8,197.36,4.097,"Pioneer","John Deere",7.88537050119052
-"Free State",18.01,476.8,"Irrigated",216.77,178.14,3.634,"Pannar","John Deere",7.08195022021658
-"North West",22.49,685.2,"Rainfed",218.7,123.08,2.522,"Pioneer","New Holland",5.87777856245246
-"Free State",27.94,660.5,"Rainfed",95.36,126.36,3.678,"Dekalb","New Holland",5.88717354242776
-"Mpumalanga",18.7,945.4,"Rainfed",69.59,179.15,3.611,"Pannar","John Deere",7.3636648913875
-"Free State",20.8,458.1,"Rainfed",419.53,111.05,2.98,"Pannar","John Deere",7.18695429918382
-"Free State",24.32,771.6,"Rainfed",181.47,128.19,3.47,"Pioneer","Case",6.65790777473653
-"Free State",22.71,462.6,"Rainfed",192.93,130.5,3.287,"Dekalb","John Deere",6.30035497320125
-"Free State",24.59,700.3,"Rainfed",99.12,67.21,3.369,"Pannar","New Holland",5.17831115904552
-"Free State",33.22,507.8,"Rainfed",266.05,157.66,3.593,"Pannar","John Deere",5.58193230856989
-"Free State",19.5,507,"Rainfed",359.18,175.06,3.327,"Pannar","John Deere",7.3821826703558
-"Mpumalanga",21.08,694.6,"Rainfed",314.67,132.29,3.32,"Dekalb","New Holland",7.01691635642174
-"Free State",21.93,821.2,"Rainfed",69.66,301.41,3.086,"Pannar","Case",6.08674541709825
-"North West",35.56,452.6,"Rainfed",105.75,125.72,3.489,"Pioneer","John Deere",3.55000519736676
-"Mpumalanga",19.69,470.2,"Rainfed",171.46,175.75,3.666,"Pannar","John Deere",5.800957073383
-"Mpumalanga",21.75,911.1,"Rainfed",221.12,172.18,3.704,"Pannar","John Deere",7.62498807854065
-"Free State",27.15,1070.1,"Rainfed",130.57,192.56,3.882,"Pannar","New Holland",8.61653880946055
-"Free State",19.77,487.5,"Rainfed",114.24,163.62,2.793,"Pioneer","John Deere",4.59100873100556
-"Mpumalanga",26.97,769.2,"Rainfed",181.34,124.86,3.509,"Pioneer","New Holland",5.70918867658315
-"Free State",26.7,670.3,"Rainfed",110.23,174.54,3.091,"Pioneer","John Deere",4.98846062382658
-"Free State",19.7,684.8,"Rainfed",391.68,152.12,3.703,"Dekalb","John Deere",8.94549194903995
-"Free State",25.82,481.3,"Irrigated",75.78,151.44,3.502,"Pannar","New Holland",5.8603377524287
-"Free State",23.15,470.3,"Rainfed",204.15,187.08,3.167,"Dekalb","Case",5.48101097080594
-"Free State",25.25,390.2,"Rainfed",70.47,191.54,3.359,"Pannar","John Deere",4.14522801366045
-"North West",27.55,506.6,"Rainfed",133.35,135.41,3.894,"Pannar","New Holland",5.03757979165729
-"Mpumalanga",25.21,835.8,"Rainfed",308.91,114.37,3.35,"Pannar","John Deere",6.30813807668861
-"Mpumalanga",17.95,625,"Rainfed",264.83,245.11,3.004,"Pioneer","Case",7.65194955262951
-"Free State",21.91,271.5,"Rainfed",90.78,139.16,3.801,"Pannar","Case",4.3850077329841
-"Free State",23,502.9,"Rainfed",87.89,115.02,3.842,"Pioneer","John Deere",4.20239754552675
-"North West",23.02,325.1,"Rainfed",168.59,89.31,3.293,"Pioneer","John Deere",4.64473960560782
-"Free State",19.84,544.8,"Rainfed",109.75,153.23,4.003,"Pioneer","John Deere",5.85482508040924
-"Free State",23.93,725.2,"Rainfed",195.41,161.41,3.457,"Pannar","John Deere",6.98701155904887
-"Free State",23.47,380.1,"Rainfed",108.32,82.02,3.096,"Dekalb","John Deere",4.82532664202892
-"Free State",13.8,529.7,"Rainfed",83.03,74.71,3.437,"Pannar","Case",5.13149047866846
-"Free State",28.16,496.7,"Rainfed",137.03,147.51,3.546,"Pannar","John Deere",4.85217806496483
-"Free State",25,611.9,"Rainfed",97.81,94.5,3.662,"Pioneer","John Deere",5.88689490948154
-"Mpumalanga",29.25,1100.4,"Rainfed",260.91,247.33,3.635,"Pioneer","Case",8.02192471378121
-"Free State",26.74,465.5,"Rainfed",142.69,83.15,3.844,"Pioneer","John Deere",5.00953377819791
-"Mpumalanga",20.66,697.2,"Rainfed",161.86,68.35,3.587,"Pannar","John Deere",6.44673097783433
-"Free State",35.19,397.5,"Rainfed",295.59,131.78,3.589,"Dekalb","Case",5.09495128350502
-"Mpumalanga",30.5,419.4,"Rainfed",361.99,167.31,3.762,"Pioneer","New Holland",5.35699672254107
-"Free State",19.13,757.2,"Rainfed",160.83,145.73,3.479,"Pannar","New Holland",6.98932345991491
-"Mpumalanga",23.41,884.1,"Rainfed",189.49,128.83,3.286,"Pioneer","Case",7.55481427515678
-"Mpumalanga",21.37,1013.6,"Irrigated",286.76,160.82,3.458,"Pannar","John Deere",9.67126690697413
-"Free State",24.75,494.2,"Rainfed",152.74,96.65,3.083,"Pioneer","John Deere",4.38149854052023
-"Mpumalanga",22.68,703.2,"Rainfed",105.61,150.34,3.525,"Dekalb","Case",5.78694801168776
-"Free State",18.95,392.5,"Irrigated",250.87,93.88,3.648,"Pannar","John Deere",6.39045978080619
-"Free State",25.14,439,"Rainfed",86.1,95.11,3.163,"Dekalb","Case",4.49196324072897
-"Mpumalanga",27.25,793.5,"Rainfed",148.22,142.52,3.239,"Dekalb","John Deere",7.04454779612473
-"Free State",23.34,512.1,"Rainfed",138.67,163.16,3.158,"Pioneer","Case",4.51330483275835
-"Mpumalanga",21.51,848.1,"Rainfed",131.75,92.42,3.515,"Pannar","New Holland",6.73254027652941
-"Free State",29.59,710.6,"Rainfed",51.1,68.28,3.909,"Pannar","John Deere",5.5136561020253
-"Mpumalanga",24.7,873.4,"Rainfed",128.21,86.19,3.328,"Dekalb","John Deere",7.17628715809849
-"North West",19.76,590.9,"Rainfed",281.59,55.94,3.323,"Pannar","Case",6.74214534874965
-"Free State",24.91,630.3,"Rainfed",134.8,143.94,3.487,"Pannar","John Deere",5.86642757262775
-"Free State",30.61,497.2,"Rainfed",126.47,176.21,3.168,"Dekalb","John Deere",4.11933961167234
-"Mpumalanga",26.25,930.2,"Rainfed",123.97,302.46,3.821,"Pannar","John Deere",7.5367390362098
-"Free State",25.68,748.8,"Rainfed",113.46,91.37,3.412,"Pioneer","John Deere",5.86297532469698
-"Mpumalanga",24.16,537.7,"Rainfed",175.01,110.21,3.829,"Pioneer","John Deere",4.79357247931415
-"North West",22.02,340.3,"Rainfed",211.56,129.54,3.672,"Pannar","John Deere",5.87825565187671
-"Free State",25.2,630,"Rainfed",304.27,151.05,3.732,"Pannar","Case",6.7134974915467
-"Free State",20.18,564.5,"Rainfed",84.6,95.37,3.064,"Pioneer","New Holland",4.58180464763248
-"Mpumalanga",20.63,911.1,"Rainfed",194.55,205.33,3.032,"Dekalb","Case",7.93157411244952
-"Free State",27.74,398.8,"Rainfed",154.13,114.85,3.481,"Dekalb","New Holland",5.31739838302058
-"North West",22.32,568.3,"Irrigated",185.67,210.49,3.392,"Pannar","John Deere",6.85182682998591
-"Free State",25.07,680.5,"Rainfed",106.14,65.95,3.397,"Pioneer","John Deere",5.14468011413225
-"Free State",25.71,641.7,"Rainfed",167.7,126.48,3.462,"Dekalb","John Deere",7.32290701263056
-"Mpumalanga",22.16,573.3,"Rainfed",100.79,158.48,3.981,"Pannar","John Deere",5.69708282802104
-"Mpumalanga",27.47,542.4,"Rainfed",217.66,109.25,3.338,"Dekalb","New Holland",5.82324057745344
-"Free State",19.91,537.7,"Rainfed",110.07,109.91,3.321,"Dekalb","John Deere",6.20714535783277
-"Free State",26.42,262.1,"Rainfed",168.98,102.42,3.944,"Pannar","John Deere",5.03824916130839
-"Free State",23.64,416.7,"Rainfed",66.66,142.31,3.548,"Dekalb","Case",5.41069745139226
-"Free State",22.96,441.3,"Rainfed",188.98,238.04,3.558,"Pannar","John Deere",5.79992184100811
-"Free State",25.86,445.7,"Rainfed",263.26,86.27,3.086,"Pioneer","New Holland",5.39642335199896
-"Free State",19.92,424.7,"Rainfed",227.72,130.08,3.721,"Pannar","John Deere",5.30819791871432
-"Free State",18.75,532.3,"Rainfed",257.29,109.72,3.861,"Pioneer","Case",7.00375993823649
-"Free State",22.02,535.7,"Rainfed",92.49,254.53,3.712,"Pioneer","John Deere",6.0536332892141
-"North West",36.76,745.2,"Rainfed",153.08,319.83,3.114,"Pioneer","John Deere",5.20018003272714
-"Free State",24.22,868.3,"Rainfed",159.69,169.76,3.954,"Pannar","New Holland",7.41187495342331
-"Free State",25.33,465.8,"Rainfed",223.32,139.99,3.389,"Pannar","New Holland",5.51884749405903
-"Free State",23.24,695.7,"Rainfed",153.18,249.28,4.058,"Dekalb","Case",7.25102850497008
-"North West",30.35,611.3,"Irrigated",150.89,110.74,3.611,"Dekalb","John Deere",5.49543658041536
-"Free State",20.19,293.8,"Rainfed",335.4,132.54,3.608,"Pannar","John Deere",6.40579130517168
-"Mpumalanga",25.47,1155.1,"Irrigated",261.39,216.65,4.142,"Pioneer","John Deere",8.94783976285671
-"Free State",26.34,640.6,"Irrigated",78.03,142.46,3.853,"Dekalb","John Deere",7.24123690250273
-"Free State",20.77,585.1,"Irrigated",139.7,110.07,3.645,"Pannar","Case",6.06677127911925
-"Mpumalanga",22.16,1001.4,"Rainfed",107.94,147.56,3.303,"Pannar","Case",6.34750033037987
-"Free State",26.87,352.9,"Rainfed",500,111.43,3.733,"Pioneer","Case",6.59404340215101
-"Mpumalanga",23.67,688.7,"Rainfed",133.35,311.73,3.735,"Pioneer","John Deere",5.5829778995786
-"Free State",29.93,287.7,"Rainfed",267.8,114.67,3.291,"Pannar","New Holland",4.58335204884559
-"Free State",21.55,609.1,"Rainfed",171.35,206.38,3.44,"Pioneer","John Deere",6.47980367905645
-"Free State",28.46,536.2,"Rainfed",172.26,136,3.39,"Dekalb","New Holland",5.07602907632227
-"Free State",28.15,326,"Rainfed",202.98,245.34,2.962,"Pioneer","John Deere",4.77814598045331
-"Free State",23.35,435.5,"Rainfed",154.82,205.46,3.687,"Dekalb","New Holland",5.12172783021976
-"Mpumalanga",19.07,631.6,"Rainfed",234.27,101.92,3.071,"Pioneer","New Holland",7.17853910008343
-"North West",22.55,785.9,"Rainfed",208.62,154.06,3.622,"Pioneer","New Holland",6.93755002834866
-"Free State",25.83,489.1,"Rainfed",80.43,127.41,3.015,"Pannar","John Deere",4.89777008890313
-"North West",27.64,736,"Irrigated",129.92,169.91,3.78,"Dekalb","John Deere",7.79431348981872
-"Free State",31.12,498.5,"Rainfed",131.71,133.16,3.705,"Dekalb","New Holland",5.35968859236275
-"North West",30.68,635.8,"Rainfed",132.68,167.48,4.034,"Pioneer","John Deere",4.72748114920469
-"Mpumalanga",20.88,501,"Rainfed",258.56,129.05,3.143,"Pioneer","John Deere",6.95524874585549
-"Free State",19.9,759.9,"Rainfed",309.26,207.74,3.812,"Pannar","John Deere",6.93077746598699
-"Mpumalanga",20.25,779.6,"Rainfed",111.21,156.2,3.462,"Pannar","John Deere",7.97144004862739
-"Free State",25.37,518.8,"Rainfed",207,75.8,3.548,"Pioneer","John Deere",6.30917731118556
-"Mpumalanga",20.65,938.3,"Rainfed",100.1,134.68,3.415,"Dekalb","John Deere",6.64352925839951
-"Free State",26.06,405,"Rainfed",129.84,117.06,3.595,"Dekalb","Case",4.53547503875391
-"Mpumalanga",21,439.5,"Rainfed",186.71,223.11,3.16,"Dekalb","John Deere",6.94996570197014
-"Free State",23.58,667.2,"Rainfed",151.81,81.53,3.233,"Pioneer","John Deere",5.21519047740618
-"Free State",21.08,733.4,"Rainfed",123.21,54.84,3.765,"Pioneer","John Deere",7.3721888344555
-"Mpumalanga",27.72,823.4,"Rainfed",96.44,167.29,2.635,"Dekalb","New Holland",6.6560450054492
-"Free State",25.33,391,"Rainfed",144.09,206.49,3.39,"Dekalb","New Holland",5.67320880571383
-"Mpumalanga",22.69,989.9,"Rainfed",168.19,166.19,3.402,"Pioneer","New Holland",7.18693672920086
-"Free State",17.23,524.7,"Rainfed",208.83,247.79,3.739,"Dekalb","John Deere",8.09082046548618
-"Mpumalanga",23.98,874,"Irrigated",113.41,202.85,3.649,"Dekalb","John Deere",7.68331879944655
-"North West",22.88,722.4,"Rainfed",211.02,89.94,3.105,"Pioneer","John Deere",7.04898471693616
-"Free State",20.43,632.8,"Rainfed",100.35,205.44,3.957,"Dekalb","New Holland",6.32519687387097
-"North West",32.59,476.1,"Irrigated",130.45,104.67,3.768,"Pioneer","John Deere",5.29766755203922
-"Mpumalanga",20.64,975.8,"Rainfed",199.15,221.99,3.974,"Pannar","New Holland",7.4665823076035
-"Free State",17.01,636.1,"Irrigated",122.58,211.21,3.234,"Dekalb","John Deere",7.10403257103294
-"Free State",31.08,601.2,"Rainfed",118.14,132.96,4.039,"Pioneer","Case",4.74818557440089
-"Free State",14.49,362.6,"Rainfed",161.21,218.36,3.873,"Pioneer","John Deere",6.90797498273649
-"Free State",26.29,537.6,"Rainfed",166.98,120.69,3.828,"Dekalb","John Deere",5.88900996422052
-"North West",33.09,383,"Rainfed",244.59,212.91,3.078,"Pioneer","Case",4.49435674668412
-"Free State",21.48,475.2,"Rainfed",148.97,48.83,3.474,"Dekalb","John Deere",5.11748554700592
-"Free State",25.78,988.6,"Rainfed",79.9,85.24,3.58,"Pioneer","John Deere",5.95836071970351
-"Mpumalanga",23.32,1043.7,"Rainfed",124.51,145.13,3.127,"Dekalb","John Deere",7.75474602916095
-"Free State",28.16,497.9,"Rainfed",125.86,108.36,3.41,"Pannar","John Deere",5.13663712681021
-"Free State",25.94,441.2,"Rainfed",110.72,41.59,3.707,"Dekalb","Case",4.67044217183522
-"Free State",23.02,652,"Irrigated",188.58,93.82,3.599,"Pioneer","John Deere",6.5494309118824
-"Free State",27.66,553.6,"Rainfed",475.8,278.25,3.55,"Pannar","John Deere",6.50038703498379
-"North West",32,205.7,"Irrigated",230.44,79.49,3.863,"Pioneer","New Holland",4.76503139496216
-"Mpumalanga",19.19,574.5,"Rainfed",154.02,146.38,3.286,"Pioneer","Case",5.8510896069364
-"Free State",18.4,382.2,"Rainfed",203.7,109.17,3.736,"Pannar","John Deere",5.57518569624302
-"Mpumalanga",22.48,1155.1,"Rainfed",303.5,137.04,3.871,"Dekalb","John Deere",9.15912701876537
-"Mpumalanga",21.18,969.5,"Rainfed",144.25,125.64,3.148,"Pannar","Case",6.03404989395432
-"Free State",20.06,552,"Rainfed",218.1,127.97,2.91,"Pannar","John Deere",5.94410442344769
-"Mpumalanga",22.25,674.3,"Rainfed",208.8,128.73,3.797,"Pannar","John Deere",7.46028905154469
-"Free State",18.72,901.8,"Rainfed",156.14,51.72,3.468,"Dekalb","John Deere",8.46587729372297
-"North West",28.81,401.1,"Rainfed",168.48,135.96,4.178,"Pioneer","New Holland",4.02428866607064
-"Free State",21.5,817.2,"Rainfed",216.94,143.9,3.62,"Pannar","New Holland",7.07309925558192
-"North West",32.79,750.6,"Rainfed",162.66,163.23,3.466,"Dekalb","New Holland",4.7591551929468
-"Free State",33.7,596,"Rainfed",142.41,249.39,2.938,"Pioneer","New Holland",4.42906311636668
-"Free State",20.34,653.5,"Rainfed",127.82,138.16,3.272,"Dekalb","John Deere",7.37947499196846
-"North West",33.29,911.6,"Rainfed",186.11,153.29,3.073,"Pannar","John Deere",6.93671430464998
-"Mpumalanga",24.48,891.9,"Rainfed",160.69,72.13,4.374,"Pioneer","John Deere",6.77232265414138
-"Free State",23.72,550,"Rainfed",140.47,142.07,3.108,"Dekalb","John Deere",5.60476019605141
-"Free State",22.19,531.6,"Irrigated",177.29,68.15,3.683,"Pannar","John Deere",6.01409887899733
-"Free State",30.3,307.6,"Rainfed",118.46,330.04,3.847,"Pioneer","John Deere",3.87964060273997
-"Free State",15.98,663.7,"Irrigated",117,116.01,3.436,"Dekalb","John Deere",7.38065762131334
-"North West",24.78,648.2,"Rainfed",294.71,158.93,3.54,"Dekalb","Case",6.5138384300489
-"Mpumalanga",17.69,1273.9,"Rainfed",113.14,165.34,3.256,"Pioneer","John Deere",7.92768854071031
-"North West",34.98,635.3,"Rainfed",188.09,76.08,3.454,"Pioneer","John Deere",4.42093819470684
-"Free State",23.24,336.6,"Rainfed",109.04,167.23,3.367,"Pioneer","New Holland",5.00968628673637
-"North West",25.38,513,"Rainfed",149.14,84.43,3.256,"Dekalb","John Deere",4.8866280337533
-"Free State",36.74,693,"Rainfed",194.14,166.61,3.633,"Pannar","John Deere",5.30262245854427
-"Free State",23.8,346.6,"Rainfed",107.15,103.28,3.224,"Dekalb","John Deere",3.63295452289033
-"Mpumalanga",20.67,642.6,"Rainfed",211.76,100.52,3.049,"Dekalb","John Deere",6.94907249179789
-"North West",29.5,539.6,"Rainfed",180.51,163.36,3.716,"Dekalb","John Deere",5.67809595436332
-"Free State",17.73,722.8,"Rainfed",143.8,159.94,3.592,"Pannar","New Holland",6.39886068569509
-"Free State",25.96,311.5,"Rainfed",182.55,121.71,2.975,"Pannar","Case",4.9374167944563
-"Free State",23.62,636.6,"Irrigated",169.81,98.03,3.289,"Dekalb","John Deere",6.61828542455368
-"North West",30.34,528.5,"Rainfed",115.16,148.15,3.72,"Pioneer","John Deere",4.95292231837714
-"Free State",20.07,435.8,"Rainfed",90.89,133.02,3.197,"Dekalb","John Deere",5.29723317365259
-"Free State",19.91,456.3,"Irrigated",172.07,208.1,3.731,"Pannar","John Deere",6.00259933477593
-"North West",24.53,437.5,"Rainfed",107.37,102.67,3.381,"Pioneer","Case",5.07383739825319
-"Free State",20.93,560.7,"Rainfed",162.04,128.7,3.079,"Dekalb","John Deere",6.60717711779394
-"Free State",29.2,864.6,"Rainfed",81.7,372.44,3.64,"Pannar","New Holland",7.25359321018876
-"North West",35.9,764.2,"Rainfed",110.87,76.88,2.717,"Pioneer","John Deere",4.59115688881031
-"Free State",23.37,742.8,"Rainfed",184.63,156.48,3.317,"Pioneer","New Holland",6.43957255264212
-"Free State",22.56,484.2,"Rainfed",256.38,163.11,3.465,"Pioneer","Case",5.81458821047069
-"Mpumalanga",21.01,511.1,"Rainfed",176.74,111.37,3.575,"Dekalb","Case",7.07382189785998
-"Free State",24.28,496.4,"Rainfed",107.84,99.2,3.562,"Pioneer","John Deere",4.99499182388602
-"Free State",24.39,545.7,"Rainfed",137.89,71.19,3.524,"Pannar","John Deere",5.16469823556195
-"Free State",25.16,1001.1,"Rainfed",261.69,72.45,3.942,"Pioneer","New Holland",8.69403826217552
-"Mpumalanga",19.76,501.5,"Rainfed",205.01,120.9,4.018,"Pioneer","John Deere",7.20579715725963
-"Free State",20.61,429,"Rainfed",229.75,237.03,4.043,"Pioneer","John Deere",6.22260836282758
-"Mpumalanga",25.59,769.1,"Rainfed",251.14,139.21,3.111,"Pannar","John Deere",6.73801508648649
-"Free State",21.81,336,"Irrigated",193.08,269.95,3.239,"Dekalb","John Deere",6.16545453047266
-"Free State",25.21,361.5,"Rainfed",263.44,104.04,3.092,"Pannar","Case",5.58732923420597
-"Mpumalanga",21.83,538.9,"Irrigated",108.81,175.73,3.373,"Pannar","John Deere",5.81980552725155
-"Free State",20.17,632.8,"Rainfed",186.8,143.64,3.605,"Pioneer","John Deere",6.73448247960945
-"Free State",26.36,512.2,"Rainfed",142.41,159.67,3.535,"Pannar","John Deere",5.41458585365542
-"North West",28.87,525.9,"Rainfed",179.2,148.9,3.401,"Dekalb","New Holland",5.39309738337704
-"Free State",29.6,413.3,"Rainfed",288.75,191.97,3.411,"Pioneer","Case",5.08907181057165
-"Mpumalanga",22.35,703.5,"Rainfed",203.72,135.46,3.386,"Dekalb","John Deere",6.97579364838882
-"North West",26.34,499.1,"Rainfed",125.9,208.93,3.219,"Pannar","New Holland",5.43595538058256
-"Mpumalanga",22.83,898.3,"Rainfed",141.76,168.97,3.307,"Pioneer","New Holland",6.85482482747072
-"North West",22.07,311.8,"Rainfed",109.83,135.35,3.229,"Pioneer","John Deere",4.29556201589994
-"Free State",20.66,363.7,"Rainfed",158.33,129.29,3.335,"Dekalb","New Holland",5.74145503441741
-"North West",30.55,464.2,"Rainfed",133.05,77.13,3.04,"Pioneer","John Deere",4.16722918487727
-"North West",26.33,1096,"Rainfed",230.19,101.92,3.901,"Pioneer","New Holland",8.28855885832438
-"Mpumalanga",21.8,768,"Rainfed",133.44,120.93,4.105,"Pannar","John Deere",6.1107358750785
-"Free State",23.54,581.2,"Rainfed",222.38,205.91,3.103,"Dekalb","Case",7.41873772208843
-"Free State",21.4,557.8,"Rainfed",223.37,193.13,3.879,"Pioneer","New Holland",6.09161719688005
-"Free State",15.93,670.6,"Rainfed",136.73,95.03,3.568,"Dekalb","John Deere",6.79606820005458
-"Free State",25.4,234.8,"Rainfed",301.41,110.02,3.466,"Dekalb","John Deere",5.68412486556733
-"North West",31.81,302,"Rainfed",166.38,293.89,3.456,"Pannar","John Deere",5.00257182658764
-"Free State",18.85,531.9,"Rainfed",124.67,72.61,3.647,"Pioneer","Case",4.84313952437625
-"Free State",29.93,816.8,"Rainfed",169.76,147.19,3.523,"Pioneer","John Deere",5.80552375454373
-"Mpumalanga",23.16,706.4,"Rainfed",108,153.76,3.25,"Pannar","John Deere",6.37020766260764
-"Mpumalanga",26.02,433.9,"Rainfed",216.85,108.79,3.514,"Pannar","John Deere",6.41891208638693
-"Free State",20.17,845.9,"Rainfed",112.48,73.91,3.795,"Pannar","Case",7.40937170071026
-"Mpumalanga",22.5,602.2,"Rainfed",284.8,114.14,3.431,"Pioneer","New Holland",7.72578927990286
-"Free State",23.6,625.2,"Rainfed",68.18,448.32,3.132,"Pioneer","John Deere",6.64320137393423
-"Free State",27.07,871,"Rainfed",102.57,129.46,3.012,"Dekalb","John Deere",6.6194080335476
-"North West",25.12,438.8,"Rainfed",142.48,123.11,3.664,"Pioneer","Case",4.75040595630692
-"Mpumalanga",21.97,702,"Rainfed",122.16,147.19,3.494,"Pioneer","John Deere",6.48351177122715
-"Mpumalanga",16.66,892.3,"Rainfed",291.4,80.91,3.372,"Pannar","John Deere",7.5143482211061
-"Free State",20.89,529.3,"Rainfed",160.32,189.72,3.569,"Pannar","John Deere",4.9626792862564
-"Free State",24.5,665.8,"Rainfed",191.23,187.06,3.291,"Dekalb","John Deere",7.20962487279735
-"Mpumalanga",19.88,725.6,"Rainfed",222.11,116.46,3.498,"Pioneer","John Deere",6.86533620700407
-"North West",27.78,399.9,"Rainfed",175.52,139.55,3.549,"Pioneer","John Deere",5.19943558031966
-"Free State",22.13,779,"Irrigated",247.36,108.63,2.907,"Pioneer","Case",6.75110103976894
-"Free State",26.43,320.8,"Rainfed",198.25,184.63,3.166,"Dekalb","John Deere",3.3860522984367
-"Mpumalanga",25.51,768,"Rainfed",221.24,65.09,3.108,"Dekalb","John Deere",6.54412835262534
-"Mpumalanga",19.53,908.2,"Rainfed",87.52,123.16,3.169,"Pioneer","John Deere",5.99120227058464
-"Free State",22.77,757.3,"Rainfed",101.96,179.26,3.98,"Dekalb","John Deere",6.68153217076475
-"Free State",29.76,733.5,"Rainfed",63.92,287.46,3.84,"Dekalb","John Deere",6.31235876836238
-"Mpumalanga",15.4,677.7,"Rainfed",147.72,90.82,3.766,"Pioneer","John Deere",6.58271869353442
-"Mpumalanga",21.04,1248.4,"Rainfed",302.09,82.73,3.454,"Pannar","John Deere",8.98438953600665
-"North West",38.32,239.6,"Rainfed",108.57,129.55,3.763,"Dekalb","John Deere",2.80065987673379
-"Free State",32.77,379.2,"Rainfed",188.03,132.5,3.075,"Dekalb","John Deere",3.8918028352824
-"Free State",24.63,498.3,"Rainfed",198.35,190.3,2.885,"Pannar","John Deere",5.48853718652027
-"Mpumalanga",19.41,622.6,"Rainfed",182.02,129.2,2.608,"Dekalb","New Holland",6.93135069278061
-"North West",28.83,746.2,"Irrigated",145.79,105.35,3.558,"Pioneer","John Deere",5.77535579667076
-"North West",24.74,409.7,"Rainfed",126.52,314.51,3.487,"Pannar","Case",5.81721948355228
-"Free State",29.81,594.5,"Rainfed",125.52,117.45,3.235,"Pioneer","John Deere",4.51949802422537
-"Free State",20.77,486.4,"Rainfed",165.71,200.96,3.645,"Pannar","Case",5.13675288720803
-"Free State",25.49,1001.9,"Rainfed",285.61,189.15,3.538,"Pioneer","John Deere",8.59821790668894
-"Mpumalanga",23.86,1114.2,"Rainfed",117.44,111.82,3.451,"Pioneer","John Deere",7.67890567410772
-"Mpumalanga",19.73,697.8,"Rainfed",156.15,284.3,3.903,"Dekalb","Case",8.01275037909515
-"Free State",27.41,720.6,"Rainfed",171.57,81.38,3.925,"Dekalb","New Holland",6.48940598904442
-"Mpumalanga",19.76,581.6,"Rainfed",230.17,89.65,3.823,"Pannar","Case",6.23805999852485
-"Free State",26.52,591.4,"Rainfed",149.1,228.19,3.664,"Pannar","Case",6.6203911420276
-"Free State",28.39,465.5,"Rainfed",215.63,68.09,3.166,"Pioneer","John Deere",4.76196490856902
-"North West",23.06,480.7,"Rainfed",87.13,180.37,3.414,"Pioneer","New Holland",4.88145868409364
-"Free State",28.43,712.3,"Rainfed",223.15,148.38,3.475,"Pioneer","John Deere",6.12230938207495
-"Mpumalanga",20.53,1098.8,"Rainfed",171.36,188.74,3.599,"Dekalb","Case",8.88730306888488
-"Free State",25.18,531.8,"Irrigated",103.3,192.29,3.82,"Pannar","John Deere",5.73854942131571
-"Free State",24.81,442.4,"Rainfed",61.16,101.16,3.053,"Dekalb","John Deere",5.0727072652568
-"Free State",22.29,451.4,"Rainfed",140.85,100.32,3.082,"Pioneer","John Deere",4.3390951722784
-"Free State",25.07,644.4,"Rainfed",218.5,195.11,3.477,"Dekalb","John Deere",6.3005202615334
-"Free State",19.08,346.1,"Rainfed",188.35,201.63,3.051,"Pannar","New Holland",5.44888837001353
-"Free State",23.46,722.2,"Rainfed",140.92,82.91,3.844,"Dekalb","Case",6.52581229395863
-"Free State",27.3,485.4,"Rainfed",168.02,78.67,3.422,"Dekalb","Case",4.79677148705215
-"Mpumalanga",15.48,1232.4,"Rainfed",175.75,84.36,2.778,"Dekalb","John Deere",9.76305934478138
-"Free State",18.05,1011.4,"Rainfed",119.51,135.04,3.484,"Dekalb","John Deere",8.49378701860331
-"Free State",19.35,483.9,"Irrigated",168.34,134.66,3.567,"Pannar","Case",6.10248402315621
-"Free State",17.64,1010.2,"Rainfed",172.52,381.95,3.326,"Pannar","John Deere",8.63412772313797
-"Mpumalanga",23.26,889.1,"Rainfed",121.02,172.56,3.145,"Dekalb","John Deere",6.97109035314981
-"Mpumalanga",19.02,843.4,"Rainfed",178.93,127.12,3.541,"Dekalb","John Deere",8.27139749894559
-"Mpumalanga",15.51,642.1,"Rainfed",187.67,107.53,3.9,"Pioneer","John Deere",7.29368483051946
-"North West",24.81,631.2,"Rainfed",205.67,107.19,3.351,"Pannar","John Deere",5.02530766006615
-"North West",26.05,554.2,"Rainfed",222.45,103.23,3.817,"Pannar","John Deere",5.91285837212985
-"Free State",27.43,439.7,"Rainfed",195.79,83.63,3.888,"Pioneer","John Deere",5.09153902367539
-"Free State",19.58,725.1,"Rainfed",186.94,146.89,3.145,"Pannar","Case",6.02028646137058
-"Free State",28.65,705,"Rainfed",157.95,33,3.747,"Dekalb","Case",5.54889941550592
-"Free State",25.59,823,"Rainfed",199.01,80.89,3.477,"Dekalb","John Deere",7.70839987021739
-"Free State",25.45,995.5,"Rainfed",95.96,211.08,3.599,"Pannar","Case",8.33443890225077
-"Free State",20.59,456.7,"Rainfed",217.15,145.23,4.023,"Pannar","New Holland",6.46315740919399
-"Mpumalanga",27.86,714.2,"Rainfed",131.07,173.87,3.785,"Pannar","John Deere",5.89698119377259
-"Free State",23.34,488.5,"Rainfed",443.76,104.62,3.344,"Pioneer","Case",7.89867586732119
-"Free State",16.7,1097.5,"Rainfed",127.69,254.12,3.118,"Dekalb","John Deere",9.17292721835251
-"Free State",23.18,348,"Rainfed",48.27,119.12,3.585,"Pannar","John Deere",5.26349608352681
-"Free State",16.26,415.6,"Rainfed",294.53,176.41,3.668,"Dekalb","New Holland",6.72660097270095
-"Free State",22.76,755.5,"Rainfed",127.57,136.75,3.878,"Dekalb","Case",7.17298304681387
-"Free State",22.31,442.6,"Rainfed",211.57,168.14,3.917,"Pioneer","John Deere",7.35122698279724
-"Free State",26.73,266.9,"Rainfed",181.03,111.74,3.52,"Dekalb","New Holland",3.54726836989792
-"Free State",28.04,583.4,"Rainfed",261.99,236.11,3.529,"Dekalb","John Deere",6.95994773317804
-"Mpumalanga",19.82,751.8,"Rainfed",112.09,108.02,3.658,"Pioneer","John Deere",7.07189619167262
-"Free State",27.22,769.8,"Rainfed",99.28,483.76,3.823,"Pioneer","John Deere",7.04709002920352
-"Free State",29.7,285.8,"Rainfed",258.52,126.51,3.496,"Pannar","John Deere",5.13432165668207
-"North West",24.08,698.2,"Rainfed",109.49,143.75,3.387,"Pioneer","John Deere",5.39493513470523
-"Free State",21.39,215.5,"Rainfed",85.77,103.22,3.155,"Dekalb","Case",3.96138633294509
-"Mpumalanga",23.95,718,"Rainfed",228.86,188.2,3.51,"Pioneer","Case",6.3343507943559
-"Free State",24.73,508.1,"Rainfed",159.99,147.81,3.48,"Dekalb","John Deere",4.92275062459607
-"Free State",26.2,560.5,"Rainfed",432.72,180.21,3.484,"Pannar","New Holland",7.22446007978037
-"Free State",29.62,839.5,"Rainfed",190.32,186.55,3.377,"Pannar","John Deere",6.74246884106001
-"Free State",25.55,673.1,"Rainfed",141.59,96.62,3.319,"Pioneer","John Deere",5.59414260623857
-"Mpumalanga",25.16,860.3,"Rainfed",126.03,196.12,3.792,"Pannar","Case",6.83510763263294
-"Free State",26.49,250.5,"Rainfed",336.32,80.15,3.412,"Pannar","Case",4.82409573300425
-"Mpumalanga",23.3,935.9,"Rainfed",98.2,145.5,3.996,"Dekalb","John Deere",8.23887450732136
-"Mpumalanga",23.16,617.6,"Rainfed",213.74,203.82,3.266,"Dekalb","John Deere",6.90028743692226
-"Free State",29.17,404.2,"Rainfed",208.78,67.07,2.905,"Pannar","New Holland",4.57680787430998
-"Free State",19.99,722.4,"Rainfed",128.98,111.74,3.474,"Dekalb","Case",6.16328612330958
-"Free State",19.58,1291,"Rainfed",315.72,113.67,3.848,"Pioneer","John Deere",9.57053312583004
-"Free State",26.37,630.3,"Rainfed",119.75,54.42,3.443,"Pannar","John Deere",4.99028818219051
-"North West",27.4,316.6,"Rainfed",163.13,124.24,2.983,"Pioneer","New Holland",4.37668015357432
-"Free State",24.3,495.6,"Rainfed",193.91,253.89,3.31,"Pioneer","John Deere",6.41430223602385
-"Free State",26.97,731.4,"Rainfed",441.05,72.78,3.484,"Pannar","Case",7.029010883478
-"Mpumalanga",24.26,796.4,"Rainfed",213.58,83.44,3.903,"Pioneer","Case",6.37905634170756
-"Mpumalanga",21.21,951.2,"Rainfed",343.09,114.16,3.875,"Pannar","John Deere",7.94078530273901
-"North West",26.44,491.4,"Irrigated",120.72,132.39,3.72,"Dekalb","John Deere",5.23366646908014
-"Mpumalanga",22.22,1013.5,"Rainfed",78.39,142.41,3.681,"Dekalb","New Holland",7.49272862273444
-"Mpumalanga",25.19,671.9,"Rainfed",239.95,147.82,3.253,"Pioneer","New Holland",7.03984460597511
-"Mpumalanga",23.28,598.3,"Rainfed",82.39,120.14,3.742,"Pannar","New Holland",4.1270529099726
-"Mpumalanga",26.3,945.1,"Rainfed",93.03,387.35,3.883,"Dekalb","John Deere",7.7049037784026
-"Mpumalanga",21.98,616.9,"Rainfed",213.18,111.43,3.728,"Dekalb","John Deere",7.36606908928794
-"Free State",28.5,814.5,"Rainfed",160.64,75.14,3.85,"Dekalb","John Deere",6.03307531266222
-"Free State",27.53,458.3,"Rainfed",235.67,67.87,3.56,"Pannar","John Deere",5.28108239379562
-"North West",31.06,406.7,"Rainfed",302.27,124.41,3.756,"Pannar","New Holland",5.81416980925736
-"Mpumalanga",23.24,744.5,"Rainfed",242.34,106.97,3.933,"Dekalb","John Deere",7.43594825925533
-"North West",26.6,426.5,"Rainfed",193.48,216.59,3.18,"Dekalb","New Holland",5.63371405735789
-"Free State",23.56,678.9,"Rainfed",207.93,125.09,3.96,"Dekalb","New Holland",5.62283599231229
-"Free State",24.92,671.9,"Rainfed",174.92,140.79,3.728,"Pannar","John Deere",6.03184082143443
-"Mpumalanga",22.15,843.7,"Rainfed",339.73,66.29,3.736,"Pannar","John Deere",7.5543258121748
-"North West",32.72,387.1,"Rainfed",168.19,122.2,3.465,"Dekalb","Case",4.9003551749479
-"Free State",23.56,454.7,"Rainfed",231.72,120.47,3.198,"Pannar","John Deere",5.72909454252017
-"Free State",23.72,488.7,"Rainfed",110.35,72.92,3.112,"Dekalb","John Deere",5.59424176747398
-"North West",25.58,371.8,"Rainfed",167.25,90.64,3.56,"Dekalb","New Holland",5.41008572123767
-"Free State",23.45,369.2,"Irrigated",70.43,92.25,3.434,"Pioneer","New Holland",4.01067999963415
-"Free State",23.72,997.7,"Rainfed",174.47,196.23,3.852,"Pannar","John Deere",7.98385587760408
-"Free State",14.75,275.4,"Rainfed",87.44,174.13,3.498,"Pannar","John Deere",5.1925025151706
-"Free State",18.54,816.4,"Rainfed",155.46,185,3.425,"Pioneer","John Deere",6.62447432117625
-"Free State",23.71,462.5,"Rainfed",148.54,253.7,3.938,"Pannar","John Deere",4.76635851905517
-"Mpumalanga",21.2,908.9,"Rainfed",248.52,117.86,3.455,"Pannar","John Deere",7.66369009751961
-"Free State",19.2,820.1,"Rainfed",125.23,229.81,3.332,"Dekalb","John Deere",7.75422382273093
-"Mpumalanga",16.03,1032.5,"Rainfed",124.07,120.8,3.767,"Pannar","John Deere",7.42413496464079
-"North West",26.23,409.6,"Rainfed",71.17,227.08,3.921,"Pioneer","New Holland",5.03156676047722
-"Free State",26.61,369.4,"Rainfed",214.05,77.94,3.172,"Dekalb","John Deere",4.35686977195191
-"Free State",31.09,794,"Rainfed",261.14,103.95,3.403,"Pannar","John Deere",7.52395719024982
-"Free State",23.85,690.2,"Rainfed",149.43,203.89,3.401,"Pioneer","John Deere",6.56602950465804
-"Free State",29.97,482.5,"Rainfed",308.37,283.68,3.472,"Pannar","John Deere",7.02293298013962
-"Free State",24.33,297,"Rainfed",138.22,133.6,3.567,"Pioneer","John Deere",4.92382280096512
-"Free State",24.46,736.8,"Rainfed",107.48,117.34,3.725,"Pannar","John Deere",6.25960071558905
-"Free State",25.3,810,"Rainfed",181.29,179.47,3.823,"Dekalb","New Holland",7.24926915555866
-"North West",23.65,464,"Rainfed",220.13,128.84,3.266,"Dekalb","John Deere",6.55396771781568
-"Free State",23.79,466.6,"Rainfed",87.24,136.75,3.48,"Dekalb","New Holland",5.77940090594598
-"Free State",27.63,741.8,"Rainfed",82.14,152.03,3.73,"Dekalb","Case",6.0673904702454
-"Free State",21,463.5,"Rainfed",167.76,220.46,3.317,"Dekalb","John Deere",7.23487220943286
-"Free State",22.71,934.1,"Rainfed",201.7,84.7,3.667,"Pioneer","John Deere",6.87610942907904
-"Free State",19.41,187.1,"Irrigated",60.79,111.75,4,"Pannar","John Deere",3.93398559573607
-"Free State",25.42,604.6,"Rainfed",79.71,177.43,3.088,"Pannar","Case",6.50510006012358
-"Free State",25.7,348.5,"Rainfed",187.45,52.49,3.684,"Pannar","Case",4.28673201305438
-"Free State",26.59,635.8,"Rainfed",239.88,241.57,3.467,"Pioneer","John Deere",7.39811175487875
-"Free State",19.12,868.5,"Rainfed",139.92,101.92,3.238,"Pannar","John Deere",7.24940111166927
-"Free State",24.43,328.8,"Rainfed",273.83,85.5,3.549,"Pioneer","John Deere",5.29499243549112
-"Mpumalanga",19.17,739.2,"Rainfed",126.75,146.42,3.512,"Pannar","John Deere",6.52318344268109
-"Mpumalanga",22,996.3,"Rainfed",153.25,366.37,3.232,"Pannar","John Deere",7.80756847753166
-"North West",34.71,447.2,"Rainfed",291.75,100.86,3.446,"Pioneer","John Deere",5.08267634219867
-"Mpumalanga",20.49,769.2,"Rainfed",158.89,70.01,3.7,"Pannar","New Holland",6.19782501640925
-"Mpumalanga",24.15,791.7,"Rainfed",166.3,128.13,3.453,"Pioneer","John Deere",5.98186578469852
-"Mpumalanga",19.75,543.2,"Rainfed",112.25,228.51,4.046,"Pioneer","John Deere",6.48512377048621
-"Free State",22.09,389.4,"Rainfed",169.23,120.2,3.953,"Dekalb","John Deere",5.58948922755488
-"Free State",25.75,502.6,"Rainfed",125.12,177.39,3.255,"Dekalb","John Deere",5.40124792685328
-"Free State",21.28,916.4,"Rainfed",76.62,227.13,3.948,"Pannar","John Deere",7.00426179092491
-"Free State",17.19,794.7,"Rainfed",108.94,63.52,3.918,"Pannar","New Holland",6.69952987889102
-"Mpumalanga",25.8,656.8,"Rainfed",148.64,177.41,3.299,"Dekalb","John Deere",5.7021432939035
-"Mpumalanga",23.08,561.8,"Rainfed",176.32,108.05,3.967,"Pioneer","John Deere",6.13232079336834
-"Free State",21.67,360.9,"Rainfed",258.86,132.38,3.983,"Pioneer","John Deere",5.82298494532496
-"Mpumalanga",16.02,861.1,"Rainfed",167.2,368.2,3.738,"Pioneer","John Deere",8.32671773316284
-"Free State",31.61,531,"Irrigated",155.82,152.03,3.727,"Pannar","John Deere",5.42314442084718
-"Mpumalanga",32.17,916,"Rainfed",263.08,194.81,3.188,"Pannar","New Holland",7.08632327955279
-"Mpumalanga",22.62,599.6,"Rainfed",458.61,87.6,4.06,"Pioneer","New Holland",8.40337346670983
-"Free State",27.4,407.2,"Rainfed",158.63,164.53,3.287,"Pioneer","Case",4.2311205126131
-"Free State",28.9,580.4,"Rainfed",271.23,128.67,3.367,"Pioneer","Case",5.64036659212501
-"Free State",21.19,664.7,"Rainfed",202.2,122.63,3.666,"Pannar","New Holland",6.3246008617742
-"Free State",22.6,666.7,"Rainfed",159.26,174.13,3.538,"Pioneer","Case",5.4324896103602
-"North West",19.36,314.9,"Rainfed",72.77,69.71,3.993,"Dekalb","John Deere",5.05225506650018
-"North West",24.32,423.1,"Rainfed",109.07,251.98,3.258,"Dekalb","Case",6.21935133801484
-"Free State",26.49,641,"Rainfed",129.86,374.4,3.328,"Dekalb","John Deere",6.38985135437709
-"Free State",22.84,599.5,"Rainfed",102.66,111.75,3.579,"Pioneer","John Deere",5.43090993099165
-"Free State",23.14,584.4,"Rainfed",100.46,171.13,3.667,"Dekalb","John Deere",5.5054930316171
-"Mpumalanga",21.66,805.3,"Rainfed",138.04,338.25,4.402,"Dekalb","John Deere",7.79371952847043
-"Free State",16.55,641.7,"Rainfed",246.4,91.89,3.139,"Pannar","John Deere",6.88964277806892
-"Free State",27.35,595.6,"Rainfed",111.29,138.8,3.817,"Pioneer","John Deere",5.58867233871352
-"Free State",18.23,697.3,"Rainfed",172.95,378.75,3.794,"Dekalb","John Deere",8.09725540137253
-"Free State",23.17,509.6,"Rainfed",150.9,90.14,3.822,"Pioneer","New Holland",5.25159162607823
-"Free State",22.25,528.2,"Rainfed",230.34,207.73,3.115,"Pioneer","John Deere",5.77576585051175
-"Free State",23.13,291.6,"Rainfed",167.19,167.72,3.581,"Pioneer","John Deere",4.94251782593557
-"Free State",29.84,596.8,"Rainfed",153.15,115.69,3.324,"Dekalb","John Deere",5.55300939303904
-"Free State",21.67,661,"Irrigated",128.35,159.61,2.984,"Pannar","New Holland",6.06991293777505
-"Free State",20.87,652.1,"Rainfed",240.21,117.29,3.242,"Dekalb","New Holland",7.32503164916218
-"Free State",17.92,482.5,"Irrigated",266.81,190.5,3.196,"Pannar","John Deere",6.90113782409495
-"North West",23.97,488.4,"Rainfed",165.85,108.41,3.977,"Pioneer","John Deere",5.05147433289015
-"Free State",19.34,369.8,"Rainfed",500,62.31,3.281,"Pioneer","Case",7.47796386957098
-"Free State",25.63,467,"Rainfed",164.28,195.02,3.747,"Pannar","John Deere",5.2411048657903
-"Mpumalanga",19.41,581.7,"Rainfed",500,224.69,3.694,"Pannar","John Deere",7.48880928383638
-"Mpumalanga",22.91,583.1,"Rainfed",155.4,142.83,3.26,"Pannar","New Holland",5.11226611282468
-"Free State",23.41,491.7,"Rainfed",84.43,94.03,3.65,"Dekalb","John Deere",5.19046497593031
-"Mpumalanga",17.7,546,"Rainfed",89.83,109.72,3.682,"Pioneer","New Holland",5.24233791943006
-"Free State",20.84,453.4,"Rainfed",113.62,75.75,3.149,"Pioneer","New Holland",4.92738636965313
-"North West",32.43,671.5,"Irrigated",308.13,73.43,3.687,"Pioneer","New Holland",5.812631004677
-"Mpumalanga",24.71,916.5,"Rainfed",339,224.7,3.519,"Pioneer","Case",7.77374019030549
-"Free State",32.02,772.9,"Rainfed",194.73,54.51,3.408,"Pannar","Case",6.52363596878418
-"Free State",23.99,781.4,"Rainfed",187.5,174.18,3.246,"Pannar","John Deere",6.52241940998512
-"Free State",18.02,289,"Rainfed",130.95,114.62,3.439,"Dekalb","John Deere",5.53558647346612
-"Free State",20.93,1064,"Rainfed",123.41,75.47,3.224,"Pioneer","John Deere",7.69305202778714
-"Free State",25.63,712.6,"Rainfed",121.27,122.6,3.492,"Pioneer","John Deere",5.68977987717879
-"Mpumalanga",27.7,770.9,"Rainfed",113.66,124.99,3.457,"Pioneer","New Holland",6.17887223965564
-"Free State",24.44,485.3,"Rainfed",130.79,231.78,3.41,"Pioneer","New Holland",5.69525018596967
-"Mpumalanga",25.42,601.8,"Rainfed",126.27,394.22,3.824,"Pioneer","New Holland",7.22873784060125
-"North West",31.84,583.5,"Rainfed",205.87,305.29,3.278,"Pannar","Case",6.37062256246872
-"Mpumalanga",18.5,620.8,"Rainfed",228.17,279.86,3.479,"Dekalb","John Deere",8.55323156848384
-"Free State",23.32,616.7,"Rainfed",324.89,278.49,3.759,"Pioneer","New Holland",7.64399171134399
-"Free State",29.22,497.5,"Rainfed",58.16,205.28,3.862,"Pioneer","John Deere",3.87042638435167
-"Free State",27.5,472,"Rainfed",202.97,111.09,3.439,"Pioneer","John Deere",5.75602703436616
-"Free State",25.86,532.6,"Rainfed",143.68,146.66,3.502,"Dekalb","Case",5.42340059214103
-"Mpumalanga",23.43,827.7,"Rainfed",146.9,68.9,3.848,"Pannar","Case",6.71767905207764
-"Free State",22.03,190.9,"Rainfed",81.92,96.24,3.563,"Pannar","Case",4.73882016071896
-"Mpumalanga",18.04,757.7,"Rainfed",162.21,92.26,3.633,"Dekalb","John Deere",7.68728060846973
-"Free State",29.18,658.4,"Rainfed",118.32,83.78,3.403,"Pannar","Case",4.52633481678473
-"Mpumalanga",17.74,640.6,"Rainfed",191.31,254.47,3.554,"Pioneer","New Holland",7.88533531218273
-"Mpumalanga",19.18,681.6,"Rainfed",102.55,169.71,3.524,"Pioneer","John Deere",6.65615201271174
-"Free State",26.52,453.3,"Rainfed",500,152.86,3.646,"Pioneer","New Holland",7.56774090126333
-"Mpumalanga",18.21,676.6,"Rainfed",118.01,135.25,3.482,"Pannar","John Deere",5.91664182420649
-"Mpumalanga",20.34,705.5,"Irrigated",145.91,210.56,3.427,"Dekalb","John Deere",7.44512416216066
-"Free State",19.27,398.6,"Rainfed",97.62,201.3,3.474,"Dekalb","John Deere",5.13697061424145
-"Free State",26.48,833.9,"Rainfed",143.28,90.96,3.369,"Pioneer","New Holland",4.8977971718968
-"North West",30.23,548.7,"Rainfed",407.06,55.85,3.931,"Pannar","New Holland",5.98294520771197
-"Mpumalanga",23.27,1108.2,"Rainfed",139.57,80.56,3.226,"Pannar","John Deere",7.39616702375417
-"Mpumalanga",23.33,611.5,"Rainfed",213.13,109.12,3.863,"Pannar","Case",5.53629391657988
-"Free State",26.23,511.8,"Rainfed",110.37,135.73,3.476,"Pannar","Case",3.92672965964735
-"Free State",26.56,370.9,"Rainfed",316.07,264.93,2.859,"Pannar","New Holland",6.03793695447637
-"Free State",16.13,217.8,"Rainfed",200.67,180.17,3.329,"Pannar","New Holland",4.69755743209515
-"North West",27.26,670.7,"Rainfed",121.34,184.27,3.836,"Pannar","John Deere",6.01483868335998
-"Free State",24.45,474.6,"Rainfed",181.39,194.78,3.095,"Pioneer","New Holland",4.2142069069044
-"Free State",26.9,601.9,"Rainfed",139.57,128.28,3.524,"Pannar","New Holland",5.87878678810843
-"Free State",19.25,383.7,"Rainfed",204.14,84.38,3.127,"Dekalb","Case",5.25030137001782
-"Free State",22,928.2,"Irrigated",116.65,91.26,3.557,"Pannar","John Deere",7.84874178005551
-"Mpumalanga",18.78,982.1,"Rainfed",200.24,74.42,3.857,"Pannar","New Holland",7.63754190233776
-"North West",33.29,615.1,"Rainfed",322.14,76.58,3.399,"Pannar","John Deere",6.10328719912517
-"Mpumalanga",25.84,763.8,"Rainfed",281.17,69.32,3.79,"Dekalb","John Deere",7.24191059123563
-"Free State",27.15,714.3,"Rainfed",187.23,199.04,3.712,"Pannar","John Deere",6.44590144353289
-"Free State",19.11,698.9,"Rainfed",189.52,79.28,3.886,"Dekalb","John Deere",7.46870666849394
-"North West",30.26,814.7,"Irrigated",196.72,178.91,3.89,"Pannar","John Deere",8.09344045243499
-"Free State",28.6,738,"Rainfed",240.87,384.98,3.79,"Dekalb","New Holland",7.51509383289829
-"Free State",24.67,532.5,"Rainfed",193.77,124.49,3.604,"Pannar","John Deere",5.67988152556406
-"North West",25.17,530.8,"Irrigated",212.76,125.27,3.504,"Pannar","John Deere",6.06971584363045
-"Free State",19.66,641.6,"Rainfed",215.64,197.24,3.558,"Pioneer","John Deere",6.45393863314522
-"Free State",21.34,799.3,"Irrigated",181.19,135.05,3.633,"Pannar","John Deere",7.38381454722897
-"Mpumalanga",24.14,723.2,"Rainfed",223.34,96.84,3.236,"Pannar","John Deere",5.71992519882261
-"Free State",22.27,874.7,"Rainfed",168.58,72.39,3.349,"Pioneer","Case",6.18791338684162
-"Mpumalanga",22.68,578.1,"Rainfed",252.7,141.68,3.349,"Pioneer","New Holland",7.15899347160719
-"Free State",29.18,527.6,"Rainfed",137.14,112.45,3.312,"Pannar","New Holland",4.17884280113845
-"Free State",26.31,569.1,"Rainfed",178.59,161.79,3.399,"Dekalb","John Deere",7.02009861130897
-"Free State",29.46,742.8,"Rainfed",166.77,154.05,3.47,"Dekalb","New Holland",6.45966988672734
-"Free State",17.19,968,"Rainfed",104.25,241.84,3.317,"Pannar","John Deere",8.46497941178869
-"Free State",22.88,547.3,"Rainfed",273.64,177.42,2.825,"Pioneer","John Deere",6.74047739688631
-"Free State",24.26,549.9,"Rainfed",100.41,225.1,4.095,"Dekalb","John Deere",6.02178582037088
-"Free State",26.31,839.5,"Irrigated",286.27,140.2,3.263,"Dekalb","John Deere",8.63590653542128
-"Mpumalanga",18.49,915.3,"Irrigated",104.5,195.25,3.852,"Pioneer","Case",7.97995501471348
-"Free State",27.22,754.1,"Rainfed",108.4,121.8,3.311,"Dekalb","John Deere",5.8242329982071
-"North West",29.54,708.2,"Rainfed",237.07,126.97,3.634,"Dekalb","New Holland",6.0137483640966
-"Mpumalanga",22.79,816.4,"Rainfed",158.88,140.51,3.479,"Pioneer","John Deere",6.46686675955937
-"Free State",26.03,809.9,"Rainfed",75.14,83.04,3.687,"Pannar","John Deere",6.20985203525936
-"Mpumalanga",21.65,754.1,"Rainfed",311.42,79.6,2.964,"Dekalb","Case",7.50279551349151
-"North West",32.63,862.2,"Rainfed",57.18,119.47,3.557,"Pannar","John Deere",5.80706741242374
-"Mpumalanga",23.94,1151.4,"Rainfed",122.58,72.96,3.5,"Pioneer","New Holland",6.36801371484091
-"Free State",23.4,549.6,"Rainfed",86.26,141.82,3.91,"Dekalb","John Deere",5.26082405165084
-"North West",33.2,421.2,"Rainfed",129.24,193.73,3.344,"Dekalb","Case",3.29130355934178
-"Mpumalanga",22.88,720.8,"Rainfed",170.8,91.87,3.394,"Pannar","John Deere",5.64658093541038
-"Free State",26.68,696.5,"Rainfed",142.77,139.1,2.942,"Pannar","John Deere",6.72476696353386
-"Mpumalanga",20.22,661.7,"Rainfed",128.65,68.59,3.565,"Pioneer","Case",6.67566823916347
-"North West",35.9,552,"Rainfed",153.44,205.84,3.63,"Pioneer","John Deere",4.25246580281617
-"Free State",23.98,530,"Rainfed",184.4,116,3.419,"Pannar","New Holland",6.16445093556436
-"Free State",27.39,583,"Rainfed",114.38,268.13,3.306,"Pioneer","New Holland",5.22324573289517
-"Free State",23.6,472.6,"Irrigated",68.16,138.47,3.594,"Pannar","Case",5.19255050170264
-"Free State",22.88,815.5,"Rainfed",111.02,310.34,3.16,"Pioneer","New Holland",7.19549968476691
-"Free State",27.14,541.4,"Rainfed",73.28,157.71,3.573,"Dekalb","Case",5.10922070255634
-"Mpumalanga",17.25,683.7,"Rainfed",215.42,124.95,3.833,"Pannar","John Deere",7.51893184853279
-"Mpumalanga",23.44,859.2,"Rainfed",363.89,213.01,3.472,"Pioneer","New Holland",8.66295037017014
-"Free State",25.57,762,"Rainfed",101.14,171.98,3.387,"Pannar","John Deere",5.6467331596351
-"Mpumalanga",13.91,761.3,"Rainfed",112.94,106.22,3.445,"Dekalb","John Deere",7.66014205844554
-"Mpumalanga",23.11,1282.1,"Rainfed",113.42,185.64,3.706,"Pannar","John Deere",8.38662507817202
-"Free State",15.33,965,"Rainfed",229.88,179.86,3.18,"Pioneer","John Deere",8.36490801059944
-"Free State",26.64,697.8,"Rainfed",166.69,160.4,3.241,"Pioneer","John Deere",5.84308099332053
-"Free State",22.18,570.7,"Rainfed",202.44,116.04,3.052,"Pannar","John Deere",5.87071647165171
-"Mpumalanga",19.92,870.8,"Rainfed",228.23,132.93,3.456,"Pioneer","John Deere",8.05122032187782
-"North West",27.97,395.9,"Irrigated",182.74,200.78,3.451,"Pannar","John Deere",5.61072316396921
-"Free State",29.49,648.9,"Rainfed",198.93,223.93,3.504,"Dekalb","John Deere",6.35022399337096
-"North West",24.82,384.9,"Rainfed",100.41,155.14,3.423,"Pannar","Case",4.01097229663397
-"Free State",26.23,540.2,"Rainfed",160.23,95.01,2.933,"Pioneer","John Deere",4.96626250022155
-"Mpumalanga",23.02,785.7,"Rainfed",126.63,189.94,3.133,"Pioneer","John Deere",6.33827210405794
-"Free State",19.28,512.8,"Rainfed",94.52,145.28,3.418,"Pannar","John Deere",5.29630001012054
-"Mpumalanga",16.78,547.9,"Rainfed",100.13,225.2,3.602,"Pannar","John Deere",5.87789722223175
-"North West",18.04,266,"Rainfed",244.91,66.77,3.546,"Pioneer","New Holland",5.5648677463922
-"Mpumalanga",23.65,938,"Rainfed",94.69,97.69,3.213,"Dekalb","John Deere",6.90780427131275
-"Free State",23.86,665.5,"Rainfed",138.54,172.18,3.809,"Pannar","John Deere",6.44802505978442
-"Free State",31.4,640.3,"Rainfed",249.63,74.56,3.484,"Dekalb","Case",6.43752826019916
-"Free State",26.29,376.6,"Rainfed",189.17,460.45,3.362,"Pioneer","Case",5.70649376961751
-"North West",32.25,450.8,"Rainfed",216.98,93.13,3.531,"Dekalb","New Holland",4.70356085384694
-"Free State",29.34,824.3,"Rainfed",189.34,165.77,3.751,"Pioneer","John Deere",7.54582115401466
-"Free State",22,522.5,"Rainfed",154.41,63.12,3.677,"Pioneer","John Deere",5.33045561274972
-"North West",30.55,600.6,"Rainfed",64.64,361.73,3.351,"Pioneer","John Deere",4.76934675202615
-"Free State",27.48,596.5,"Rainfed",127.02,187.6,3.127,"Pioneer","New Holland",5.38302752057151
-"Free State",29.48,836.2,"Rainfed",91.62,108.2,3.754,"Pioneer","John Deere",5.5298105002
-"Free State",27.05,380.9,"Rainfed",140.09,152.63,3.151,"Pioneer","Case",4.61975041905293
-"Free State",25.68,539.4,"Irrigated",393.45,99.16,3.278,"Dekalb","Case",7.46474134238589
-"Mpumalanga",19.4,529.3,"Rainfed",174.43,63.36,3.851,"Pioneer","John Deere",7.43783181597986
-"Free State",26.92,420.9,"Rainfed",121.21,83.81,3.31,"Pioneer","New Holland",4.85481997621645
-"Free State",26,342.6,"Rainfed",239.88,90.7,3.388,"Pannar","John Deere",5.50181849775947
-"North West",31.17,489.8,"Irrigated",202.64,225.59,3.6,"Dekalb","New Holland",5.99447202507973
-"Mpumalanga",23.27,735,"Rainfed",158.97,167.18,3.911,"Pannar","John Deere",6.42402562192961
-"Mpumalanga",21.39,1413.1,"Rainfed",149.33,115.32,3.283,"Dekalb","John Deere",9.2717508549418
-"Free State",23.69,452.2,"Rainfed",154.63,121.31,3.707,"Dekalb","Case",5.03525816032067
-"Free State",26.75,284.9,"Rainfed",159.57,218.78,3.448,"Pannar","John Deere",5.17746270652705
-"Free State",24.69,1181.1,"Irrigated",213.98,87.04,3.971,"Pannar","John Deere",8.96000549837953
-"Mpumalanga",19.51,764.8,"Rainfed",173.65,177.36,3.816,"Pannar","Case",7.56585333420076
-"North West",26.55,513,"Rainfed",126.02,89.78,3.464,"Dekalb","Case",4.65806073799271
-"Free State",18.72,302.9,"Rainfed",234.41,186.84,3.263,"Pannar","John Deere",5.39276658790543
-"Mpumalanga",19.1,805.2,"Rainfed",122.28,237.47,3.144,"Pannar","John Deere",6.40791374135
-"Free State",23.42,1098.6,"Rainfed",286.77,111.94,3.239,"Dekalb","John Deere",8.44899311039821
-"North West",19.01,645.1,"Rainfed",108.49,166.48,3.387,"Pannar","John Deere",6.21082132528256
-"Free State",17.25,360,"Rainfed",225.97,51.07,3.138,"Pioneer","John Deere",6.17695889282361
-"Free State",28.41,494,"Rainfed",280.58,156.94,3.426,"Pannar","Case",5.92008378063134
-"North West",25.12,390.1,"Rainfed",276.37,156.28,3.312,"Pioneer","John Deere",5.50987490494897
-"North West",18.74,696.3,"Rainfed",156.84,164.19,4.118,"Dekalb","John Deere",7.29297118863383
-"Free State",23.55,620,"Rainfed",220.68,233.23,3.829,"Pioneer","John Deere",6.32416902846671
-"North West",34.61,613,"Irrigated",66.37,89.02,3.608,"Pioneer","Case",4.70038353169563
-"Free State",26.65,429.1,"Rainfed",198.63,252.97,3.302,"Pioneer","John Deere",5.78415921315811
-"Free State",25.77,356.5,"Irrigated",157.03,88.74,4.072,"Pannar","John Deere",4.66409778396312
-"Free State",28.73,587.6,"Rainfed",212.19,65.79,3.392,"Pannar","John Deere",5.94411287556345
-"Free State",20.91,649.6,"Rainfed",172.26,361.87,3.501,"Dekalb","John Deere",7.88201676799256
-"Free State",26.92,785.9,"Rainfed",285.02,195.3,2.922,"Pannar","Case",7.2311426015993
-"Free State",21.65,516,"Rainfed",152.99,190.76,3.826,"Dekalb","John Deere",6.77620202284615
-"Free State",24,983.7,"Rainfed",224.61,179.88,3.513,"Dekalb","John Deere",7.57710871076714
-"Free State",32.86,482.1,"Rainfed",157.25,123.9,3.146,"Pioneer","John Deere",3.84838398127806
-"Free State",27.88,596.8,"Rainfed",217.29,212.69,3.478,"Pannar","New Holland",6.7048474153962
-"Free State",27.07,581.4,"Rainfed",97.52,257.11,3.805,"Dekalb","John Deere",6.29247001646728
-"Free State",19.57,569.9,"Rainfed",212.8,67.96,3.535,"Dekalb","John Deere",6.43733065602402
-"North West",24.07,538.2,"Rainfed",139.41,81.84,3.581,"Pannar","John Deere",5.6852132103408
-"Free State",33.14,422.2,"Rainfed",194.5,98.63,3.762,"Dekalb","John Deere",5.62246908737279
-"Free State",19.63,335.9,"Rainfed",113.43,171.66,3.214,"Pioneer","Case",4.94840772564374
-"North West",29.07,411.4,"Irrigated",207.02,48.02,3.384,"Dekalb","John Deere",5.08282256936264
-"Mpumalanga",24.68,911,"Rainfed",500,126.75,3.728,"Pioneer","John Deere",9.25384075087971
-"Free State",28.08,966.4,"Rainfed",316.36,71.39,3.094,"Pioneer","John Deere",7.04075606737466
-"Free State",28.36,605.5,"Rainfed",249.4,116.62,3.838,"Dekalb","John Deere",6.34833147621342
-"Free State",23.35,453.8,"Irrigated",126.47,66.61,3.162,"Dekalb","New Holland",5.75959872703407
-"Free State",20.72,436,"Irrigated",188.81,228.53,3.574,"Pioneer","John Deere",6.8134073871426
-"Free State",22.77,275.9,"Irrigated",153.79,120.25,3.525,"Dekalb","John Deere",5.60523480175543
-"Mpumalanga",19.29,610.2,"Rainfed",70.81,124.67,3.337,"Pannar","John Deere",5.54950164342496
-"Free State",26.51,722.4,"Rainfed",148.54,263.6,3.562,"Dekalb","John Deere",6.94166451397181
-"North West",33.6,240,"Rainfed",143.8,92.6,3.368,"Dekalb","John Deere",3.17730959050937
-"Free State",32.51,486.9,"Rainfed",158.34,68.42,3.72,"Dekalb","John Deere",4.61970804753355
-"Free State",25.46,566.4,"Rainfed",131.23,103.25,3.083,"Pannar","New Holland",5.15018631415182
-"Free State",20.5,528.3,"Irrigated",216.93,101.74,3.892,"Pioneer","John Deere",7.68820423130759
-"Mpumalanga",25.07,711.8,"Rainfed",371.45,158.8,3.426,"Dekalb","John Deere",6.56312777359566
-"Free State",27.62,515.4,"Rainfed",268.67,118.15,3.251,"Dekalb","John Deere",7.03729768881664
-"Mpumalanga",21.29,876.3,"Rainfed",217.7,72.66,3.212,"Pannar","John Deere",6.69269013018205
-"Free State",17.77,651.7,"Rainfed",168.38,125.27,3.849,"Dekalb","John Deere",7.66639601169133
-"Mpumalanga",24.28,1062.1,"Rainfed",169.86,177.14,3.074,"Pioneer","John Deere",7.42072569176667
-"Free State",28.52,942.8,"Rainfed",268.88,74.87,3.55,"Dekalb","John Deere",7.20818958734075
-"Free State",22.82,538.5,"Rainfed",283.43,211.97,3.316,"Dekalb","John Deere",6.79678140075865
-"Mpumalanga",23.61,765,"Rainfed",127.93,186.08,3.281,"Pannar","John Deere",5.18750621649402
-"North West",26.62,278.4,"Rainfed",246.19,264.58,3.408,"Dekalb","New Holland",6.84750767127908
-"Free State",26.73,451.4,"Rainfed",99.54,117.52,3.489,"Pannar","Case",4.81631371550859
-"Free State",23.53,651.7,"Rainfed",99.13,163.97,3.391,"Pannar","John Deere",6.15055140296668
-"Free State",22.62,800.3,"Rainfed",323.87,92.25,3.295,"Dekalb","John Deere",7.38841086469714
-"Free State",24.45,487.1,"Rainfed",167.09,121.29,3.703,"Pioneer","John Deere",5.07118197252121
-"Mpumalanga",21.15,417.8,"Rainfed",166.86,85.14,3.689,"Pannar","John Deere",5.97214887843886
-"North West",25.04,1036.7,"Rainfed",249.26,219.09,4.025,"Pioneer","New Holland",8.72223174554777
-"Mpumalanga",21.05,784.1,"Rainfed",151.31,71.47,3.227,"Dekalb","Case",7.28160161827706
-"North West",27.96,808.6,"Rainfed",114.82,178.57,3.196,"Pannar","John Deere",6.04208494566056
-"Mpumalanga",22.62,662.2,"Rainfed",174.44,100.35,3.262,"Pannar","New Holland",5.28891261413363
-"Free State",30.13,813.8,"Rainfed",79.63,85.37,3.147,"Pioneer","Case",4.68573256279856
-"Free State",18.57,399.5,"Rainfed",134.59,259.98,4.094,"Pioneer","New Holland",6.74704141159423
-"Free State",23.2,442.5,"Irrigated",153.9,142.54,2.732,"Pioneer","New Holland",4.80742252890401
-"Free State",26.53,678.4,"Rainfed",89.15,157.6,3.069,"Pannar","Case",6.35057945802054
-"Free State",31.05,479.4,"Rainfed",177.91,148.18,3.23,"Pioneer","Case",4.38567624238067
-"Free State",25.7,479.3,"Rainfed",120.51,181.6,3.406,"Pannar","John Deere",4.43899882361795
-"Free State",23.94,453.6,"Rainfed",263.97,261.6,3.438,"Dekalb","John Deere",5.95495613946122
-"Free State",22.77,473.2,"Rainfed",145.98,139.72,3.794,"Pioneer","John Deere",5.6535946371325
-"Free State",25.66,357.6,"Rainfed",103.5,233.7,3.852,"Pioneer","John Deere",4.58804040227845
-"Mpumalanga",24.97,732.5,"Rainfed",182.07,47.95,3.191,"Dekalb","John Deere",5.0057406306419
-"Mpumalanga",21.45,554.7,"Rainfed",160.81,179.79,3.569,"Pannar","Case",5.71420515866447
-"Free State",24.66,610.5,"Rainfed",167.33,163.99,2.988,"Pannar","John Deere",6.60032442588659
-"Mpumalanga",22.65,1099.7,"Rainfed",180.24,147.29,3.813,"Pioneer","John Deere",7.92058397956044
-"Free State",26.92,897.6,"Rainfed",139.15,143.82,3.248,"Pannar","Case",7.2989032068071
-"Free State",28.45,155.9,"Rainfed",143.19,110.94,3.572,"Dekalb","Case",3.91530136740017
-"Free State",25.12,635.6,"Rainfed",216.58,103.08,3.196,"Pannar","John Deere",5.51077063591677
-"Free State",23.7,928,"Irrigated",328.16,221.06,3.531,"Pannar","John Deere",8.2349866910477
-"North West",34.97,297.2,"Rainfed",72.62,125.12,3.423,"Pannar","Case",3.54376287905252
-"Mpumalanga",22.49,1036.7,"Rainfed",155.28,229.65,3.219,"Pannar","Case",7.65692276125526
-"Free State",30.31,536.8,"Rainfed",249.33,114.48,3.579,"Dekalb","New Holland",5.52149763523318
-"Mpumalanga",21.81,864,"Rainfed",99.7,86.68,4.511,"Pannar","Case",5.81035170611451
-"Free State",26.46,396.8,"Rainfed",269.95,258.33,3.474,"Dekalb","John Deere",6.21202624471711
-"Free State",17.82,688.2,"Rainfed",140.02,130.11,3.403,"Pannar","John Deere",6.2715573056523
-"Free State",23.55,546.8,"Irrigated",222.14,233.33,3.338,"Dekalb","Case",6.08383650326787
-"Free State",23.91,557.9,"Irrigated",307.52,78.67,3.384,"Pioneer","Case",6.2721329369946
-"Free State",20.97,836.1,"Rainfed",240.89,159.33,3.579,"Pioneer","John Deere",7.80007653309151
-"Free State",19.86,610.9,"Rainfed",275.45,118.15,3.251,"Pannar","John Deere",6.14081311065982
-"Free State",27.79,900.2,"Rainfed",64.42,323.59,3.964,"Pioneer","John Deere",5.60466542545973
-"Free State",27.66,915.4,"Rainfed",95.79,242.88,3.69,"Dekalb","Case",6.86060239224506
-"Mpumalanga",18.1,611.4,"Rainfed",210.55,174.31,3.797,"Dekalb","John Deere",7.53651959120268
-"Free State",25.7,843.8,"Rainfed",111.74,108.54,3.926,"Pioneer","John Deere",6.7434651280777
-"Mpumalanga",18.66,735,"Rainfed",130.13,210.33,3.202,"Dekalb","John Deere",6.69510335805608
-"Free State",19.8,674.9,"Rainfed",296.05,187.25,3.238,"Pannar","John Deere",7.12301069577113
-"Free State",26.1,554.3,"Rainfed",172.83,71.52,3.582,"Pannar","John Deere",6.03341969408713
-"Free State",21.26,833.7,"Rainfed",167.68,230.31,3.383,"Pannar","John Deere",6.4197951567869
-"Mpumalanga",24.98,619.7,"Rainfed",148.2,198.85,3.647,"Dekalb","Case",6.78759293565858
-"Free State",24.15,574.3,"Rainfed",83.46,125.07,3.472,"Pannar","John Deere",6.2353161286031
-"Free State",26.14,528.8,"Rainfed",74.02,379.31,3.693,"Dekalb","John Deere",5.6739139143411
-"Mpumalanga",20.43,993.4,"Rainfed",149.96,207.49,3.063,"Pannar","John Deere",7.46880255117871
-"Free State",19.4,762.4,"Rainfed",191.22,108.2,3.739,"Dekalb","John Deere",5.47269122755772
-"Free State",27.66,676.6,"Rainfed",93.96,205.5,2.935,"Pioneer","Case",4.15052455275151
-"Free State",24.95,621.6,"Rainfed",76.35,163.01,3.488,"Pioneer","John Deere",5.88835719280888
-"Free State",23.04,615.6,"Rainfed",282.7,125.77,3.642,"Dekalb","John Deere",5.51085245885057
-"Free State",24.28,1013.3,"Rainfed",203.99,31.95,3.293,"Dekalb","John Deere",7.55366368928523
-"Free State",29.3,335.9,"Rainfed",201.85,112.23,3.902,"Dekalb","John Deere",4.38075843182848
-"Free State",21.21,538.6,"Rainfed",242.79,137.4,3.567,"Pannar","John Deere",6.12585166312808
-"Free State",21,761.5,"Rainfed",208.17,187.4,3.039,"Dekalb","Case",6.91364479519407
-"Free State",21.52,525.5,"Rainfed",105.08,158.96,3.967,"Pannar","John Deere",5.57415088218541
-"Mpumalanga",17.25,711.2,"Irrigated",279.67,150.32,3.625,"Dekalb","John Deere",8.29555308859181
-"Free State",27.28,467.9,"Rainfed",95.63,266.08,3.388,"Pioneer","John Deere",5.0733331575951
-"Free State",24.77,601.9,"Irrigated",134.24,132.77,3.71,"Pioneer","Case",6.01055317666705
-"Free State",24.83,317.9,"Rainfed",189.51,85.07,3.092,"Pioneer","New Holland",5.08198861009939
-"Free State",23.83,631.3,"Rainfed",185.33,108.7,3.5,"Dekalb","John Deere",5.82028871119328
-"Free State",21.96,500.4,"Irrigated",211.25,125.25,3.58,"Pannar","John Deere",6.24028202096289
-"Mpumalanga",19.53,922,"Rainfed",238.65,105.32,2.665,"Pannar","John Deere",6.28791115541136
-"Mpumalanga",24.56,969.4,"Rainfed",116.64,59.41,3.403,"Pioneer","John Deere",6.77222356848486
-"Free State",18.3,513.3,"Rainfed",95.22,177.05,3.303,"Dekalb","John Deere",6.23967760012729
-"Free State",25.76,1378.2,"Rainfed",100.19,193.15,3.665,"Dekalb","John Deere",9.17248927644908
-"Free State",20.83,1146.4,"Rainfed",209.92,98.04,3.891,"Pioneer","New Holland",7.75942462454866
-"Free State",25.13,477,"Rainfed",135.15,164.97,3.525,"Pioneer","John Deere",4.88235267006549
-"Free State",21.04,748.1,"Rainfed",196,118.16,3.28,"Pioneer","Case",6.11569350015594
-"Free State",21.91,934.6,"Rainfed",271.81,119.22,3.511,"Pannar","John Deere",7.69737268388943
-"North West",36.85,307.7,"Rainfed",123.67,177.73,3.116,"Pannar","New Holland",3.34763613352288
-"North West",31.34,506.1,"Rainfed",243.58,163.65,3.156,"Pannar","John Deere",5.33892231547776
-"Mpumalanga",15.57,790.4,"Rainfed",125.09,104.91,2.795,"Pannar","John Deere",7.10094153230683
-"Mpumalanga",22.38,1109,"Rainfed",213.73,98.22,3.469,"Pioneer","Case",8.97193804992933
-"North West",25.74,820.3,"Rainfed",166.88,173,3.685,"Dekalb","New Holland",5.94154111845159
-"Free State",19.45,1139.2,"Rainfed",114.63,87.24,3.643,"Pannar","New Holland",6.99809246823011
-"Free State",24.84,493.4,"Rainfed",245.98,99.43,3.168,"Pioneer","John Deere",6.36567549031844
-"Free State",24.52,833.1,"Rainfed",223.55,251.15,3.374,"Dekalb","John Deere",7.64206802247477
-"Mpumalanga",21.01,1058.9,"Rainfed",113.75,145.95,3.887,"Pioneer","John Deere",7.12744452824396
-"Free State",31.89,522.9,"Rainfed",167.14,111.62,3.68,"Pannar","John Deere",5.49213868983004
-"Free State",15.01,333.6,"Rainfed",479.99,80.58,3.669,"Dekalb","John Deere",7.05410868395329
-"Mpumalanga",24.51,987.5,"Rainfed",119.53,186.89,3.432,"Dekalb","John Deere",7.3957298408406
-"Mpumalanga",21.13,496.7,"Rainfed",153.25,106.3,3.482,"Pioneer","Case",5.67206409143192
-"Free State",26.63,751.5,"Rainfed",298.41,141.9,3.165,"Pannar","John Deere",7.27737258818284
-"Free State",22.18,536.4,"Rainfed",102.51,230.53,3.509,"Pioneer","John Deere",5.95923953911665
-"Free State",21.62,495,"Rainfed",451.91,123.31,3.617,"Pioneer","John Deere",8.18602897485453
-"Free State",17.16,850.1,"Rainfed",123.9,214.83,3.561,"Dekalb","New Holland",7.97492135220931
-"Mpumalanga",21.37,640.6,"Rainfed",131.82,81.73,3.574,"Dekalb","Case",6.69128734831777
-"Free State",33.91,950.2,"Rainfed",161.82,62.15,2.767,"Dekalb","Case",5.70460692792624
-"Free State",27.96,656.9,"Rainfed",259.59,157.18,3.571,"Pioneer","John Deere",5.92321135135255
-"North West",36.38,382.7,"Rainfed",500,230.56,3.33,"Pioneer","John Deere",6.77682634103718
-"Free State",27.66,593.2,"Rainfed",201.95,107.61,3.102,"Dekalb","John Deere",5.94886661158114
-"Mpumalanga",25.43,1102.3,"Rainfed",213.98,121.37,3.444,"Pioneer","John Deere",8.36803681713119
-"Mpumalanga",24.71,826.7,"Rainfed",91.8,205.04,3.57,"Pioneer","Case",5.68865375866154
-"North West",30.38,427.3,"Rainfed",174.65,111.09,3.169,"Dekalb","John Deere",4.93832890086776
-"Mpumalanga",20.25,940.5,"Rainfed",60.4,82.67,3.547,"Dekalb","John Deere",6.93205092016876
-"Mpumalanga",20.4,483.9,"Rainfed",147.4,94.22,3.146,"Pannar","John Deere",5.65969853715942
-"Mpumalanga",17.2,780.2,"Rainfed",305.91,125.88,3.214,"Dekalb","John Deere",8.72497806231866
-"Free State",23.98,256.4,"Irrigated",151.22,68.35,4.009,"Dekalb","Case",5.54383966098608
-"Free State",27.6,609.2,"Irrigated",160.51,194.63,3.715,"Dekalb","Case",5.86865147257492
-"Free State",28.13,452,"Rainfed",167.24,175.37,2.993,"Pioneer","New Holland",4.31948045570017
-"Free State",24.38,581,"Rainfed",156.07,197.58,3.421,"Pannar","John Deere",5.60199997625506
+"region","rainfall_mm","temperature_C","fertiliser_kgha","chem_weed_control_kgha","irrigation","soil_organic_matter","seed_brand","tractor_brand","yield_tha"
+"Free State",771.5,28.03,242.33,184.12,"Rainfed",3.679,"Pannar","John Deere",5.67944712646603
+"Mpumalanga",784.8,26,254.32,199.8,"Irrigated",3.519,"Dekalb","New Holland",7.62433580220559
+"Free State",1026.7,19.62,162.45,198.42,"Rainfed",3.937,"Pioneer","John Deere",8.61093895093315
+"North West",300.1,29.95,87.25,170.33,"Rainfed",3.481,"Pannar","John Deere",3.32939173652229
+"North West",416,26.61,232.53,203.61,"Rainfed",3.467,"Pioneer","Case",4.39390957076695
+"Free State",578.4,20.78,183.73,324.45,"Rainfed",3.719,"Dekalb","John Deere",6.7824584957412
+"Free State",736.1,19.21,130.05,180,"Rainfed",3.585,"Pioneer","John Deere",6.73212247085228
+"North West",600.4,25.33,212.59,140.7,"Rainfed",4.066,"Dekalb","John Deere",7.15173580880591
+"Free State",880.6,25.95,201.99,184.21,"Rainfed",3.382,"Pannar","Case",7.01717332064291
+"Free State",584.4,22.02,349.46,263.11,"Rainfed",3.841,"Pannar","New Holland",8.18544271502466
+"North West",669.9,27.2,141.8,149.62,"Rainfed",3.593,"Pioneer","John Deere",4.23026564212041
+"Free State",317,23.98,243.31,131.26,"Rainfed",3.243,"Dekalb","Case",3.92910534951339
+"Mpumalanga",1039,24.83,179.59,147.54,"Rainfed",3.727,"Dekalb","John Deere",7.75306981813977
+"Free State",879.3,19.45,182.65,266.55,"Irrigated",3.665,"Pannar","John Deere",7.91099099239176
+"Free State",320.9,20.26,279.73,155.5,"Rainfed",3.5,"Pannar","John Deere",4.81233907474001
+"North West",740,31.58,97.74,337.97,"Rainfed",3.388,"Dekalb","John Deere",4.89241753408088
+"Free State",360.1,21.75,245.65,301.7,"Irrigated",3.511,"Dekalb","New Holland",7.27360523681555
+"Free State",549.8,20.15,230.96,201,"Rainfed",3.711,"Dekalb","Case",5.80795853041222
+"Free State",605.6,18.39,222,165.51,"Rainfed",3.527,"Pannar","Case",5.16256340787921
+"North West",317.7,24.39,135.6,176.47,"Rainfed",3.528,"Dekalb","New Holland",3.33438792679112
+"North West",454.4,25.98,178.23,226.79,"Irrigated",3.339,"Pannar","John Deere",5.44162685991799
+"Mpumalanga",270.9,26.67,206.99,277.26,"Rainfed",3.709,"Pioneer","John Deere",5.41899334421778
+"Mpumalanga",520.2,26.66,193.27,195.88,"Rainfed",3.519,"Pioneer","Case",5.77237681981392
+"North West",482.7,29.71,120.19,337.51,"Rainfed",3.255,"Pioneer","Case",4.84938548502227
+"Mpumalanga",854.9,22.37,151.45,279.01,"Rainfed",3.685,"Pioneer","Case",6.5584862520844
+"Mpumalanga",580.5,24.32,129.52,199.14,"Rainfed",3.725,"Pannar","John Deere",5.56065316672822
+"Free State",628.8,19.89,101.5,122.31,"Rainfed",3.717,"Pannar","New Holland",5.89864002486186
+"Free State",835.7,19.02,348.65,180.63,"Irrigated",3.809,"Pioneer","New Holland",9.93809645500231
+"Free State",603.6,24.76,231.55,146.9,"Irrigated",3.973,"Pioneer","John Deere",5.98403115316122
+"Free State",598.5,19.08,166.16,231.2,"Rainfed",3.743,"Pioneer","John Deere",6.75877684685775
+"North West",503,33.37,327.97,260.25,"Rainfed",3.46,"Pioneer","New Holland",5.58396050305855
+"North West",406.2,27.62,227.13,213.96,"Rainfed",3.386,"Pioneer","John Deere",5.74515102663673
+"Mpumalanga",850.1,23.55,360.82,239.52,"Rainfed",4.06,"Dekalb","John Deere",8.14197148879743
+"Mpumalanga",824.9,21.74,473.53,212.91,"Rainfed",4.005,"Pioneer","John Deere",10.7162813693765
+"Free State",686.7,20.05,166.47,164.65,"Rainfed",3.402,"Dekalb","John Deere",6.03052049951755
+"Free State",509.8,18.53,200.6,142.19,"Rainfed",3.874,"Dekalb","New Holland",6.18225264757232
+"Mpumalanga",805,22.93,500,128.57,"Irrigated",4.039,"Pioneer","Case",11.0490458488276
+"Free State",762.6,22.72,277.93,208.72,"Rainfed",3.823,"Dekalb","John Deere",7.83207646109845
+"Free State",491,23.53,435.54,190.69,"Rainfed",3.404,"Pannar","John Deere",6.10885862231683
+"Free State",755.1,19.15,247.99,500,"Rainfed",3.745,"Pannar","John Deere",7.8223457272324
+"Free State",293.3,20.98,196.2,323.06,"Rainfed",3.473,"Pannar","John Deere",5.25497473199559
+"Free State",753.3,20,334.03,243.62,"Rainfed",3.855,"Pannar","John Deere",7.77528297414539
+"Free State",598.7,26.61,284.54,153.68,"Rainfed",3.183,"Pannar","John Deere",5.12652346309885
+"Free State",404.2,19.49,164.33,122.86,"Rainfed",3.785,"Pannar","John Deere",6.10974071460176
+"Free State",443.1,22.21,180.69,227.25,"Rainfed",3.261,"Pioneer","John Deere",5.71155918749192
+"Free State",459.9,28.39,156,152.64,"Rainfed",3.419,"Dekalb","John Deere",3.57149296133021
+"Free State",712.8,21.36,322.17,256.55,"Rainfed",3.559,"Pannar","John Deere",7.1674628635324
+"Free State",595.7,18.06,157.31,202.13,"Rainfed",3.594,"Pannar","New Holland",5.27478262213242
+"Free State",730.8,19.6,211.28,154.65,"Rainfed",3.578,"Pioneer","John Deere",6.2698869774978
+"North West",705.4,28.15,129.62,192.7,"Rainfed",3.612,"Pannar","John Deere",5.71102854143053
+"Free State",956.7,19.56,343.9,218.68,"Rainfed",3.888,"Pioneer","John Deere",8.66491482506429
+"Free State",570.2,20.55,311.02,161.15,"Rainfed",3.702,"Dekalb","John Deere",6.49731895020071
+"Mpumalanga",870.6,22.35,152.74,215.22,"Rainfed",3.873,"Pannar","New Holland",6.55384852127351
+"Free State",498.6,22.79,169.36,168.92,"Irrigated",3.783,"Dekalb","Case",7.36506600880556
+"Free State",549,27.12,250.51,336.45,"Rainfed",3.799,"Dekalb","New Holland",7.58653339877011
+"Free State",693.8,21.48,184.33,214.26,"Rainfed",3.792,"Pannar","New Holland",6.81895987482843
+"Free State",589.9,25.4,184.7,184.79,"Rainfed",3.543,"Dekalb","New Holland",5.16576353374326
+"Mpumalanga",767.4,24.71,258.6,186.5,"Rainfed",3.542,"Dekalb","John Deere",6.34289996468594
+"North West",517.7,27.11,325.36,152.5,"Irrigated",3.371,"Pioneer","New Holland",6.05120929741065
+"Free State",485.5,17.98,131.03,311.13,"Rainfed",3.894,"Dekalb","John Deere",6.16500110015451
+"Mpumalanga",844.7,22.1,107.22,189.51,"Rainfed",3.735,"Pannar","John Deere",6.93411172623887
+"Free State",537.3,20.9,256.06,211.55,"Rainfed",4.056,"Pannar","New Holland",6.11878508171835
+"Free State",439.4,22.9,111.93,216.54,"Rainfed",3.682,"Pioneer","Case",2.87467128553021
+"Free State",570.3,26.14,194,177.02,"Rainfed",3.699,"Pioneer","John Deere",4.54449696634265
+"Mpumalanga",1016.2,27.04,152.35,218.63,"Rainfed",3.709,"Pannar","New Holland",8.29452284238631
+"Free State",458.3,27.33,191.2,466.83,"Rainfed",3.69,"Pannar","John Deere",6.74873801691032
+"Mpumalanga",837.9,22.9,195.83,187.99,"Rainfed",3.946,"Pioneer","Case",6.90543874491799
+"Mpumalanga",605.3,20.58,326.73,157.92,"Rainfed",3.322,"Dekalb","John Deere",6.92064353543946
+"Mpumalanga",740.1,22.78,193.12,306.83,"Rainfed",3.691,"Pannar","John Deere",6.84379621279963
+"Free State",743.3,21.81,165.25,138.73,"Rainfed",3.675,"Dekalb","John Deere",6.74144047595744
+"Mpumalanga",1191.7,23.44,207.72,235.75,"Rainfed",3.987,"Pioneer","John Deere",8.60230160842149
+"Mpumalanga",853.4,25.03,192.25,302.96,"Rainfed",4.105,"Dekalb","New Holland",6.96360771908569
+"Mpumalanga",712.6,25.04,162.09,249.4,"Rainfed",4.027,"Pioneer","Case",5.23792807992514
+"Free State",794.8,17.15,216.95,257.21,"Rainfed",3.95,"Pioneer","John Deere",7.13775347078896
+"Free State",449,25.27,158.38,162.7,"Rainfed",3.595,"Dekalb","John Deere",4.33091769888932
+"Free State",459,21.34,165.59,265.83,"Rainfed",4.115,"Dekalb","Case",6.11434743690367
+"Free State",547.8,22.85,284.8,271.4,"Rainfed",3.807,"Pioneer","John Deere",6.96684493337928
+"Mpumalanga",983.8,22.73,137.39,126.32,"Rainfed",3.52,"Dekalb","John Deere",7.62351388054132
+"Free State",560.6,23.56,157.03,237.72,"Rainfed",3.42,"Dekalb","Case",6.16121714181492
+"Free State",458.2,22.76,231.28,169.7,"Rainfed",3.595,"Dekalb","John Deere",6.08645960036404
+"Free State",573.8,17.22,410.14,168.63,"Rainfed",4.021,"Pannar","John Deere",7.99325682248716
+"Mpumalanga",816.5,24.72,220.09,215.39,"Rainfed",3.602,"Pannar","John Deere",6.35569430807634
+"Free State",366.9,24.21,72.05,174.97,"Rainfed",3.565,"Pioneer","John Deere",3.69435092062743
+"Mpumalanga",1125.5,21.48,348.8,249.42,"Rainfed",3.701,"Pioneer","John Deere",9.34369482078647
+"Free State",419.3,23.19,173.4,332.8,"Rainfed",3.604,"Dekalb","New Holland",5.9544937479265
+"Free State",614,22.46,235.75,217.84,"Irrigated",3.619,"Pannar","Case",6.13511240550705
+"North West",581.3,27.86,173.01,152.02,"Rainfed",3.808,"Dekalb","John Deere",6.27462774082674
+"North West",641.2,31.88,223.49,298.39,"Rainfed",3.876,"Pioneer","John Deere",5.20732975962403
+"North West",415.7,27.2,292.67,211.44,"Rainfed",3.574,"Pannar","John Deere",5.38395502044672
+"Free State",377.7,23.51,186.99,480.83,"Rainfed",3.592,"Pannar","John Deere",4.75898646118762
+"Free State",845.4,24.64,130.85,165.78,"Rainfed",3.679,"Dekalb","New Holland",6.34910742326899
+"Mpumalanga",1051.4,24.42,239.54,235.49,"Rainfed",4.028,"Pannar","John Deere",8.82643568122807
+"Free State",725.2,25.05,324.67,246.55,"Rainfed",3.766,"Pioneer","John Deere",7.55119514635689
+"Mpumalanga",730.1,22.44,360.6,242.07,"Rainfed",3.677,"Dekalb","John Deere",7.88768957568547
+"Free State",774.2,27.43,183.02,191.54,"Rainfed",3.704,"Dekalb","John Deere",6.47689866020204
+"Free State",582,22.39,270.71,149.6,"Rainfed",3.533,"Dekalb","Case",6.80522837824115
+"Mpumalanga",853.6,26.84,144.57,317.27,"Rainfed",3.477,"Pannar","John Deere",6.31431934336508
+"Free State",574.3,18.17,454.92,136.31,"Rainfed",3.872,"Dekalb","Case",7.09804525209739
+"Free State",344.9,23.2,218.37,194.21,"Rainfed",3.657,"Dekalb","New Holland",5.67977828601798
+"Free State",475.9,26.36,163.99,237.18,"Rainfed",3.606,"Dekalb","John Deere",4.71427646894503
+"Free State",674.6,19.67,302.06,241.76,"Rainfed",3.703,"Dekalb","New Holland",8.26917365668318
+"Free State",607.6,19.83,169.19,414.54,"Rainfed",4.026,"Dekalb","John Deere",8.26892955395833
+"Free State",457.5,19.87,134.98,98.02,"Rainfed",3.423,"Dekalb","John Deere",4.92147044601734
+"North West",276.9,25.25,149.82,165.83,"Rainfed",3.433,"Dekalb","New Holland",3.00984049219163
+"Free State",734.1,20.27,211.09,112.69,"Rainfed",3.657,"Pannar","John Deere",7.33900847944792
+"North West",187.3,29.76,240.35,147.05,"Rainfed",3.475,"Pannar","Case",4.9019260583934
+"North West",288.6,22.32,149.32,216.4,"Rainfed",3.473,"Dekalb","John Deere",5.45035663131616
+"Mpumalanga",907.7,23.31,212.64,135.07,"Rainfed",3.777,"Pannar","John Deere",6.63271845196202
+"Free State",685.3,25.49,286.85,268.37,"Rainfed",3.782,"Dekalb","John Deere",6.51255928587938
+"Free State",558.7,28.4,172.35,147.87,"Rainfed",3.285,"Pioneer","John Deere",4.8439547333651
+"North West",1156.7,28.79,274.36,279.81,"Rainfed",3.796,"Pannar","John Deere",9.06275224623546
+"Free State",746.8,23.8,241.18,170.04,"Rainfed",4.055,"Pioneer","John Deere",7.0756675957268
+"Free State",387.4,17.79,138.23,144.61,"Rainfed",3.443,"Dekalb","John Deere",5.1844422088242
+"North West",926.7,24.01,162.11,230.77,"Rainfed",3.944,"Dekalb","John Deere",8.70060361073636
+"Mpumalanga",940.2,22.05,174.99,175.14,"Rainfed",3.585,"Dekalb","John Deere",7.35580182989834
+"Free State",610.7,24.19,153.9,240.36,"Irrigated",3.758,"Pannar","John Deere",6.42170188693788
+"Free State",261.3,23.16,153.28,219.57,"Rainfed",3.527,"Dekalb","John Deere",5.52631828451313
+"North West",577,23.43,333.76,187.43,"Rainfed",3.776,"Dekalb","John Deere",6.85734677697824
+"Free State",734.9,26.63,252.73,134.59,"Rainfed",3.673,"Dekalb","John Deere",7.47003699826466
+"Free State",441.6,25.49,132.57,211.88,"Rainfed",3.649,"Pannar","Case",4.57464023143374
+"Mpumalanga",1156.4,22.37,248.49,160.92,"Irrigated",4.23,"Dekalb","John Deere",9.91826320696324
+"Free State",556.5,25.95,247.94,288.67,"Rainfed",3.518,"Pannar","New Holland",5.47767582226853
+"Free State",599.4,18.1,337.87,201.46,"Rainfed",3.699,"Pioneer","Case",7.62573181056374
+"Free State",547,24.31,167.15,261.27,"Rainfed",3.721,"Dekalb","Case",6.38287471557703
+"Free State",554.8,20.73,118.67,221.91,"Rainfed",3.572,"Dekalb","John Deere",6.16620345235507
+"North West",333.4,30.24,114.97,208.45,"Rainfed",3.681,"Pioneer","New Holland",3.28452267093223
+"Free State",281.4,23.21,262.7,171.36,"Rainfed",3.586,"Pioneer","John Deere",3.83443520043969
+"Free State",833.8,23.08,167.48,182.15,"Rainfed",3.79,"Dekalb","John Deere",7.28270346246999
+"Free State",684.3,25.79,371.47,173.16,"Rainfed",3.508,"Dekalb","John Deere",8.56527426764435
+"Mpumalanga",468.5,24.66,222.05,163.52,"Rainfed",3.854,"Dekalb","John Deere",6.29922467554585
+"Mpumalanga",633.1,26.02,213.4,331.07,"Rainfed",3.857,"Dekalb","John Deere",8.56958337850414
+"North West",684.2,23.22,329.46,160.67,"Rainfed",3.404,"Dekalb","New Holland",8.08474211405565
+"Mpumalanga",743,22.1,115.09,220.56,"Rainfed",4.04,"Dekalb","John Deere",7.37141041976176
+"Mpumalanga",640.9,26.99,285.61,236.84,"Rainfed",3.535,"Dekalb","John Deere",7.03857001559985
+"Free State",327,24.34,342.43,97.66,"Rainfed",3.405,"Pannar","John Deere",3.36057474689498
+"Mpumalanga",819.6,19.14,150.12,151.7,"Rainfed",3.618,"Pannar","New Holland",7.52239659304846
+"Mpumalanga",668.7,21.11,176.77,139.25,"Rainfed",3.423,"Pannar","Case",5.99281790970601
+"Mpumalanga",852,22.71,237.39,232.56,"Rainfed",3.932,"Pannar","New Holland",8.47945068825601
+"North West",811.5,28.87,130.56,200.78,"Rainfed",3.336,"Dekalb","New Holland",4.95311272751703
+"Free State",574.3,21.91,200.1,172.61,"Rainfed",3.432,"Dekalb","New Holland",6.25230400062031
+"Free State",497.8,24.4,148.78,209.52,"Rainfed",3.352,"Pannar","New Holland",5.01367506625223
+"Free State",528.7,25.28,210.97,179.48,"Rainfed",3.688,"Pannar","John Deere",6.66276042795368
+"Free State",495.1,27.55,166.71,177.6,"Rainfed",3.421,"Dekalb","John Deere",4.47764487926834
+"Free State",575.5,22.38,238.58,239.55,"Rainfed",3.658,"Dekalb","John Deere",6.5644035189749
+"Mpumalanga",557.8,24.18,177.11,124.93,"Rainfed",3.468,"Dekalb","John Deere",4.92211826867032
+"Free State",777.3,16.15,170.17,216.21,"Rainfed",3.898,"Pioneer","John Deere",7.45883762487925
+"Free State",295.2,23.63,196.22,134.54,"Rainfed",3.38,"Pannar","John Deere",4.62352209298284
+"Free State",1056.8,18.58,315.35,165.97,"Irrigated",4.302,"Dekalb","New Holland",9.93308945086453
+"Free State",364.7,20.14,217.59,177.78,"Rainfed",3.594,"Dekalb","John Deere",5.50783484992964
+"Mpumalanga",993.1,22.19,234.15,301.69,"Rainfed",3.724,"Dekalb","Case",9.14370160763113
+"Mpumalanga",864.1,25.09,164.41,272.76,"Rainfed",3.984,"Dekalb","New Holland",6.95054654777955
+"Free State",546.4,16.35,116.53,126.72,"Rainfed",3.681,"Dekalb","John Deere",5.27099450860375
+"Free State",798.5,20.04,362.78,292.45,"Rainfed",3.653,"Pioneer","Case",7.90344663911349
+"Free State",615.5,22.41,274.97,185.37,"Irrigated",3.503,"Pannar","New Holland",6.55784626328274
+"Free State",357.5,20.41,114.42,216.14,"Rainfed",3.629,"Dekalb","John Deere",4.33882905185253
+"Free State",690,22.76,126.05,308,"Rainfed",3.411,"Pannar","Case",5.78319326429142
+"Free State",637,23.2,220.95,198.35,"Irrigated",3.976,"Pioneer","John Deere",7.20407291761607
+"Free State",468.8,22.54,162.92,134.36,"Rainfed",3.391,"Pannar","Case",3.87044465059129
+"Free State",872.8,13.63,214.49,223.55,"Rainfed",3.607,"Dekalb","John Deere",8.74821407378925
+"Free State",599.7,29.83,337.65,186.44,"Irrigated",3.294,"Pannar","John Deere",6.37992540229407
+"Free State",562.2,21.65,109.94,105.01,"Rainfed",3.4,"Pioneer","Case",5.3574872338054
+"Free State",530,24.35,385.37,227.97,"Irrigated",3.794,"Dekalb","New Holland",7.41732707961893
+"Mpumalanga",757,24.04,235.61,204.83,"Rainfed",3.325,"Pioneer","John Deere",6.12984302336805
+"Free State",288.3,26.44,165.49,148.23,"Rainfed",3.338,"Pioneer","John Deere",3.96735212825216
+"Free State",561.9,24.72,211.16,253.41,"Rainfed",3.59,"Pannar","John Deere",6.26315661936676
+"Free State",434.1,22.15,130.08,113.36,"Rainfed",3.262,"Pioneer","New Holland",3.94021678947233
+"Mpumalanga",977.4,23.36,313.21,177.27,"Rainfed",3.895,"Pioneer","John Deere",7.89961367925615
+"Free State",542.6,19.51,251.73,191.17,"Rainfed",3.169,"Dekalb","John Deere",6.20351944744511
+"Free State",803.9,23.87,129.93,149.08,"Rainfed",3.347,"Dekalb","John Deere",5.6503435888944
+"Free State",469.9,21.26,131.15,182,"Rainfed",3.884,"Dekalb","New Holland",4.87314182600462
+"Mpumalanga",548.3,29.16,175.9,150.27,"Rainfed",3.85,"Pannar","John Deere",5.57332005301601
+"Free State",875.5,16.06,206.73,293.38,"Irrigated",4.077,"Pioneer","John Deere",9.19908791903966
+"North West",741.5,25.16,166.76,386.59,"Irrigated",4.162,"Pannar","John Deere",7.68775773455426
+"Mpumalanga",1057.2,23.94,180.93,300.65,"Rainfed",3.705,"Dekalb","Case",9.44438856095645
+"Mpumalanga",538.7,25.38,167.84,330.79,"Rainfed",3.911,"Dekalb","John Deere",6.17435937846692
+"Mpumalanga",713.4,22.49,123.51,162.57,"Rainfed",3.432,"Pannar","John Deere",5.06318616155496
+"Free State",584.2,19.19,181.49,309.42,"Rainfed",3.863,"Pioneer","Case",6.27316248866241
+"Free State",796.7,21.76,143.25,223.5,"Rainfed",3.378,"Dekalb","John Deere",6.71071932037828
+"North West",588.5,27.12,99.38,151.85,"Rainfed",3.631,"Pioneer","John Deere",4.30869074545324
+"Free State",312.2,17.9,127.94,137.74,"Rainfed",3.125,"Dekalb","John Deere",3.8556047225242
+"Mpumalanga",969.7,22.71,163.3,352.2,"Rainfed",3.458,"Pioneer","New Holland",7.34518212513603
+"Free State",860.9,21.64,354.92,226.73,"Rainfed",3.618,"Pioneer","John Deere",8.59842235643293
+"Mpumalanga",750,23.87,169.14,207.23,"Rainfed",3.53,"Dekalb","Case",6.38703472564818
+"Free State",600.4,18.95,222.53,270.01,"Rainfed",3.751,"Dekalb","Case",5.78687586952212
+"Free State",692.3,23.18,170.91,140.41,"Rainfed",3.626,"Pioneer","John Deere",6.33024636927709
+"Free State",645.3,26.07,158.15,287.26,"Rainfed",3.86,"Dekalb","John Deere",6.84624118208686
+"Free State",634.3,23.35,131.88,163.36,"Rainfed",3.914,"Pioneer","John Deere",5.83414850207974
+"Free State",482.7,19.18,105.93,109.76,"Rainfed",3.772,"Pannar","Case",5.50289708590509
+"North West",999.3,24.21,252.42,233.55,"Rainfed",3.742,"Pioneer","John Deere",6.9986152799528
+"North West",377.8,29.04,333.37,305.05,"Rainfed",3.522,"Dekalb","John Deere",6.11775321146801
+"Free State",617.3,20.11,215.99,152.6,"Rainfed",3.671,"Pannar","John Deere",6.1756107638838
+"Free State",893.7,14.47,240.82,129.68,"Rainfed",4.118,"Pioneer","John Deere",8.71644197177168
+"North West",251.4,31.16,167.82,242.5,"Rainfed",3.335,"Pannar","John Deere",4.96995680704817
+"Mpumalanga",1031.7,20.73,301.24,166.55,"Rainfed",3.764,"Pioneer","John Deere",8.46282438865439
+"North West",754.6,24.78,233.7,183.39,"Rainfed",3.809,"Dekalb","John Deere",7.61115509954268
+"Free State",570,26.75,104.53,233.95,"Rainfed",3.088,"Dekalb","John Deere",3.42517860280533
+"Free State",365.9,20.73,86.57,225.55,"Rainfed",3.534,"Pannar","John Deere",4.41223996975871
+"Mpumalanga",1024.6,24.11,205.09,199.99,"Rainfed",3.675,"Pioneer","New Holland",7.41494187995072
+"Free State",395.7,19.15,119.54,274.24,"Rainfed",3.498,"Pannar","New Holland",3.98305550084276
+"Free State",625.8,20.95,239.3,174.43,"Rainfed",3.822,"Pannar","New Holland",7.04431004837391
+"Free State",345.6,22.91,146.61,242.87,"Rainfed",3.55,"Pannar","John Deere",6.13241348768717
+"North West",394.2,24.44,264.29,198.94,"Rainfed",3.686,"Pannar","New Holland",4.90450181407816
+"Mpumalanga",797.6,22.06,373.87,304.44,"Rainfed",3.834,"Pioneer","New Holland",8.76982408136705
+"Free State",385.7,22.89,344.21,254.29,"Rainfed",3.453,"Dekalb","John Deere",5.44699661597389
+"Free State",599.4,24.13,177.57,202.71,"Rainfed",3.409,"Pioneer","John Deere",6.89365888294625
+"North West",250.6,23.56,120.93,162.65,"Rainfed",3.43,"Pannar","John Deere",4.49791224491832
+"Free State",644.9,20.89,184.29,284.61,"Rainfed",4.089,"Pioneer","John Deere",6.61183439189291
+"Free State",439.6,25.03,107.5,171.05,"Rainfed",3.154,"Dekalb","John Deere",3.82729599508409
+"Free State",302.8,21.69,287.41,221.28,"Rainfed",3.607,"Dekalb","New Holland",5.59537222118883
+"Free State",619.3,22.72,101.94,124.22,"Rainfed",3.5,"Dekalb","John Deere",5.40792322420017
+"Free State",733,23.06,133.25,224.63,"Rainfed",3.518,"Pannar","Case",6.22081919032581
+"Free State",765.9,22.26,247.43,162.41,"Rainfed",3.86,"Pioneer","New Holland",6.26458492847044
+"Free State",934.6,22.74,237.97,271.28,"Rainfed",3.762,"Pioneer","John Deere",7.86106644107699
+"Mpumalanga",1347.7,20.88,311.83,391.88,"Rainfed",4.329,"Pioneer","New Holland",8.91016939500158
+"Free State",854.1,19.86,152.58,129.34,"Rainfed",3.62,"Dekalb","John Deere",8.03208844257681
+"Mpumalanga",1266.2,16.17,151.86,281.45,"Rainfed",3.662,"Dekalb","John Deere",9.48054174729195
+"Free State",718.2,21.37,285.43,178.86,"Rainfed",3.517,"Dekalb","New Holland",7.08011418372765
+"Free State",930,22.09,257.36,146.06,"Rainfed",3.584,"Pioneer","John Deere",8.17861361504703
+"Mpumalanga",1081.7,23.26,482.87,238.52,"Rainfed",4.136,"Pannar","New Holland",9.03494967623233
+"North West",428.6,26.14,119.71,238.67,"Rainfed",3.502,"Pioneer","John Deere",3.93160723656719
+"Free State",274.8,28.76,81.01,147.17,"Rainfed",3.474,"Pannar","New Holland",2.85120481011579
+"North West",420.1,28.7,246.95,194.62,"Rainfed",3.551,"Pioneer","John Deere",3.90392409520134
+"Mpumalanga",707.6,23.94,361.59,284.82,"Rainfed",3.943,"Pannar","Case",8.19979356670495
+"Mpumalanga",892.2,25.49,198.02,247.37,"Rainfed",3.969,"Dekalb","Case",7.19497075834802
+"Free State",412.4,20.71,251.18,197.35,"Rainfed",3.809,"Pioneer","Case",5.53380234839222
+"Free State",557.2,20.94,159.95,128.45,"Rainfed",3.547,"Pioneer","John Deere",5.92635853909582
+"Free State",644,29.13,289.94,163.15,"Rainfed",3.439,"Pioneer","John Deere",5.10070513227755
+"Free State",419.3,22.87,207.44,219.44,"Rainfed",3.675,"Pioneer","John Deere",4.70204553725908
+"Mpumalanga",853.9,26.37,246.23,191.39,"Rainfed",3.91,"Pioneer","John Deere",6.57800681263222
+"North West",240.2,24.24,97.59,87.61,"Rainfed",3.22,"Pannar","John Deere",3.37786522719664
+"Mpumalanga",892.9,22.56,167,251.23,"Rainfed",3.925,"Dekalb","Case",6.88761250571713
+"Free State",462.3,23.8,146.59,374.76,"Rainfed",3.403,"Dekalb","John Deere",6.18883966855353
+"Free State",753,22.41,233.73,301.03,"Irrigated",3.682,"Pioneer","New Holland",6.93715267025506
+"Free State",503.8,19.49,110.99,156.36,"Rainfed",3.505,"Dekalb","John Deere",5.9119929997877
+"Free State",617,22.11,242.36,136.28,"Rainfed",3.601,"Dekalb","John Deere",6.96755402298535
+"Free State",415.9,19.62,126.43,145.02,"Rainfed",3.043,"Dekalb","John Deere",4.1202250649871
+"Free State",651.9,24.05,215.77,232.15,"Rainfed",3.706,"Pioneer","John Deere",4.86355516562335
+"Mpumalanga",476.3,26.78,101.33,188.35,"Rainfed",3.294,"Dekalb","New Holland",5.51216117183353
+"Free State",773.6,14.75,149.07,188.49,"Rainfed",3.689,"Dekalb","New Holland",7.18851334217222
+"Mpumalanga",662,26.34,480.44,269.49,"Irrigated",3.538,"Pioneer","Case",8.37266275116166
+"Free State",661.8,18.15,238.96,145.02,"Rainfed",3.735,"Dekalb","John Deere",8.04325540321673
+"Mpumalanga",772.4,24.34,206.36,226.04,"Rainfed",3.642,"Dekalb","John Deere",7.42703587983648
+"Free State",620,24.02,128.9,239.55,"Rainfed",3.788,"Pannar","John Deere",5.52785552924395
+"Mpumalanga",1442.1,20.35,202.87,383.97,"Rainfed",4.193,"Pioneer","Case",9.17803375875202
+"Free State",391.6,21.02,121.55,83.56,"Rainfed",3.64,"Pioneer","John Deere",4.20325902973125
+"Mpumalanga",1065.8,22.59,256.02,187.08,"Rainfed",3.466,"Dekalb","John Deere",8.39457654323491
+"Free State",792.9,22.66,430.38,115.1,"Rainfed",3.908,"Dekalb","New Holland",8.84082780231664
+"North West",579.5,29.85,345.38,179.87,"Rainfed",3.214,"Pioneer","John Deere",6.4254043677309
+"North West",450.3,21.56,193.66,268.05,"Rainfed",4.069,"Pannar","Case",6.1779114371786
+"Mpumalanga",625.4,20.74,166.13,173.13,"Rainfed",3.688,"Pannar","John Deere",5.64158284227307
+"Free State",647.1,26.22,329.31,185.51,"Rainfed",3.432,"Pioneer","John Deere",8.20885496761508
+"Free State",876.9,24.15,319.67,268.87,"Rainfed",3.805,"Pannar","Case",7.90361033255142
+"Free State",506.9,23.8,171.97,158.08,"Rainfed",3.61,"Pannar","John Deere",6.87663210469196
+"Free State",711.1,23.82,385.31,310.17,"Rainfed",3.982,"Dekalb","New Holland",8.04335221085107
+"Free State",828.9,23.95,241.6,326.12,"Rainfed",3.981,"Dekalb","John Deere",7.67693953546557
+"Mpumalanga",1099.7,16.8,176.05,194.02,"Rainfed",3.176,"Pannar","John Deere",8.76187173943327
+"Free State",558.9,25.61,131.85,234.72,"Rainfed",3.744,"Pannar","Case",6.03244367093311
+"Free State",609.6,20.62,148.61,376.35,"Rainfed",3.28,"Pannar","John Deere",6.38290560258376
+"Free State",505.1,23.19,218.75,239.85,"Rainfed",3.745,"Pannar","John Deere",4.92529896054221
+"North West",481.5,26.71,155.67,184.66,"Rainfed",3.201,"Pioneer","Case",2.89228993532691
+"North West",256.5,31.11,137.67,231.78,"Rainfed",3.294,"Pioneer","John Deere",3.32651415716878
+"North West",333.6,27.14,159.84,227.55,"Irrigated",3.482,"Dekalb","Case",4.68178597446608
+"Mpumalanga",788.3,24.4,340.19,154,"Rainfed",4.221,"Dekalb","John Deere",8.44155953124986
+"North West",610.8,25.9,191.74,247.96,"Rainfed",3.478,"Pannar","John Deere",6.23058096785294
+"Free State",520,19.16,271.2,286.82,"Rainfed",4.174,"Pannar","John Deere",6.51392083439941
+"Free State",539.2,25.99,144.61,287.14,"Rainfed",3.257,"Pannar","John Deere",4.0530214389368
+"Free State",510.5,24.7,124.09,200.7,"Rainfed",3.455,"Dekalb","John Deere",6.48814037120998
+"Free State",515.6,27.63,114.91,212.11,"Rainfed",3.358,"Dekalb","Case",4.97346363261571
+"Free State",716.3,21.85,233.56,190.42,"Rainfed",3.538,"Dekalb","John Deere",8.56881513628055
+"Free State",529.4,25.78,168.7,211.3,"Rainfed",3.653,"Dekalb","New Holland",5.75792648111485
+"North West",467.2,33.58,187.76,263.74,"Irrigated",3.517,"Pannar","Case",4.96903803143181
+"Free State",468.1,21.8,245.63,113.38,"Rainfed",3.165,"Pannar","John Deere",5.50839833149322
+"Free State",600,18.15,192.76,365.28,"Rainfed",3.517,"Pioneer","New Holland",6.88881993072357
+"Free State",744.2,20.82,198.4,213.14,"Irrigated",3.399,"Dekalb","New Holland",5.8804609926016
+"Mpumalanga",810.2,22.85,117.44,231.04,"Rainfed",3.938,"Dekalb","John Deere",7.72781188520972
+"Mpumalanga",666.7,24.15,274.74,264.81,"Rainfed",3.862,"Pioneer","John Deere",6.56922003653683
+"North West",476,32.75,84.65,147.26,"Rainfed",3.482,"Dekalb","John Deere",3.49201965734022
+"Free State",615.3,21.08,119.83,190.93,"Rainfed",4.015,"Dekalb","John Deere",6.71323882068923
+"Free State",636.9,23.09,277.83,246.22,"Rainfed",3.704,"Dekalb","John Deere",7.05146808563944
+"Mpumalanga",480.2,24.14,275.43,190.7,"Rainfed",3.673,"Pioneer","New Holland",6.15518029190726
+"Mpumalanga",862.9,23.11,181.09,197.46,"Rainfed",3.525,"Pannar","John Deere",6.55072482476779
+"Free State",363.5,24.01,202.59,164.59,"Rainfed",3.947,"Pannar","John Deere",3.83167568031509
+"Free State",748.4,25.51,169.21,264.5,"Rainfed",3.611,"Dekalb","John Deere",6.84202544583453
+"Free State",715.6,22.02,255.45,170.64,"Rainfed",3.616,"Pioneer","John Deere",6.30791396713462
+"Free State",1031,22.53,256.28,212.91,"Rainfed",3.768,"Pioneer","John Deere",8.53254869939691
+"Free State",601.9,24.45,314.64,216.91,"Rainfed",4.123,"Dekalb","Case",6.85802146624753
+"Free State",583,24.93,249.1,111.33,"Rainfed",3.418,"Pannar","John Deere",5.40959571955132
+"Free State",591.5,20.43,194.26,204.72,"Rainfed",3.766,"Pioneer","Case",6.93984291183813
+"Free State",586.9,27.05,141.84,194.9,"Rainfed",3.507,"Pannar","Case",5.38004906160696
+"Mpumalanga",905.3,22.13,217.87,202.52,"Rainfed",3.99,"Dekalb","John Deere",7.99552220455952
+"Free State",730.6,21.28,171.64,148.11,"Rainfed",3.883,"Pannar","New Holland",6.50891750744324
+"Free State",697.9,25.94,184.14,171.67,"Rainfed",3.417,"Pannar","John Deere",6.60434760304083
+"Free State",484.5,26.46,207.49,104.55,"Rainfed",3.063,"Pannar","John Deere",5.29746487209882
+"North West",237.4,25.3,187.69,185.94,"Rainfed",3.81,"Pannar","New Holland",3.28664100307066
+"Mpumalanga",879.4,21.25,123.71,159.23,"Rainfed",4.18,"Pannar","Case",7.65063060658662
+"Mpumalanga",656.9,21.17,218.58,146.94,"Rainfed",3.572,"Pioneer","Case",7.0359251320925
+"North West",328.2,28.75,156.22,339.66,"Rainfed",3.739,"Pioneer","Case",3.96653126492017
+"Free State",564,22.76,168.24,259.51,"Rainfed",3.738,"Dekalb","John Deere",6.24804173336097
+"Free State",600.1,23.21,84.55,137.31,"Rainfed",3.534,"Pioneer","John Deere",5.38908526686355
+"Mpumalanga",1364.6,22.16,164.04,227.66,"Rainfed",4.116,"Pioneer","John Deere",9.5342728592779
+"Mpumalanga",567.2,23.05,204.61,258.7,"Rainfed",3.627,"Pioneer","New Holland",6.73525504768119
+"Free State",515.7,19.47,230.06,193.31,"Rainfed",3.808,"Dekalb","New Holland",6.73133375582253
+"Mpumalanga",1149.7,23.97,310.44,166.68,"Irrigated",3.976,"Pioneer","John Deere",8.87382480422507
+"Mpumalanga",633.8,25.48,205.94,216.4,"Rainfed",3.71,"Pannar","John Deere",5.42064503815384
+"Mpumalanga",813.8,20.24,179.22,166.13,"Rainfed",3.733,"Pannar","John Deere",6.4041048413528
+"Free State",641.2,21.67,199.07,147.36,"Rainfed",3.739,"Dekalb","John Deere",5.42909199459291
+"Free State",499.2,19.83,236.19,123.42,"Irrigated",3.948,"Pioneer","Case",6.28372662911534
+"Free State",695.3,15.52,214.39,230.56,"Rainfed",3.954,"Pannar","New Holland",7.32216531551428
+"Free State",407.3,23.34,202.77,226.88,"Rainfed",3.644,"Pioneer","John Deere",5.71037117022579
+"Free State",405.1,22.66,190.64,200.31,"Rainfed",3.605,"Pannar","John Deere",5.58016538571691
+"Free State",629.3,21.71,327.25,151.14,"Rainfed",3.734,"Dekalb","John Deere",8.07361101851496
+"Free State",559.8,22.93,326.3,204.92,"Irrigated",3.391,"Pioneer","John Deere",6.88970247751021
+"Mpumalanga",588.5,25.93,208.91,221.69,"Rainfed",3.42,"Pannar","New Holland",5.86015490985151
+"Free State",489.8,23.18,237.44,201.33,"Rainfed",3.808,"Pioneer","John Deere",6.32456366787367
+"Free State",553.3,20.46,78.13,232.84,"Rainfed",3.639,"Pannar","Case",3.90924776401176
+"Mpumalanga",582.7,22.72,173.52,139.53,"Rainfed",3.522,"Dekalb","John Deere",6.21590462249891
+"Mpumalanga",855.7,22.83,145.46,156.74,"Rainfed",3.859,"Pannar","John Deere",6.42750044367239
+"Free State",336.7,24.1,292.85,207.17,"Rainfed",3.353,"Pioneer","John Deere",5.33422070903938
+"Free State",765,18.34,202.45,186.53,"Rainfed",3.825,"Pannar","John Deere",7.30943061683346
+"North West",492,27,143,271.73,"Rainfed",3.338,"Pioneer","New Holland",4.46164235819926
+"North West",934.6,28.68,244,144.3,"Rainfed",3.599,"Dekalb","Case",6.61666798638165
+"Free State",697,21.4,388.07,263.36,"Rainfed",3.903,"Pioneer","John Deere",8.61791819873938
+"Free State",501.7,20.42,149.26,145.31,"Rainfed",3.491,"Pannar","John Deere",4.56599543396983
+"Mpumalanga",757.5,22.94,174.57,174.51,"Rainfed",3.679,"Pannar","John Deere",5.98546578273359
+"Free State",386.9,26.31,195.05,231.27,"Irrigated",3.558,"Pioneer","New Holland",5.88675126530134
+"Free State",608.5,23.73,155.86,107.37,"Rainfed",3.386,"Pannar","John Deere",5.26336063479463
+"North West",555.9,31,264.82,222.09,"Rainfed",4.01,"Pannar","John Deere",7.16400932202414
+"Free State",608.7,22.5,146.6,166.64,"Rainfed",3.835,"Pioneer","New Holland",6.41636368021429
+"Free State",453,23.94,175.93,180.7,"Rainfed",3.61,"Pannar","John Deere",5.50479686931004
+"North West",498.2,25.85,124.91,191.5,"Rainfed",3.158,"Pannar","John Deere",4.18135658862057
+"Mpumalanga",1212,22.88,249.95,236.74,"Rainfed",4.137,"Pioneer","John Deere",9.27447625543701
+"Free State",547.5,20.81,174.36,165.84,"Rainfed",3.887,"Dekalb","John Deere",6.13061893598562
+"Mpumalanga",951.9,19.87,144.12,139.28,"Rainfed",3.916,"Pioneer","Case",8.13672472863922
+"Mpumalanga",1100.5,22.37,183.47,380.31,"Rainfed",3.956,"Dekalb","Case",10.4901560670841
+"Free State",441,28.59,125.11,169.73,"Rainfed",3.347,"Pannar","John Deere",5.06280200655653
+"Free State",614.4,24.46,122.25,163.96,"Rainfed",3.254,"Dekalb","New Holland",4.13091001585148
+"Mpumalanga",1186.6,24.1,177.75,249.58,"Rainfed",3.915,"Dekalb","Case",8.40239556122627
+"Mpumalanga",1124.6,22.74,125.45,174.55,"Rainfed",4.199,"Pannar","New Holland",7.25304236451336
+"Mpumalanga",883.7,21.77,338.43,139.96,"Rainfed",3.891,"Pannar","Case",7.56556013559367
+"North West",576.3,26.61,158.01,349.89,"Rainfed",3.323,"Pannar","New Holland",5.48326650526512
+"Free State",390,22.14,188.7,310.63,"Rainfed",4.159,"Pioneer","John Deere",5.95723778684577
+"Free State",753.1,20.1,203.55,176.33,"Rainfed",3.676,"Pannar","New Holland",7.47026794833718
+"Free State",1018.1,22.56,239.79,356.68,"Rainfed",3.963,"Pioneer","John Deere",9.62109638820074
+"Free State",398.4,19.33,179.47,169.22,"Rainfed",3.774,"Pannar","Case",5.5401099922251
+"Free State",533,24.99,248.56,243.76,"Rainfed",3.535,"Dekalb","Case",6.45763162784393
+"Free State",584.3,24.77,284.09,198.66,"Rainfed",3.699,"Pannar","John Deere",5.77503023313584
+"North West",799.2,22.73,212.81,190.28,"Irrigated",3.665,"Pioneer","John Deere",7.3836224592841
+"Free State",414.7,24.78,101.56,224.19,"Rainfed",3.492,"Pioneer","John Deere",4.85897847032996
+"Free State",384.6,30.27,195,204.98,"Rainfed",3.679,"Dekalb","New Holland",5.84745359392183
+"Mpumalanga",735.6,22.46,191.3,158.44,"Rainfed",3.896,"Dekalb","Case",7.41603630732819
+"Free State",496.4,25.07,136.44,151.08,"Rainfed",3.445,"Dekalb","John Deere",5.17834390981481
+"North West",260.1,26.13,175.63,274.62,"Rainfed",3.721,"Dekalb","John Deere",5.32226118140799
+"Free State",690.7,25.09,275.78,144.93,"Rainfed",3.85,"Pioneer","Case",7.26253367997748
+"Free State",539.5,23.11,190.74,235.17,"Rainfed",3.256,"Pioneer","Case",6.01295149673165
+"Mpumalanga",863.6,26.37,140.92,218.33,"Rainfed",3.667,"Pioneer","New Holland",5.7363523043748
+"North West",419.3,23.46,203.03,292.89,"Rainfed",3.855,"Pannar","John Deere",5.81958334312401
+"Mpumalanga",920.1,22.73,147.86,194.87,"Rainfed",3.13,"Dekalb","John Deere",5.71749667793707
+"Free State",443.1,21.16,201.08,137.49,"Rainfed",3.493,"Dekalb","Case",4.91661343201865
+"Free State",678.4,21.21,210.64,187.99,"Rainfed",3.898,"Pioneer","John Deere",5.84231989206379
+"Mpumalanga",626.7,22.75,340.62,103.87,"Rainfed",3.82,"Pioneer","John Deere",6.98512443301161
+"Free State",451.4,20.21,168.57,127.73,"Rainfed",3.423,"Dekalb","John Deere",5.37057249202865
+"Free State",673.5,23.56,255.63,220.12,"Rainfed",3.799,"Pioneer","John Deere",7.16861887247595
+"North West",726.4,23.35,273.92,206.09,"Rainfed",3.578,"Dekalb","John Deere",7.51898246396877
+"Free State",475.8,27.07,168.93,242.96,"Rainfed",3.3,"Dekalb","Case",4.24894467458744
+"Free State",289.8,19.8,94.68,105.1,"Rainfed",3.06,"Pioneer","John Deere",3.30652767923918
+"Mpumalanga",756.1,23.7,198.3,236.46,"Rainfed",3.868,"Dekalb","Case",7.00743105571465
+"Free State",523.9,24.02,208.28,230.03,"Rainfed",3.644,"Pannar","John Deere",5.78078292759112
+"Free State",655.2,23.66,224.08,171.59,"Rainfed",3.721,"Pannar","New Holland",6.3812463143782
+"Free State",563,21.36,201.05,127.8,"Rainfed",3.974,"Pannar","New Holland",5.08125265024689
+"Free State",581.6,22.43,175.47,254.78,"Rainfed",3.393,"Pannar","New Holland",5.16767011897489
+"Free State",430.8,25.68,276.87,180.92,"Rainfed",3.456,"Pioneer","New Holland",5.62158300593925
+"Free State",414.3,18.49,176.86,178.82,"Rainfed",3.453,"Pioneer","John Deere",5.98951518887363
+"North West",404.2,25.56,172.1,166.54,"Rainfed",3.479,"Dekalb","New Holland",4.59928856629834
+"Free State",501.1,23.47,219.74,145.82,"Rainfed",4.049,"Pannar","Case",6.74865164631826
+"Free State",419.4,21.51,209.12,167.17,"Rainfed",3.81,"Pioneer","Case",6.67561864308662
+"North West",432.8,31.9,362.87,273.1,"Rainfed",3.334,"Pioneer","John Deere",4.86408111765101
+"Mpumalanga",738.4,24.91,320.06,274.53,"Rainfed",3.855,"Pioneer","John Deere",8.14893928640969
+"Free State",632.8,22.2,278.04,246.6,"Rainfed",3.489,"Pioneer","John Deere",7.53704604916018
+"Free State",614.8,17.54,211.11,137.64,"Rainfed",3.543,"Pioneer","John Deere",6.64323262114098
+"North West",214.9,28.74,127.42,122.24,"Rainfed",3.479,"Dekalb","John Deere",3.45449282069988
+"Free State",548.3,21.38,126.65,224.65,"Rainfed",3.818,"Pannar","John Deere",7.04448353580352
+"Mpumalanga",610.5,23.87,137.67,195.86,"Rainfed",3.539,"Pannar","Case",6.0058967670134
+"Free State",330.4,19.65,123.14,160.5,"Rainfed",3.158,"Pioneer","Case",4.23864576213694
+"Mpumalanga",459.2,25.68,220.93,173.73,"Rainfed",3.66,"Dekalb","John Deere",5.86399568421824
+"Free State",647.5,18.81,158.76,117.98,"Rainfed",3.78,"Dekalb","John Deere",6.47707531275179
+"North West",436,27.1,168.47,234.38,"Rainfed",3.641,"Dekalb","John Deere",5.69721490753937
+"Free State",760.4,22.62,324.8,144.69,"Rainfed",3.469,"Dekalb","John Deere",7.79701570380574
+"Free State",473,20.28,202.88,151.63,"Rainfed",3.859,"Dekalb","Case",8.05657222527244
+"Free State",425.8,24.56,180.46,103.78,"Rainfed",3.587,"Dekalb","New Holland",4.65915823614647
+"Free State",765,17.51,154.92,423.87,"Rainfed",3.441,"Dekalb","John Deere",7.70678350070092
+"North West",533.1,18.96,144.18,207.72,"Rainfed",3.645,"Dekalb","John Deere",5.03521022204826
+"Free State",534.2,23.78,141.27,133.49,"Rainfed",3.595,"Dekalb","Case",5.98907140231625
+"Mpumalanga",918.9,24.52,199.66,229.01,"Rainfed",3.955,"Pioneer","John Deere",7.27719479337645
+"Mpumalanga",404.9,24.33,138.36,148.19,"Rainfed",3.179,"Dekalb","John Deere",3.79388934712694
+"Free State",362,24.58,187,336.77,"Rainfed",3.694,"Pioneer","John Deere",4.66767617300051
+"Free State",481.7,19.12,280.43,365.38,"Rainfed",3.69,"Pioneer","Case",7.01797022948452
+"Free State",420,22.46,201.75,388.99,"Rainfed",3.634,"Pannar","Case",5.43184803621535
+"Free State",380.7,17.17,142.09,139,"Rainfed",3.45,"Dekalb","New Holland",5.06472356989754
+"Free State",602.7,25.65,130.68,224.46,"Rainfed",3.494,"Pannar","John Deere",4.44563989775528
+"North West",353.2,33.68,189.7,391.58,"Rainfed",3.317,"Pioneer","John Deere",3.28326001840523
