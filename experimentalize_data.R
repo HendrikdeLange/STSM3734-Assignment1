@@ -198,3 +198,4 @@ final_data %>%
            tl.col = "black", title = "Experimental", mar = c(0,0,1,0))
 
 par(mfrow = c(1, 1))
+write.csv(final_data, file = "experimental_data.csv", row.names = FALSE)

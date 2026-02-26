@@ -110,4 +110,13 @@ maize_data <- data.frame(
 
 head(maize_data)
 write.csv(maize_data, file = "maize_data.csv", row.names = FALSE)
+colnames(maize_data)
+numeric_vars <- maize_data[, c(
+  "temperature_C",
+  "rainfall_mm",
+  "fertiliser_kgha",
+  "chem_weed_control_kgha",
+  "soil_organic_matter"
+)]
 
+pairs(numeric_vars)
