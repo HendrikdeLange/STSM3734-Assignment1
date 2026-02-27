@@ -64,195 +64,242 @@ final_data <- expand.grid(
     soil_organic_matter_mean_z = (soil_organic_matter_mean - mean(df_ref$soil_organic_matter)) / sd(df_ref$soil_organic_matter)
   )
 
-nrow(final_data)  # 131,220
+final_data %>%
+  group_by(rainfall_cat, temperature_cat, fertiliser_cat, 
+           weed_control_cat, soil_organic_matter_cat,
+           region, seed_brand, tractor_brand, irrigation) %>%
+  summarise(n = n()) %>%
+  summary()  # min, max, mean of n should all be 10
 
-#correct way
-#Adjusting based on Experience
-#RAIN
-#1
-beta_rain <- 0.60 * rainfall_means$rainfall_mean
+
+#need to standardize the means
+rainfall_means_Z <- rainfall_means %>%
+  mutate(rainfall_mean_z = (rainfall_mean - mean(df_ref$rainfall_mm)) / sd(df_ref$rainfall_mm)) %>%
+  select(rainfall_cat, rainfall_mean_z)
+
+temperature_means_Z <- temperature_means %>%
+  mutate(temperature_mean_z = (temperature_mean - mean(df_ref$temperature_C)) / sd(df_ref$temperature_C)) %>%
+  select(temperature_cat, temperature_mean_z)
+
+fertiliser_means_Z <- fertiliser_means %>%
+  mutate(fertiliser_mean_z = (fertiliser_mean - mean(df_ref$fertiliser_kgha)) / sd(df_ref$fertiliser_kgha)) %>%
+  select(fertiliser_cat, fertiliser_mean_z)
+
+weed_control_means_Z <- weed_control_means %>%
+  mutate(weed_control_mean_z = (weed_control_mean - mean(df_ref$chem_weed_control_kgha)) / sd(df_ref$chem_weed_control_kgha)) %>%
+  select(weed_control_cat, weed_control_mean_z)
+
+soil_om_means_Z <- soil_om_means %>%
+  mutate(soil_organic_matter_mean_z = (soil_organic_matter_mean - mean(df_ref$soil_organic_matter)) / sd(df_ref$soil_organic_matter)) %>%
+  select(soil_organic_matter_cat, soil_organic_matter_mean_z)
+
+
+#CORRECT WAY
+# RAIN
+beta_rain <- 0.80 * rainfall_means_Z$rainfall_mean_z
 beta_rain_dev <- beta_rain - beta_rain[1]
-intercept_new <- 6 + beta_exp[1] #NEW INTERCEPT = OLD + LOWEST TERTILE MEAN
+intercept_new <- 6 + beta_rain[1]
+beta_rain_2 <- beta_rain_dev[2]
+beta_rain_3 <- beta_rain_dev[3]
+rain_medium <- ifelse(final_data$rainfall_cat == "Medium", 1, 0)
+rain_high   <- ifelse(final_data$rainfall_cat == "High", 1, 0)
 
-#2
-beta_rain_2 <- beta_rain_dev[2] 
-beta_rain_3 <- beta_rain_dev[3] 
+# TEMPERATURE
+beta_temperature <- -0.25 * temperature_means_Z$temperature_mean_z
+beta_temperature_dev <- beta_temperature - beta_temperature[1]
+intercept_new <- intercept_new + beta_temperature[1]
+beta_temperature_2 <- beta_temperature_dev[2]
+beta_temperature_3 <- beta_temperature_dev[3]
+temperature_medium <- ifelse(final_data$temperature_cat == "Medium", 1, 0)
+temperature_high   <- ifelse(final_data$temperature_cat == "High", 1, 0)
 
-# 3
-rain_medium <- ifelse(final_data$rainfall_cat == "Medium", 1, 0) 
-rain_high <- ifelse(final_data$rainfall_cat == "High", 1, 0)
+# FERTILISER
+beta_fertiliser <- 0.40 * fertiliser_means_Z$fertiliser_mean_z
+beta_fertiliser_dev <- beta_fertiliser - beta_fertiliser[1]
+intercept_new <- intercept_new + beta_fertiliser[1]
+beta_fertiliser_2 <- beta_fertiliser_dev[2]
+beta_fertiliser_3 <- beta_fertiliser_dev[3]
+fertiliser_medium <- ifelse(final_data$fertiliser_cat == "Medium", 1, 0)
+fertiliser_high   <- ifelse(final_data$fertiliser_cat == "High", 1, 0)
 
-#TEMPERATURE
+# WEED CONTROL
+beta_weed <- 0.20 * weed_control_means_Z$weed_control_mean_z
+beta_weed_dev <- beta_weed - beta_weed[1]
+intercept_new <- intercept_new + beta_weed[1]
+beta_weed_2 <- beta_weed_dev[2]
+beta_weed_3 <- beta_weed_dev[3]
+weed_medium <- ifelse(final_data$weed_control_cat == "Medium", 1, 0)
+weed_high   <- ifelse(final_data$weed_control_cat == "High", 1, 0)
 
+# SOIL ORGANIC MATTER
+beta_soil <- 0.20 * soil_om_means_Z$soil_organic_matter_mean_z
+beta_soil_dev <- beta_soil - beta_soil[1]
+intercept_new <- intercept_new + beta_soil[1]
+beta_soil_2 <- beta_soil_dev[2]
+beta_soil_3 <- beta_soil_dev[3]
+soil_medium <- ifelse(final_data$soil_organic_matter_cat == "Medium", 1, 0)
+soil_high   <- ifelse(final_data$soil_organic_matter_cat == "High", 1, 0)
 
-
-
-
-
-
-
-#FERTILISER
-
-
-
-
-
-
-
-
-
-#WEED CONTROL
-
-
-
-
-
-
-
-
-#SOIL OM
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# --- Step 3: Create dummies ---
+# MORE DUMMIESSSSS
 final_data$Irrigated  <- as.integer(final_data$irrigation == "Irrigated")
 final_data$Dekalb     <- as.integer(final_data$seed_brand != "Pioneer" & final_data$seed_brand != "Pannar")
 final_data$Pioneer    <- as.integer(final_data$seed_brand == "Pioneer")
 final_data$John_Deere <- as.integer(final_data$tractor_brand != "Case" & final_data$tractor_brand != "New Holland")
 
-# --- Step 4: Simulate yield ---
+#temp vs seed brand
+beta_temperature_seed <- -0.20 * temperature_means_Z$temperature_mean_z
+beta_temperature_seed_dev <- beta_temperature_seed - beta_temperature_seed[1]
+beta_temperature_seed_2 <- beta_temperature_seed_dev[2]
+beta_temperature_seed_3 <- beta_temperature_seed_dev[3]
+temperature_seed_medium <- ifelse(final_data$temperature_cat == "Medium", 1, 0)
+temperature_seed_high   <- ifelse(final_data$temperature_cat == "High", 1, 0)
+
+#fertiliser vs seed brand
+beta_fertiliser_seed <- 0.20 * fertiliser_means_Z$fertiliser_mean_z
+beta_fertiliser_seed_dev <- beta_fertiliser_seed - beta_fertiliser_seed[1]
+beta_fertiliser_seed_2 <- beta_fertiliser_seed_dev[2]
+beta_fertiliser_seed_3 <- beta_fertiliser_seed_dev[3]
+fertiliser_seed_medium <- ifelse(final_data$fertiliser_cat == "Medium", 1, 0)
+fertiliser_seed_high   <- ifelse(final_data$fertiliser_cat == "High", 1, 0)
+
+#creating the model
+
 final_data$yield_tha <- (
-  6.0
-  + 0.80 * final_data$rainfall_mean_z
-  - 0.25 * final_data$temperature_mean_z
-  + 0.40 * final_data$fertiliser_mean_z
-  + 0.20 * final_data$weed_control_mean_z
-  + 0.50 * final_data$Irrigated
-  + 0.20 * final_data$soil_organic_matter_mean_z
-  + 0.30 * final_data$Dekalb
-  - 0.20 * final_data$Dekalb   * final_data$temperature_mean_z
-  - 0.20 * final_data$Pioneer  * final_data$temperature_mean_z
-  + 0.25 * final_data$Pioneer  * final_data$Irrigated
-  + 0.20 * final_data$Pioneer  * final_data$fertiliser_mean_z
-  + 0.15 * final_data$John_Deere
-  + rnorm(nrow(final_data), mean = 0, sd = 0.7)
+  intercept_new + 
+    beta_rain_2 * rain_medium +
+    beta_rain_3 * rain_high +
+    
+    beta_temperature_2 * temperature_medium +
+    beta_temperature_3 * temperature_high +
+    
+    beta_fertiliser_2 * fertiliser_medium +
+    beta_fertiliser_3 * fertiliser_high +
+    
+    beta_weed_2 * weed_medium +
+    beta_weed_3 * weed_high +
+    
+    0.50 * final_data$Irrigated + 
+    
+    beta_soil_2 * soil_medium +
+    beta_soil_3 * soil_high +
+    
+    0.30 * final_data$Dekalb + 
+    
+    beta_temperature_seed_2 * temperature_medium * final_data$Dekalb +
+    beta_temperature_seed_3 * temperature_high   * final_data$Dekalb +
+    
+    beta_temperature_seed_2 * temperature_medium * final_data$Pioneer +
+    beta_temperature_seed_3 * temperature_high   * final_data$Pioneer +
+    
+    0.25 * final_data$Pioneer  * final_data$Irrigated +
+    
+    beta_fertiliser_seed_2 * fertiliser_seed_medium * final_data$Pioneer +
+    beta_fertiliser_seed_3 * fertiliser_seed_high * final_data$Pioneer +
+    
+    0.15 * final_data$John_Deere +
+  
+
+    rnorm(nrow(final_data), mean = 0, sd = 0.7)
 )
+
 final_data$yield_tha <- pmin(pmax(final_data$yield_tha, 2), 16)
 
-# --- Step 5: Save ---
-write.csv(final_data, file = "maize_experimental_data.csv", row.names = FALSE)
+#evaluating the model
+model <- lm(yield_tha ~ 
+              rainfall_cat +
+              temperature_cat +
+              fertiliser_cat +
+              weed_control_cat +
+              soil_organic_matter_cat +
+              Irrigated +
+              Dekalb +
+              temperature_cat * Dekalb +
+              temperature_cat * Pioneer +
+              Pioneer * Irrigated +
+              fertiliser_cat * Pioneer +
+              John_Deere,
+            data = final_data)
 
-# --- Step 6: Model ---
-model_exp <- lm(yield_tha ~ rainfall_mean_z + temperature_mean_z +
-                  fertiliser_mean_z + weed_control_mean_z + Irrigated +
-                  soil_organic_matter_mean_z + Dekalb + Pioneer + John_Deere +
-                  Dekalb:temperature_mean_z + Pioneer:temperature_mean_z +
-                  Pioneer:Irrigated + Pioneer:fertiliser_mean_z,
-                data = final_data)
+summary(model)
 
-summary(model_exp)
+#QQPLOT
+library(ggplot2)
 
-
-#SCATTERPLOT
-library(scales)
-library(rlang)
-
-# Colour-coded correlation panels
-cor_coloured <- function(data, mapping, ...) {
-  x <- GGally::eval_data_col(data, mapping$x)
-  y <- GGally::eval_data_col(data, mapping$y)
-  r <- cor(x, y, use = "complete.obs")
-  
-  bg <- scales::col_numeric(
-    palette = c("#D55E00", "#FFFFFF", "#0072B2"),
-    domain  = c(-1, 1)
-  )(r)
-  
-  ggplot(data, mapping) +
-    annotate("rect", xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf,
-             fill = bg, alpha = 0.7) +
-    annotate("text", x = mean(range(x, na.rm = TRUE)),
-             y = mean(range(y, na.rm = TRUE)),
-             label = round(r, 2), size = 4.5, fontface = "bold",
-             color = ifelse(abs(r) > 0.5, "white", "black")) +
-    theme_void()
-}
-
-var_colours <- c(
-"rainfall_mean"            = "#4A90C4",
-"fertiliser_mean"          = "#26C485",
-"temperature_mean"         = "#F17300",
-"soil_organic_matter_mean" = "#816C61",
-"weed_control_mean"        = "#A40606"
+qq_data <- data.frame(
+  yield = c(df$yield_tha, final_data$yield_tha),
+  source = rep(c("Observational (df)", "Experimental (final_data)"), 
+               c(nrow(df), nrow(final_data)))  # nrow(df) not nrow(df_ref)
 )
+# combine both datasets with a label
+# QQ PLOT
+ggplot(qq_data, aes(sample = yield, colour = source)) +
+  stat_qq() +
+  stat_qq_line() +
+  facet_wrap(~ source) +
+  scale_colour_manual(values = c("Observational (df)"        = "#2196F3", 
+                                 "Experimental (final_data)" = "#E91E63")) +
+  labs(
+    title    = "QQ Plot: Yield Distribution Comparison",
+    subtitle = "Observational vs Experimental Data",
+    x = "Theoretical Quantiles",
+    y = "Sample Quantiles (t/ha)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
 
-diag_custom <- function(data, mapping, ...) {
-  varname <- rlang::as_name(mapping$x)
-  col     <- var_colours[[varname]]
-  if (is.null(col)) col <- "grey50"   # fallback prevents NULL error
-  
-  ggplot(data, mapping) +
-    geom_density(fill = col, color = scales::muted(col),
-                 alpha = 0.7, linewidth = 0.8) +
-    theme_classic(base_size = 9) +
-    theme(axis.title   = element_blank(),
-          axis.text.y  = element_blank(),
-          axis.ticks.y = element_blank(),
-          axis.line.y  = element_blank())
-}
+# SUPERIMPOSED HISTOGRAMS
+ggplot(qq_data, aes(x = yield, fill = source, colour = source)) +
+  geom_histogram(alpha = 0.5, position = "identity", bins = 50,
+                 aes(y = after_stat(density))) +
+  scale_fill_manual(values = c("Observational (df)"        = "#2196F3",
+                               "Experimental (final_data)" = "#E91E63")) +
+  scale_colour_manual(values = c("Observational (df)"        = "#2196F3",
+                                 "Experimental (final_data)" = "#E91E63")) +
+  labs(
+    title = "Yield Distribution: Observational vs Experimental",
+    x     = "Yield (t/ha)",
+    y     = "Density",
+    fill  = NULL,
+    colour = NULL
+  ) +
+  theme_minimal() +
+  theme(legend.position = "top")
 
-scatter_custom <- function(data, mapping, ...) {
-  varname <- rlang::as_name(mapping$x)
-  col     <- var_colours[[varname]]
-  if (is.null(col)) col <- "grey50"   # fallback prevents NULL error
-  
-  ggplot(data, mapping) +
-    geom_point(color = col, alpha = 0.35, size = 0.7) +
-    theme_classic(base_size = 9) +
-    theme(panel.grid = element_blank())
-}
+# SUPERIMPOSED DENSITY PLOT
+ggplot(qq_data, aes(x = yield, fill = source, colour = source)) +
+  geom_density(alpha = 0.4, linewidth = 1) +
+  scale_fill_manual(values = c("Observational (df)"        = "#2196F3",
+                               "Experimental (final_data)" = "#E91E63")) +
+  scale_colour_manual(values = c("Observational (df)"        = "#2196F3",
+                                 "Experimental (final_data)" = "#E91E63")) +
+  labs(
+    title = "Yield Distribution: Observational vs Experimental",
+    x     = "Yield (t/ha)",
+    y     = "Density",
+    fill  = NULL, colour = NULL
+  ) +
+  theme_minimal() +
+  theme(legend.position = "top")
 
-# Plot
-ggpairs(
-  final_data,
-  columns      = c("rainfall_mean", "fertiliser_mean", "temperature_mean",
-                   "soil_organic_matter_mean", "weed_control_mean"),
-  columnLabels = c("Rainfall (mm)", "Fertiliser (kg/ha)", "Temperature (°C)",
-                   "Soil Organic Matter", "Weed Control (kg/ha)"),
-  upper        = list(continuous = cor_coloured),
-  lower        = list(continuous = scatter_custom),
-  diag         = list(continuous = diag_custom),
-  axisLabels   = "show"
-) +
-  theme_classic(base_size = 11) +
-  theme(
-    strip.background = element_blank(),
-    strip.text       = element_text(face = "bold", size = 9),
-    panel.grid       = element_blank(),
-    axis.text        = element_text(color = "black", size = 7),
-    plot.margin      = margin(5, 5, 5, 5)
+#scatterplot correlation matrix
+library(corrplot)
+cor_data <- final_data %>%
+  select(
+    rainfall_mean_z,
+    temperature_mean_z,
+    fertiliser_mean_z,
+    weed_control_mean_z,
+    soil_organic_matter_mean_z
   )
 
-ggsave("scatterplot_matrix_experimental.tiff", width = 8, height = 8,
-       units = "in", dpi = 600, compression = "lzw")
+cor_matrix <- cor(cor_data)
+
+corrplot(cor_matrix,
+         method      = "color",
+         type        = "upper",
+         addCoef.col = "black",
+         tl.col      = "black",
+         tl.srt      = 45,
+         number.cex  = 0.7,
+         title       = "Correlation Matrix: Experimental Data",
+         mar         = c(0, 0, 1, 0))
