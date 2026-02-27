@@ -59,6 +59,14 @@ df_processed$yield_tha <- (
 df_processed$yield_tha <- pmin(pmax(df_processed$yield_tha, 2), 16) #cap the yield to a realistic range
 df$yield_tha <- df_processed$yield_tha
 
+df_export <- df %>%
+  mutate(across(where(is.numeric) & !all_of("yield_tha"), scale)) #Standardize
+
+names(df_export) = c("Region", "Rainfall (mm)", "Temperature (C)", "Fertiliser (kg/ha)",
+                     "Chemical Weed Control (kg/ha)", "Irrigation", "Soil Organic Matter (%)",
+                     "Seed Strain", "Tractor Brand", "Yield (t/ha)")
+write.csv(df_export, file = "maize_obervations_export.csv", row.names =FALSE)
+
 write.csv(df, file = "maize_data_observed.csv", row.names = FALSE)
 
 model <- lm(yield_tha ~ rainfall_mm_z 
@@ -79,9 +87,6 @@ model <- lm(yield_tha ~ rainfall_mm_z
 summary(model)
 
 
-library(car)
-
-vif(model)
 
 
 

@@ -4,7 +4,6 @@ source("simulate_maize_data.R")
 
 
 set.seed(123)
-set.seed(123)
 
 # --- Step 1: Reference data for tertile means ---
 df_ref <- generate_maize_data(131220)
@@ -224,7 +223,6 @@ summary(model)
 
 #QQPLOT
 library(ggplot2)
-
 qq_data <- data.frame(
   yield = c(df$yield_tha, final_data$yield_tha),
   source = rep(c("Observational (df)", "Experimental (final_data)"), 
@@ -246,25 +244,7 @@ ggplot(qq_data, aes(sample = yield, colour = source)) +
   ) +
   theme_minimal() +
   theme(legend.position = "none")
-
-# SUPERIMPOSED HISTOGRAMS
-ggplot(qq_data, aes(x = yield, fill = source, colour = source)) +
-  geom_histogram(alpha = 0.5, position = "identity", bins = 50,
-                 aes(y = after_stat(density))) +
-  scale_fill_manual(values = c("Observational (df)"        = "#2196F3",
-                               "Experimental (final_data)" = "#E91E63")) +
-  scale_colour_manual(values = c("Observational (df)"        = "#2196F3",
-                                 "Experimental (final_data)" = "#E91E63")) +
-  labs(
-    title = "Yield Distribution: Observational vs Experimental",
-    x     = "Yield (t/ha)",
-    y     = "Density",
-    fill  = NULL,
-    colour = NULL
-  ) +
-  theme_minimal() +
-  theme(legend.position = "top")
-
+#please add residual vs fitted graph
 # SUPERIMPOSED DENSITY PLOT
 ggplot(qq_data, aes(x = yield, fill = source, colour = source)) +
   geom_density(alpha = 0.4, linewidth = 1) +
@@ -303,3 +283,4 @@ corrplot(cor_matrix,
          number.cex  = 0.7,
          title       = "Correlation Matrix: Experimental Data",
          mar         = c(0, 0, 1, 0))
+
