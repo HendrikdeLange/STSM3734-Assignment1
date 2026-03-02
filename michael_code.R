@@ -163,53 +163,53 @@ income_exp <- beta0 +
 
 final_data$income <- income_exp
 
-# #This is for plotting
-# # Observational income
-# income_obs <- income
-# 
-# # Experimental income
-# income_exp <- final_data$income
-# 
-# 
-# mean(income_obs)-mean(income_exp)
-# 
-# 
-# # Set common breaks for fair comparison
-# breaks_seq <- pretty(range(c(income_obs, income_exp)), n = 30)
-# 
-# # Plot observational histogram
-# hist(income_obs,
-#      breaks = breaks_seq,
-#      probability = TRUE,
-#      col = rgb(0, 0, 1, 0.4),
-#      border = NA,
-#      main = "Superimposed Histograms",
-#      xlab = "Income",
-#      ylim = c(0, max(density(income_obs)$y,
-#                      density(income_exp)$y)))
-# 
-# # Add experimental histogram
-# hist(income_exp,
-#      breaks = breaks_seq,
-#      probability = TRUE,
-#      col = rgb(1, 0, 0, 0.4),
-#      border = NA,
-#      add = TRUE)
-# 
-# legend("topright",
-#        legend = c("Observational", "Experimental"),
-#        fill = c(rgb(0,0,1,0.4), rgb(1,0,0,0.4)))
-# 
-# 
-# #QQ plot
-# qqplot(income_obs, income_exp,
-#        main = "QQ Plot: Experimental vs Observational",
-#        xlab = "Observational Quantiles",
-#        ylab = "Experimental Quantiles",
-#        pch = 16, col = "darkgray")
-# 
-# abline(0, 1, col = "red", lwd = 2)
-# 
+#This is for plotting
+# Observational income
+income_obs <- income
+
+# Experimental income
+income_exp <- final_data$income
+
+
+mean(income_obs)-mean(income_exp)
+
+
+# Set common breaks for fair comparison
+breaks_seq <- pretty(range(c(income_obs, income_exp)), n = 30)
+
+# Plot observational histogram
+hist(income_obs,
+     breaks = breaks_seq,
+     probability = TRUE,
+     col = rgb(0, 0, 1, 0.4),
+     border = NA,
+     main = "Superimposed Histograms",
+     xlab = "Income",
+     ylim = c(0, max(density(income_obs)$y,
+                     density(income_exp)$y)))
+
+# Add experimental histogram
+hist(income_exp,
+     breaks = breaks_seq,
+     probability = TRUE,
+     col = rgb(1, 0, 0, 0.4),
+     border = NA,
+     add = TRUE)
+
+legend("topright",
+       legend = c("Observational", "Experimental"),
+       fill = c(rgb(0,0,1,0.4), rgb(1,0,0,0.4)))
+
+
+#QQ plot
+qqplot(income_obs, income_exp,
+       main = "QQ Plot: Experimental vs Observational",
+       xlab = "Observational Quantiles",
+       ylab = "Experimental Quantiles",
+       pch = 16, col = "darkgray")
+
+abline(0, 1, col = "red", lwd = 2)
+
 # #Estimation of the final model
 # 
 # #Some hectically inefficient code:

@@ -2,7 +2,7 @@ df <- read.csv("C:\\Users\\hendr\\OneDrive\\Documents\\STSM3734-MAIZE_SIMULATION
 library(dplyr)
 source("simulate_maize_data.R")
 
-
+yield_obs <- df$yield_tha
 set.seed(123)
 
 # --- Step 1: Reference data for tertile means ---
@@ -54,14 +54,7 @@ final_data <- expand.grid(
   left_join(temperature_means,  by = "temperature_cat") %>%
   left_join(fertiliser_means,   by = "fertiliser_cat") %>%
   left_join(weed_control_means, by = "weed_control_cat") %>%
-  left_join(soil_om_means,      by = "soil_organic_matter_cat") %>%
-  mutate(
-    rainfall_mean_z            = (rainfall_mean - mean(df_ref$rainfall_mm))                / sd(df_ref$rainfall_mm),
-    temperature_mean_z         = (temperature_mean - mean(df_ref$temperature_C))           / sd(df_ref$temperature_C),
-    fertiliser_mean_z          = (fertiliser_mean - mean(df_ref$fertiliser_kgha))          / sd(df_ref$fertiliser_kgha),
-    weed_control_mean_z        = (weed_control_mean - mean(df_ref$chem_weed_control_kgha)) / sd(df_ref$chem_weed_control_kgha),
-    soil_organic_matter_mean_z = (soil_organic_matter_mean - mean(df_ref$soil_organic_matter)) / sd(df_ref$soil_organic_matter)
-  )
+  left_join(soil_om_means,      by = "soil_organic_matter_cat")
 
 final_data %>%
   group_by(rainfall_cat, temperature_cat, fertiliser_cat, 
@@ -92,6 +85,12 @@ soil_om_means_Z <- soil_om_means %>%
   mutate(soil_organic_matter_mean_z = (soil_organic_matter_mean - mean(df_ref$soil_organic_matter)) / sd(df_ref$soil_organic_matter)) %>%
   select(soil_organic_matter_cat, soil_organic_matter_mean_z)
 
+final_data <- final_data %>%
+  left_join(rainfall_means_Z,     by = "rainfall_cat") %>%
+  left_join(temperature_means_Z,  by = "temperature_cat") %>%
+  left_join(fertiliser_means_Z,   by = "fertiliser_cat") %>%
+  left_join(weed_control_means_Z, by = "weed_control_cat") %>%
+  left_join(soil_om_means_Z,      by = "soil_organic_matter_cat")
 
 #CORRECT WAY
 # RAIN
@@ -162,7 +161,7 @@ fertiliser_seed_medium <- ifelse(final_data$fertiliser_cat == "Medium", 1, 0)
 fertiliser_seed_high   <- ifelse(final_data$fertiliser_cat == "High", 1, 0)
 
 #creating the model
-
+set.seed(123) 
 final_data$yield_tha <- (
   intercept_new + 
     beta_rain_2 * rain_medium +
@@ -203,63 +202,59 @@ final_data$yield_tha <- (
 
 final_data$yield_tha <- pmin(pmax(final_data$yield_tha, 2), 16)
 
+
+yield_exp <- final_data$yield_tha
 #evaluating the model
+final_data <- final_data %>%
+  mutate(
+    Irrigated  = factor(Irrigated,  levels = c(0,1), labels = c("Rainfed","Irrigated")),
+    Dekalb     = factor(Dekalb,     levels = c(0,1), labels = c("Other","Dekalb")),
+    Pioneer    = factor(Pioneer,    levels = c(0,1), labels = c("Other","Pioneer")),
+    John_Deere = factor(John_Deere, levels = c(0,1), labels = c("Other","John_Deere"))
+  )
 model <- lm(yield_tha ~ 
-              rainfall_cat +
-              temperature_cat +
-              fertiliser_cat +
-              weed_control_cat +
-              soil_organic_matter_cat +
-              Irrigated +
-              Dekalb +
-              temperature_cat * Dekalb +
-              temperature_cat * Pioneer +
-              Pioneer * Irrigated +
-              fertiliser_cat * Pioneer +
-              John_Deere,
+              # Main effects — one term per DGP coefficient group
+              rainfall_cat             +   # beta_rain_2, beta_rain_3
+              temperature_cat          +   # beta_temperature_2/3
+              fertiliser_cat           +   # beta_fertiliser_2/3
+              weed_control_cat         +   # beta_weed_2/3
+              soil_organic_matter_cat  +   # beta_soil_2/3
+              Irrigated                +   # 0.50
+              Dekalb                   +   # 0.30
+              Pioneer                  +   # enters via interactions; explicit here for clarity
+              John_Deere               +   # 0.15
+              
+              # Interactions — mirror DGP exactly
+              temperature_cat : Dekalb    +   # beta_temperature_seed * Dekalb
+              temperature_cat : Pioneer   +   # beta_temperature_seed * Pioneer
+              Pioneer         : Irrigated +   # 0.25
+              fertiliser_cat  : Pioneer,      # beta_fertiliser_seed * Pioneer
+            
             data = final_data)
 
 summary(model)
 
-#QQPLOT
-library(ggplot2)
-qq_data <- data.frame(
-  yield = c(df$yield_tha, final_data$yield_tha),
-  source = rep(c("Observational (df)", "Experimental (final_data)"), 
-               c(nrow(df), nrow(final_data)))  # nrow(df) not nrow(df_ref)
-)
-# combine both datasets with a label
-# QQ PLOT
-ggplot(qq_data, aes(sample = yield, colour = source)) +
-  stat_qq() +
-  stat_qq_line() +
-  facet_wrap(~ source) +
-  scale_colour_manual(values = c("Observational (df)"        = "#2196F3", 
-                                 "Experimental (final_data)" = "#E91E63")) +
-  labs(
-    title    = "QQ Plot: Yield Distribution Comparison",
-    subtitle = "Observational vs Experimental Data",
-    x = "Theoretical Quantiles",
-    y = "Sample Quantiles (t/ha)"
-  ) +
-  theme_minimal() +
-  theme(legend.position = "none")
+#QQ plot
+# qqplot(income_obs, income_exp,
+#        main = "QQ Plot: Experimental vs Observational",
+#        xlab = "Observational Quantiles",
+#        ylab = "Experimental Quantiles",
+#        pch = 16, col = "darkgray")
+# 
+# abline(0, 1, col = "red", lwd = 2)
 #please add residual vs fitted graph
-# SUPERIMPOSED DENSITY PLOT
-ggplot(qq_data, aes(x = yield, fill = source, colour = source)) +
-  geom_density(alpha = 0.4, linewidth = 1) +
-  scale_fill_manual(values = c("Observational (df)"        = "#2196F3",
-                               "Experimental (final_data)" = "#E91E63")) +
-  scale_colour_manual(values = c("Observational (df)"        = "#2196F3",
-                                 "Experimental (final_data)" = "#E91E63")) +
-  labs(
-    title = "Yield Distribution: Observational vs Experimental",
-    x     = "Yield (t/ha)",
-    y     = "Density",
-    fill  = NULL, colour = NULL
-  ) +
-  theme_minimal() +
-  theme(legend.position = "top")
+
+
+#Gonna use this to make our QQplot
+qqplot(yield_obs, yield_exp,
+       main = "QQ Plot: Experimental vs Observational",
+       xlab = "Observational Quantiles",
+       ylab = "Experimental Quantiles",
+       pch = 16, col = "darkgray")
+
+abline(0, 1, col = "red", lwd = 2)
+
+
 
 #scatterplot correlation matrix
 library(corrplot)
