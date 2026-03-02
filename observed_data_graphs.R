@@ -1,4 +1,4 @@
-df <- read.csv("C:\\Users\\hendr\\OneDrive\\Documents\\STSM3734-MAIZE_SIMULATION\\maize_data_observed.csv")
+df <- read.csv("C:\\Users\\Marko\\Documents\\STSM3734-Assignment1\\maize_data_observed.csv")
 library(ggplot2)
 
 ggplot(df, aes(x = rainfall_mm)) +
